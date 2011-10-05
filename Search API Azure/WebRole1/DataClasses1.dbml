@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="searchresults" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=j9n5679f9g.database.windows.net;Initial Catalog=searchresults;Persist Security Info=True;User ID=Weunitedev01@j9n5679f9g" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="searchresultsConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tbamazon" Member="tbamazons">
+    <Type Name="tbamazon">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="keywordid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="price" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="imageid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbebay" Member="tbebays">
+    <Type Name="tbebay">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="kewordid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="price" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="priceUnit" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="imageid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbgoogle" Member="tbgoogles">
+    <Type Name="tbgoogle">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="keywordid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="price" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="priceunit" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="marchantname" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="imageid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbimage" Member="tbimages">
+    <Type Name="tbimage">
+      <Column Name="imageid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="imageurlsmall" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="imageurlmedium" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="imageurllarge" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="imagekeywordid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbsearch" Member="tbsearches">
+    <Type Name="tbsearch">
+      <Column Name="keywordid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="searchkeyword" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.eBayCountrySiteId" Member="eBayCountrySiteIds">
+    <Type Name="eBayCountrySiteId">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="eBaySiteId" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="SiteName" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="GlobalID" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.insertsearch" Method="insertsearch">
+    <Parameter Name="keyword" Type="System.String" DbType="NVarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.saveimage" Method="saveimage">
+    <Parameter Name="small" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="medium" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="large" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="keywordid" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_CategoriesInTrend" Method="SP_CategoriesInTrend">
+    <ElementType Name="SP_CategoriesInTrendResult">
+      <Column Name="CategoryId" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Category" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Watch" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_CategoriesInTrend_V2" Method="SP_CategoriesInTrend_V2">
+    <Parameter Name="StartDate" Parameter="startDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="EndDate" Parameter="endDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="StartPrice" Parameter="startPrice" Type="System.Decimal" DbType="Decimal(10,2)" />
+    <Parameter Name="EndPrice" Parameter="endPrice" Type="System.Decimal" DbType="Decimal(10,2)" />
+    <ElementType Name="SP_CategoriesInTrend_V2Result">
+      <Column Name="CategoryId" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ExecutionDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Category" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Watch" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_TopSubCategoryInTrend_V2" Method="SP_TopSubCategoryInTrend_V2">
+    <Parameter Name="CategoryId" Parameter="categoryId" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="StartDate" Parameter="startDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="EndDate" Parameter="endDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="StartPrice" Parameter="startPrice" Type="System.Decimal" DbType="Decimal(10,2)" />
+    <Parameter Name="EndPrice" Parameter="endPrice" Type="System.Decimal" DbType="Decimal(10,2)" />
+    <ElementType Name="SP_TopSubCategoryInTrend_V2Result">
+      <Column Name="SubCategoryId" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="SubCategoryName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Watch" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_ItemInTrend_V2" Method="SP_ItemInTrend_V2">
+    <Parameter Name="CategoryId" Parameter="categoryId" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="StartDate" Parameter="startDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="EndDate" Parameter="endDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="StartPrice" Parameter="startPrice" Type="System.Decimal" DbType="Decimal(10,2)" />
+    <Parameter Name="EndPrice" Parameter="endPrice" Type="System.Decimal" DbType="Decimal(10,2)" />
+    <ElementType Name="SP_ItemInTrend_V2Result">
+      <Column Name="Item" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ViewItemURLForNaturalSearch" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Watch" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ids" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_CategoriesInTrend_V2" Method="SP_CategoriesInTrend_V21">
+    <Parameter Name="StartDate" Parameter="startDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="EndDate" Parameter="endDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="StartPrice" Parameter="startPrice" Type="System.Decimal" DbType="Decimal(10,2)" />
+    <Parameter Name="EndPrice" Parameter="endPrice" Type="System.Decimal" DbType="Decimal(10,2)" />
+    <ElementType Name="SP_CategoriesInTrend_V2Result1">
+      <Column Name="CategoryId" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Category" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Watch" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_CategoriesInTrend_V3" Method="SP_CategoriesInTrend_V3">
+    <Parameter Name="eBaySiteId" Type="System.String" DbType="VarChar(5)" />
+    <Parameter Name="StartDate" Parameter="startDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="EndDate" Parameter="endDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="StartPrice" Parameter="startPrice" Type="System.Decimal" DbType="Decimal(10,2)" />
+    <Parameter Name="EndPrice" Parameter="endPrice" Type="System.Decimal" DbType="Decimal(10,2)" />
+    <ElementType Name="SP_CategoriesInTrend_V3Result">
+      <Column Name="CategoryId" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Category" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Watch" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_ItemInTrend_V3" Method="SP_ItemInTrend_V3">
+    <Parameter Name="eBaySiteId" Type="System.String" DbType="VarChar(5)" />
+    <Parameter Name="CategoryId" Parameter="categoryId" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="StartDate" Parameter="startDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="EndDate" Parameter="endDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="StartPrice" Parameter="startPrice" Type="System.Decimal" DbType="Decimal(10,2)" />
+    <Parameter Name="EndPrice" Parameter="endPrice" Type="System.Decimal" DbType="Decimal(10,2)" />
+    <ElementType Name="SP_ItemInTrend_V3Result">
+      <Column Name="Item" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ViewItemURLForNaturalSearch" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Watch" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ids" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_TopSubCategoryInTrend_V3" Method="SP_TopSubCategoryInTrend_V3">
+    <Parameter Name="eBaySiteId" Type="System.String" DbType="VarChar(5)" />
+    <Parameter Name="CategoryId" Parameter="categoryId" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="StartDate" Parameter="startDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="EndDate" Parameter="endDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="StartPrice" Parameter="startPrice" Type="System.Decimal" DbType="Decimal(10,2)" />
+    <Parameter Name="EndPrice" Parameter="endPrice" Type="System.Decimal" DbType="Decimal(10,2)" />
+    <ElementType Name="SP_TopSubCategoryInTrend_V3Result">
+      <Column Name="SubCategoryId" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="SubCategoryName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Watch" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_eBayItemDetail" Method="SP_eBayItemDetail">
+    <Parameter Name="Id" Parameter="id" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="eBaySiteId" Type="System.String" DbType="VarChar(10)" />
+    <ElementType Name="SP_eBayItemDetailResult">
+      <Column Name="ViewItemURLForNaturalSearch" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="GalleryURL" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="price" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="Category" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

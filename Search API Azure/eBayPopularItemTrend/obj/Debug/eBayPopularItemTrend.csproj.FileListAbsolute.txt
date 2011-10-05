@@ -1,0 +1,22 @@
+D:\Official\Projects\Kani\Code\Search API Azure\eBayPopularItemTrend\bin\Debug\eBayPopularItemTrend.dll.config
+D:\Official\Projects\Kani\Code\Search API Azure\eBayPopularItemTrend\bin\Debug\eBayPopularItemTrend.dll
+D:\Official\Projects\Kani\Code\Search API Azure\eBayPopularItemTrend\bin\Debug\eBayPopularItemTrend.pdb
+D:\Official\Projects\Kani\Code\Search API Azure\eBayPopularItemTrend\bin\Debug\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Official\Projects\Kani\Code\Search API Azure\eBayPopularItemTrend\bin\Debug\Microsoft.WindowsAzure.StorageClient.dll
+D:\Official\Projects\Kani\Code\Search API Azure\eBayPopularItemTrend\bin\Debug\msshrtmi.dll
+D:\Official\Projects\Kani\Code\Search API Azure\eBayPopularItemTrend\bin\Debug\Microsoft.WindowsAzure.StorageClient.xml
+D:\Official\Projects\Kani\Code\Search API Azure\eBayPopularItemTrend\bin\Debug\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Official\Projects\Kani\Code\Search API Azure\eBayPopularItemTrend\obj\Debug\ResolveAssemblyReference.cache
+D:\Official\Projects\Kani\Code\Search API Azure\eBayPopularItemTrend\obj\Debug\eBayPopularItemTrend.dll
+D:\Official\Projects\Kani\Code\Search API Azure\eBayPopularItemTrend\obj\Debug\eBayPopularItemTrend.pdb
+D:\Official\Projects\Kani\Shopping API Code\Search API Azure\eBayPopularItemTrend\bin\Debug\eBayPopularItemTrend.dll.config
+D:\Official\Projects\Kani\Shopping API Code\Search API Azure\eBayPopularItemTrend\bin\Debug\eBayPopularItemTrend.dll
+D:\Official\Projects\Kani\Shopping API Code\Search API Azure\eBayPopularItemTrend\bin\Debug\eBayPopularItemTrend.pdb
+D:\Official\Projects\Kani\Shopping API Code\Search API Azure\eBayPopularItemTrend\bin\Debug\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Official\Projects\Kani\Shopping API Code\Search API Azure\eBayPopularItemTrend\bin\Debug\Microsoft.WindowsAzure.StorageClient.dll
+D:\Official\Projects\Kani\Shopping API Code\Search API Azure\eBayPopularItemTrend\bin\Debug\msshrtmi.dll
+D:\Official\Projects\Kani\Shopping API Code\Search API Azure\eBayPopularItemTrend\bin\Debug\Microsoft.WindowsAzure.StorageClient.xml
+D:\Official\Projects\Kani\Shopping API Code\Search API Azure\eBayPopularItemTrend\bin\Debug\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Official\Projects\Kani\Shopping API Code\Search API Azure\eBayPopularItemTrend\obj\Debug\ResolveAssemblyReference.cache
+D:\Official\Projects\Kani\Shopping API Code\Search API Azure\eBayPopularItemTrend\obj\Debug\eBayPopularItemTrend.dll
+D:\Official\Projects\Kani\Shopping API Code\Search API Azure\eBayPopularItemTrend\obj\Debug\eBayPopularItemTrend.pdb

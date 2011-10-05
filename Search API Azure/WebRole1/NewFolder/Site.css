@@ -1,0 +1,20 @@
+﻿
+
+.TableStyle 
+{
+	background-color:Olive;	
+	font-family:Verdana;
+	font-size:10px;
+	width:400px;
+}
+
+.DefaultRow
+{
+	background-color:Olive;
+}
+
+
+.HighlightRow 
+{
+	background-color:Yellow;
+}

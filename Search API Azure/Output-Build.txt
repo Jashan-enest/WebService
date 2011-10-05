@@ -1,0 +1,10 @@
+﻿------ Rebuild All started: Project: WebRole1, Configuration: Debug Any CPU ------
+E:\Officials\Gopal Patel\AzureLast - Copy\WebRole1\Default.aspx.cs(576,30): warning CS0168: The variable 'ex' is declared but never used
+E:\Officials\Gopal Patel\AzureLast - Copy\WebRole1\App_Code\DataAccess.cs(66,26): warning CS0168: The variable 'ex' is declared but never used
+warning CS1762: A reference was created to embedded interop assembly 'f:\FileHelpers\Interop.Excel.dll' because of an indirect reference to that assembly created by assembly 'f:\FileHelpers\FileHelpers.ExcelStorage.dll'. Consider changing the 'Embed Interop Types' property on either assembly.
+E:\Officials\Gopal Patel\AzureLast - Copy\WebRole1\Default.aspx.cs(32,16): warning CS0414: The field 'WebRole1._Default.ASIN' is assigned but its value is never used
+
+Compile complete -- 0 errors, 4 warnings
+  WebRole1 -> E:\Officials\Gopal Patel\AzureLast - Copy\WebRole1\bin\WebRole1.dll
+------ Rebuild All started: Project: AzureLast, Configuration: Debug Any CPU ------
+========== Rebuild All: 2 succeeded, 0 failed, 0 skipped ==========

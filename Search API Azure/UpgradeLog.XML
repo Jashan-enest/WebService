@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="AzureLast">
+</Property><Property Name="Solution File" Value="E:\Officials\Gopal Patel\AzureLast\AzureLast.sln">
+</Property><Property Name="Date" Value="Tuesday, December 07, 2010">
+</Property><Property Name="Time" Value="1:39 AM">
+</Property></Properties><Event ErrorLevel="0" Project="E:\Officials\Gopal Patel\AzureLast\AzureLast\AzureLast.ccproj" Source="AzureLast\ServiceDefinition.csdef" Description="Added Sites element to the web role 'WebRole1'.">
+</Event><Event ErrorLevel="0" Project="E:\Officials\Gopal Patel\AzureLast\AzureLast\AzureLast.ccproj" Source="AzureLast\ServiceDefinition.csdef" Description="Added Endpoints element to the web role 'WebRole1'.">
+</Event><Event ErrorLevel="3" Project="E:\Officials\Gopal Patel\AzureLast\AzureLast\AzureLast.ccproj" Source="AzureLast\ServiceDefinition.csdef" Description="Converted">
+</Event><Event ErrorLevel="0" Project="E:\Officials\Gopal Patel\AzureLast\AzureLast\AzureLast.ccproj" Source="AzureLast\AzureLast.ccproj" Description="Upgraded ProductVersion value to 1.3.0.">
+</Event><Event ErrorLevel="0" Project="WebRole1" Source="WebRole1\WebRole1.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="WebRole1" Source="WebRole1\WebRole1.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="" Source="AzureLast.sln" Description="The solution file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="" Source="AzureLast.sln" Description="No Conversion Required">
+</Event></UpgradeLog>

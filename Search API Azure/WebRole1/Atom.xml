@@ -1,0 +1,1857 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<feed gd:kind="shopping#products" gd:etag="&quot;izYJutfqR9tRDg1H4X3fGx1UiCI/zlOPlOVG9Cfojs4UgBR738WOAeM&quot;" xmlns="http://www.w3.org/2005/Atom" xmlns:gd="http://schemas.google.com/g/2005" xmlns:openSearch="http://a9.com/-/spec/opensearchrss/1.0/" xmlns:s="http://www.google.com/shopping/api/schemas/2010">
+  <id>tag:google.com,2010:shopping/products</id>
+  <updated>2011-05-23T11:43:36.226Z</updated>
+  <title>Shopping Products</title>
+  <generator version="v1" uri="https://www.googleapis.com/shopping/search/">Search API for Shopping</generator>
+  <link rel="alternate" type="text/html" href="https://www.googleapis.com/shopping/search/"/>
+  <link rel="http://schemas.google.com/g/2005#feed" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products?alt=atom"/>
+  <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products?country=US&amp;q=digital+camera&amp;alt=atom&amp;rankBy=price:descending&amp;startIndex=1&amp;maxResults=50"/>
+  <link rel="next" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products?country=US&amp;q=digital+camera&amp;alt=atom&amp;rankBy=price:descending&amp;startIndex=51&amp;maxResults=50"/>
+  <link rel="previous" type="application/atom+xml"/>
+  <openSearch:totalResults>2510534</openSearch:totalResults>
+  <openSearch:startIndex>1</openSearch:startIndex>
+  <openSearch:itemsPerPage>50</openSearch:itemsPerPage>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1057813/3187198849639090123</id>
+    <author>
+      <name>Adorama Camera</name>
+    </author>
+    <published>2009-09-12T00:10:29.000Z</published>
+    <updated>2011-05-22T23:38:43.000Z</updated>
+    <title>Leica X1 Compact Digital Camera, 12.2MP, with Leica ELMARIT 24mm f/2.8 ASPH Lens, 2.7&quot; LCD Display</title>
+    <content type="text">Leica X 1 Compact Digital Camera, 12 . 2 MP, with Leica ELMARIT 24 mm f/ 2 . 8 ASPH Lens, 2 . 7 &quot; LCD Display Leica X1 Compact Digital Camera, 12.2MP, with Leica ELMARIT 24mm f/2.8 ASPH Lens, 2.7&quot; LCD Display Craftsmanship: The Leica X1 bo</content>
+    <link rel="alternate" type="text/html" href="http://www.adorama.com/ILCX1.html?refby=gbase"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1057813/gid/3187198849639090123?alt=atom"/>
+    <s:product>
+      <s:googleId>3187198849639090123</s:googleId>
+      <s:author>
+        <s:name>Adorama Camera</s:name>
+        <s:accountId>1057813</s:accountId>
+      </s:author>
+      <s:creationTime>2009-09-12T00:10:29.000Z</s:creationTime>
+      <s:modificationTime>2011-05-22T23:38:43.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Leica X1 Compact Digital Camera, 12.2MP, with Leica ELMARIT 24mm f/2.8 ASPH Lens, 2.7&quot; LCD Display</s:title>
+      <s:description>Leica X 1 Compact Digital Camera, 12 . 2 MP, with Leica ELMARIT 24 mm f/ 2 . 8 ASPH Lens, 2 . 7 &quot; LCD Display Leica X1 Compact Digital Camera, 12.2MP, with Leica ELMARIT 24mm f/2.8 ASPH Lens, 2.7&quot; LCD Display Craftsmanship: The Leica X1 bo</s:description>
+      <s:link>http://www.adorama.com/ILCX1.html?refby=gbase</s:link>
+      <s:brand>Leica</s:brand>
+      <s:condition>new</s:condition>
+      <s:gtin>04022243184206</s:gtin>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">1995.0</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://www.adorama.com/images/large/ILCX1.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1247713/12887052148993063996</id>
+    <author>
+      <name>Sam&apos;s Club</name>
+    </author>
+    <published>2011-04-24T16:11:14.000Z</published>
+    <updated>2011-05-22T15:54:56.000Z</updated>
+    <title>Nikon D90 DSLR Digital Camera w/18-105mm Lens - Digital SLR</title>
+    <content type="text">12.3MP DX-Format CMOS Imaging SensorCoupled with Nikon&apos;s EXPEED image processing technologies and Nikkor optics, breathtaking image fidelity is assured.AF-S DX Nikkor 18-105mm f/3.5-5.6G ED VR LensThis 5.8x zoom, designed exclusively for use with Nikon&apos;s DX-format, features Nikon&apos;s VR image stabilization and is perfect for portraits and action.Continuous Shooting As Fast As 4.5 Frames per Second:Combined with fast 0.15ms power-up and split-second 65ms shooting lag, dramatic action and decisive moments are captured easily.D-Movie Mode - Cinematic 24fps HD with SoundRecord cinematic-quality movie clips at up to 720p HD (1280 x 720 pixels) in Motion JPEG format, enhanced by Nikkor interchangeable lens quality and versatility.3&quot; Super-Density 920000-dot Color LCD MonitorHigh resolution, 170 wide-angle viewing guarantees confident image review and movie playback.11-Point AF System with Face Priority:Consistently fast and accurate autofocus, reinforced by the Nikon Scene Recognition System, delivers razor sharpness in a wide variety of conditions.In-Camera Image EditingCreative freedom stems from exclusive in-camera image editing, featuring Fisheye effect, Straighten and Distortion Control as well as D-Lighting, Red-eye Reduction, Image Overlay, Monochrome and more.</content>
+    <link rel="alternate" type="text/html" href="http://www.samsclub.com/sams/shop/product.jsp?productId=188162&amp;pid=CSE_Froogle&amp;ci_src=14110944&amp;ci_sku=216205"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1247713/gid/12887052148993063996?alt=atom"/>
+    <s:product>
+      <s:googleId>12887052148993063996</s:googleId>
+      <s:author>
+        <s:name>Sam&apos;s Club</s:name>
+        <s:accountId>1247713</s:accountId>
+      </s:author>
+      <s:creationTime>2011-04-24T16:11:14.000Z</s:creationTime>
+      <s:modificationTime>2011-05-22T15:54:56.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Nikon D90 DSLR Digital Camera w/18-105mm Lens - Digital SLR</s:title>
+      <s:description>12.3MP DX-Format CMOS Imaging SensorCoupled with Nikon&apos;s EXPEED image processing technologies and Nikkor optics, breathtaking image fidelity is assured.AF-S DX Nikkor 18-105mm f/3.5-5.6G ED VR LensThis 5.8x zoom, designed exclusively for use with Nikon&apos;s DX-format, features Nikon&apos;s VR image stabilization and is perfect for portraits and action.Continuous Shooting As Fast As 4.5 Frames per Second:Combined with fast 0.15ms power-up and split-second 65ms shooting lag, dramatic action and decisive moments are captured easily.D-Movie Mode - Cinematic 24fps HD with SoundRecord cinematic-quality movie clips at up to 720p HD (1280 x 720 pixels) in Motion JPEG format, enhanced by Nikkor interchangeable lens quality and versatility.3&quot; Super-Density 920000-dot Color LCD MonitorHigh resolution, 170 wide-angle viewing guarantees confident image review and movie playback.11-Point AF System with Face Priority:Consistently fast and accurate autofocus, reinforced by the Nikon Scene Recognition System, delivers razor sharpness in a wide variety of conditions.In-Camera Image EditingCreative freedom stems from exclusive in-camera image editing, featuring Fisheye effect, Straighten and Distortion Control as well as D-Lighting, Red-eye Reduction, Image Overlay, Monochrome and more.</s:description>
+      <s:link>http://www.samsclub.com/sams/shop/product.jsp?productId=188162&amp;pid=CSE_Froogle&amp;ci_src=14110944&amp;ci_sku=216205</s:link>
+      <s:brand>Nikon</s:brand>
+      <s:condition>new</s:condition>
+      <s:gtin>00018208254484</s:gtin>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">1307.9</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://s7d2.scene7.com/is/image/samsclub/s7product/0001820825448_A.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1172711/9519034582975303990</id>
+    <author>
+      <name>B&amp;H Photo-Video-Audio</name>
+    </author>
+    <published>2011-05-11T14:12:37.000Z</published>
+    <updated>2011-05-23T03:29:59.000Z</updated>
+    <title>Canon EOS Rebel T3i Digital Camera with 18-55mm Lens &amp; Basic Ac</title>
+    <content type="text">When you purchase a new digital camera there are usually a few items you need to round out the camera&apos;s included accessory package. With that in mind B&amp;H Photo has put together this Basic Accessory Kit to make your picture taking experience more enjoyable.In addition to the standard accessory package that is included by the manufacturer with the Canon EOS Rebel T3i Digital Camera with 18-55mm Lens the Basic Accessory Kit includes an 8GB memory card a camera bag a protection filter a lens cleaning kit a cap keeper an LCD screen protector and a 3-Year SAGEMAX Warranty Plan from NEW Customer Service Companies Inc. EOS Rebel T3i Digital Camera with 18-55mm Lens &amp; Basic Accessory Kit EOS Rebel T3i Digital Camera with 18-55mm Lens &amp; Basic Accessory Kit, SD/SDHC/SDXC Memory Card Slot, 18MP APS-C CMOS Sensor, Canon EF-S 18-55mm Lens Included, 3.0&quot; Clear View Vari-Angle LCD, 100-6400 ISO, Full HD Movie Mode w/ Manual Exposure, Compatible with Canon EF and EF-S Lenses, 3.7 Frames/Second Continuous Shooting, 63 Zone Dual-Layer Metering / 9-Point AF, Intelligent Auto Mode</content>
+    <link rel="alternate" type="text/html" href="http://www.bhphotovideo.com/c/product/768288-REG/Canon_5169B003_EOS_Rebel_T3i_Digital.html/BI/6609/kw/CAEDRT3IKE/kwid/KT100"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1172711/gid/9519034582975303990?alt=atom"/>
+    <s:product>
+      <s:googleId>9519034582975303990</s:googleId>
+      <s:author>
+        <s:name>B&amp;H Photo-Video-Audio</s:name>
+        <s:accountId>1172711</s:accountId>
+      </s:author>
+      <s:creationTime>2011-05-11T14:12:37.000Z</s:creationTime>
+      <s:modificationTime>2011-05-23T03:29:59.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Canon EOS Rebel T3i Digital Camera with 18-55mm Lens &amp; Basic Ac</s:title>
+      <s:description>When you purchase a new digital camera there are usually a few items you need to round out the camera&apos;s included accessory package. With that in mind B&amp;H Photo has put together this Basic Accessory Kit to make your picture taking experience more enjoyable.In addition to the standard accessory package that is included by the manufacturer with the Canon EOS Rebel T3i Digital Camera with 18-55mm Lens the Basic Accessory Kit includes an 8GB memory card a camera bag a protection filter a lens cleaning kit a cap keeper an LCD screen protector and a 3-Year SAGEMAX Warranty Plan from NEW Customer Service Companies Inc. EOS Rebel T3i Digital Camera with 18-55mm Lens &amp; Basic Accessory Kit EOS Rebel T3i Digital Camera with 18-55mm Lens &amp; Basic Accessory Kit, SD/SDHC/SDXC Memory Card Slot, 18MP APS-C CMOS Sensor, Canon EF-S 18-55mm Lens Included, 3.0&quot; Clear View Vari-Angle LCD, 100-6400 ISO, Full HD Movie Mode w/ Manual Exposure, Compatible with Canon EF and EF-S Lenses, 3.7 Frames/Second Continuous Shooting, 63 Zone Dual-Layer Metering / 9-Point AF, Intelligent Auto Mode</s:description>
+      <s:link>http://www.bhphotovideo.com/c/product/768288-REG/Canon_5169B003_EOS_Rebel_T3i_Digital.html/BI/6609/kw/CAEDRT3IKE/kwid/KT100</s:link>
+      <s:brand>Canon</s:brand>
+      <s:condition>new</s:condition>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">1096.5</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://www.bhphotovideo.com/images/images345x345/768288.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1172711/9568697692158549903</id>
+    <author>
+      <name>B&amp;H Photo-Video-Audio</name>
+    </author>
+    <published>2011-04-24T20:46:39.000Z</published>
+    <updated>2011-05-23T03:29:59.000Z</updated>
+    <title>Sony Alpha SLT-A55 Digital Camera w/18-55mm Lens &amp; Basic Acces</title>
+    <content type="text">When you purchase a new digital camera there are usually a few items you need to round out the camera&apos;s included accessory package. With that in mind B&amp;H Photo has put together this Basic Accessory Kit to make your picture taking experience more enjoyable. In addition to the standard accessory package that is included by the manufacturer with the Sony Alpha SLT-A55 Digital Camera with 18-55mm Lens the Basic Accessory Kit includes an 8GB memory card a camera bag for transport and storage a 55mm protection filter a lens cleaning kit a cap keeper an LCD screen protector and a 3-Year SAGEMAX Warranty Plan from NEW Customer Service Companies Inc. Alpha SLT-A55 Digital Camera w/18-55mm Lens &amp; Basic Accessory Kit Alpha SLT-A55 Digital Camera w/18-55mm Lens &amp; Basic Accessory Kit, 16.2MP High Resolution, Translucent Mirror f/Fast Focus, 921K Dot 3&quot; Tiltable LCD screen, 3x 18-55mm Lens (Equiv to 27-82.5mm), Built-In GPS, Full HD 1080/60i Video, 3D Sweep Panorama Mode, Quick AF for Full HD Movie Capture, 10 Frames per Second Continuous Shooting, Up to ISO 12800 Sensitivity</content>
+    <link rel="alternate" type="text/html" href="http://www.bhphotovideo.com/c/product/767693-REG/Sony_SLT_A55VL_Alpha_SLT_A55_Digital_Camera.html/BI/6609/kw/SOSLTA55LE/kwid/KT100"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1172711/gid/9568697692158549903?alt=atom"/>
+    <s:product>
+      <s:googleId>9568697692158549903</s:googleId>
+      <s:author>
+        <s:name>B&amp;H Photo-Video-Audio</s:name>
+        <s:accountId>1172711</s:accountId>
+      </s:author>
+      <s:creationTime>2011-04-24T20:46:39.000Z</s:creationTime>
+      <s:modificationTime>2011-05-23T03:29:59.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Sony Alpha SLT-A55 Digital Camera w/18-55mm Lens &amp; Basic Acces</s:title>
+      <s:description>When you purchase a new digital camera there are usually a few items you need to round out the camera&apos;s included accessory package. With that in mind B&amp;H Photo has put together this Basic Accessory Kit to make your picture taking experience more enjoyable. In addition to the standard accessory package that is included by the manufacturer with the Sony Alpha SLT-A55 Digital Camera with 18-55mm Lens the Basic Accessory Kit includes an 8GB memory card a camera bag for transport and storage a 55mm protection filter a lens cleaning kit a cap keeper an LCD screen protector and a 3-Year SAGEMAX Warranty Plan from NEW Customer Service Companies Inc. Alpha SLT-A55 Digital Camera w/18-55mm Lens &amp; Basic Accessory Kit Alpha SLT-A55 Digital Camera w/18-55mm Lens &amp; Basic Accessory Kit, 16.2MP High Resolution, Translucent Mirror f/Fast Focus, 921K Dot 3&quot; Tiltable LCD screen, 3x 18-55mm Lens (Equiv to 27-82.5mm), Built-In GPS, Full HD 1080/60i Video, 3D Sweep Panorama Mode, Quick AF for Full HD Movie Capture, 10 Frames per Second Continuous Shooting, Up to ISO 12800 Sensitivity</s:description>
+      <s:link>http://www.bhphotovideo.com/c/product/767693-REG/Sony_SLT_A55VL_Alpha_SLT_A55_Digital_Camera.html/BI/6609/kw/SOSLTA55LE/kwid/KT100</s:link>
+      <s:brand>Sony</s:brand>
+      <s:condition>new</s:condition>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">1043.5</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://www.bhphotovideo.com/images/images345x345/767693.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1057813/17814261991602247035</id>
+    <author>
+      <name>Adorama Camera</name>
+    </author>
+    <published>2010-10-23T13:51:39.000Z</published>
+    <updated>2011-05-21T23:39:45.000Z</updated>
+    <title>Panasonic Lumix DMC-GH2 Digital Camera, Black with 14-42mm Lens</title>
+    <content type="text">Panasonic Lumix DMCGH2 DMCGH 2 DMC GH 2 Digital Camera, Black with 1442mm 1442 mm 14 42 mm Lens Panasonic Lumix DMC-GH2 Digital Camera, Black with 14-42mm Lens The Panasonic Lumix DMC-GH2 Digital Camera has a large 17.3 x 13.0mm Live MOS sensor that rec</content>
+    <link rel="alternate" type="text/html" href="http://www.adorama.com/IPCDMCGH2KK.html?refby=gbase"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1057813/gid/17814261991602247035?alt=atom"/>
+    <s:product>
+      <s:googleId>17814261991602247035</s:googleId>
+      <s:author>
+        <s:name>Adorama Camera</s:name>
+        <s:accountId>1057813</s:accountId>
+      </s:author>
+      <s:creationTime>2010-10-23T13:51:39.000Z</s:creationTime>
+      <s:modificationTime>2011-05-21T23:39:45.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Panasonic Lumix DMC-GH2 Digital Camera, Black with 14-42mm Lens</s:title>
+      <s:description>Panasonic Lumix DMCGH2 DMCGH 2 DMC GH 2 Digital Camera, Black with 1442mm 1442 mm 14 42 mm Lens Panasonic Lumix DMC-GH2 Digital Camera, Black with 14-42mm Lens The Panasonic Lumix DMC-GH2 Digital Camera has a large 17.3 x 13.0mm Live MOS sensor that rec</s:description>
+      <s:link>http://www.adorama.com/IPCDMCGH2KK.html?refby=gbase</s:link>
+      <s:brand>Panasonic</s:brand>
+      <s:condition>new</s:condition>
+      <s:gtin>00885170024274</s:gtin>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">999.95</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://www.adorama.com/images/large/IPCDMCGH2KK.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1057813/10130924494559373345</id>
+    <author>
+      <name>Adorama Camera</name>
+    </author>
+    <published>2011-03-02T23:54:35.000Z</published>
+    <updated>2011-05-21T23:39:45.000Z</updated>
+    <title>Canon EOS Rebel T3i Digital SLR Camera/ Lens Kit, with EF-S 18-55mm f/3.5-5.6 IS Lens, 16 GB SD Memory Card, Slinger Camera Bag,Spare LP-E8 Lithium-Ion Rehargeable Battery, USB 2.0 SD Card Reader, Digital Camera &amp; Lens Cleaning Kit</title>
+    <content type="text">Canon EOS Rebel T 3 i Digital SLR Camera/ Lens Kit, with EFS EF S 1855mm 1855 mm 18 55 mm f/3.55.6 f/ 3 . 55 . 6 f/ 3 . 5 5 . 6 IS Lens, 16 GB SD Memory Card, Slinger Camera Bag,Spare LPE8 LPE 8 LP E 8 LithiumIon Lithium Ion Rehargeable Battery, USB</content>
+    <link rel="alternate" type="text/html" href="http://www.adorama.com/ICAT3IKB.html?refby=gbase"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1057813/gid/10130924494559373345?alt=atom"/>
+    <s:product>
+      <s:googleId>10130924494559373345</s:googleId>
+      <s:author>
+        <s:name>Adorama Camera</s:name>
+        <s:accountId>1057813</s:accountId>
+      </s:author>
+      <s:creationTime>2011-03-02T23:54:35.000Z</s:creationTime>
+      <s:modificationTime>2011-05-21T23:39:45.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Canon EOS Rebel T3i Digital SLR Camera/ Lens Kit, with EF-S 18-55mm f/3.5-5.6 IS Lens, 16 GB SD Memory Card, Slinger Camera Bag,Spare LP-E8 Lithium-Ion Rehargeable Battery, USB 2.0 SD Card Reader, Digital Camera &amp; Lens Cleaning Kit</s:title>
+      <s:description>Canon EOS Rebel T 3 i Digital SLR Camera/ Lens Kit, with EFS EF S 1855mm 1855 mm 18 55 mm f/3.55.6 f/ 3 . 55 . 6 f/ 3 . 5 5 . 6 IS Lens, 16 GB SD Memory Card, Slinger Camera Bag,Spare LPE8 LPE 8 LP E 8 LithiumIon Lithium Ion Rehargeable Battery, USB</s:description>
+      <s:link>http://www.adorama.com/ICAT3IKB.html?refby=gbase</s:link>
+      <s:brand>Canon</s:brand>
+      <s:condition>new</s:condition>
+      <s:gtin>00013803134254</s:gtin>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">983.2</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://www.adorama.com/images/large/ICAT3IKB.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1057813/3212098182292585664</id>
+    <author>
+      <name>Adorama Camera</name>
+    </author>
+    <published>2011-01-06T00:45:54.000Z</published>
+    <updated>2011-05-22T23:38:43.000Z</updated>
+    <title>Canon EOS Rebel T2i EF-S Digital SLR Camera Kit,- Black, USA Warranty - with 18-55mm Lens, 8GB SD Memory Card, Slinger Camera Bag, USB 2.0 SD Card Reader, Digital Camera &amp; Lens Cleaning Kit,Spare LP-E8 Lithium-Ion Rehargeable Battery</title>
+    <content type="text">Canon EOS Rebel T 2 i EFS EF S Digital SLR Camera Kit, Kit, Black, USA Warranty with 1855mm 1855 mm 18 55 mm Lens, 8 GB SD Memory Card, Slinger Camera Bag, USB 2 . 0 SD Card Reader, Digital Camera &amp; Lens Cleaning Kit,Spare LPE8 LPE 8 LP</content>
+    <link rel="alternate" type="text/html" href="http://www.adorama.com/ICADRT2IKB.html?refby=gbase"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1057813/gid/3212098182292585664?alt=atom"/>
+    <s:product>
+      <s:googleId>3212098182292585664</s:googleId>
+      <s:author>
+        <s:name>Adorama Camera</s:name>
+        <s:accountId>1057813</s:accountId>
+      </s:author>
+      <s:creationTime>2011-01-06T00:45:54.000Z</s:creationTime>
+      <s:modificationTime>2011-05-22T23:38:43.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Canon EOS Rebel T2i EF-S Digital SLR Camera Kit,- Black, USA Warranty - with 18-55mm Lens, 8GB SD Memory Card, Slinger Camera Bag, USB 2.0 SD Card Reader, Digital Camera &amp; Lens Cleaning Kit,Spare LP-E8 Lithium-Ion Rehargeable Battery</s:title>
+      <s:description>Canon EOS Rebel T 2 i EFS EF S Digital SLR Camera Kit, Kit, Black, USA Warranty with 1855mm 1855 mm 18 55 mm Lens, 8 GB SD Memory Card, Slinger Camera Bag, USB 2 . 0 SD Card Reader, Digital Camera &amp; Lens Cleaning Kit,Spare LPE8 LPE 8 LP</s:description>
+      <s:link>http://www.adorama.com/ICADRT2IKB.html?refby=gbase</s:link>
+      <s:brand>Canon</s:brand>
+      <s:condition>new</s:condition>
+      <s:gtin>00013803123784</s:gtin>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">871.01</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://www.adorama.com/images/large/ICADRT2IKB.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1172711/8079778761999407212</id>
+    <author>
+      <name>B&amp;H Photo-Video-Audio</name>
+    </author>
+    <published>2011-04-24T20:46:39.000Z</published>
+    <updated>2011-05-23T03:29:59.000Z</updated>
+    <title>Sony Alpha NEX-5 Digital Camera w/18-55mm Lens &amp; Basic Accesso</title>
+    <content type="text">When you purchase a new digital camera there are usually a few items you need to round out the camera&apos;s included accessory package. With that in mind B&amp;H Photo has put together this Basic Accessory Kit to make your picture taking experience more enjoyable. In addition to the standard accessory package that is included by the manufacturer with the Sony Alpha NEX-5 Digital Camera with 18-55mm Lens the Basic Accessory Kit includes an 8GB memory card a camera bag for transport and storage a 49mm protection filter a lens cleaning kit a cap keeper an LCD screen protector and a 3-Year SAGEMAX Warranty Plan from NEW Customer Service Companies Inc. Alpha NEX-5 Digital Camera w/18-55mm Lens &amp; Basic Accessory Kit (Black) Alpha NEX-5 Digital Camera w/18-55mm Lens &amp; Basic Accessory Kit (Black), Extremely Compact HD Imaging System, 14.2MP APS (1.5x) Exmor CMOS Sensor, Interchangeable 18-55mm E-Series Lens, HD 1080/60i Video / Dolby Digital (AC-3), Tiltable 3&quot; 921600-dot TFT TruBlack LCD, Up to ISO 12800 / Up to 7 fps, Auto HDR capture / DRO Optimizer, In-Camera 226° Sweep Panoramas, Magnesium-alloy Body (8.1 oz), Memory Stick PRO Duo or SD/SDHC Cards</content>
+    <link rel="alternate" type="text/html" href="http://www.bhphotovideo.com/c/product/767753-REG/Sony_NEX5K_B_Alpha_NEX_5_Digital_Camera.html/BI/6609/kw/SONEX5KBE/kwid/KT100"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1172711/gid/8079778761999407212?alt=atom"/>
+    <s:product>
+      <s:googleId>8079778761999407212</s:googleId>
+      <s:author>
+        <s:name>B&amp;H Photo-Video-Audio</s:name>
+        <s:accountId>1172711</s:accountId>
+      </s:author>
+      <s:creationTime>2011-04-24T20:46:39.000Z</s:creationTime>
+      <s:modificationTime>2011-05-23T03:29:59.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Sony Alpha NEX-5 Digital Camera w/18-55mm Lens &amp; Basic Accesso</s:title>
+      <s:description>When you purchase a new digital camera there are usually a few items you need to round out the camera&apos;s included accessory package. With that in mind B&amp;H Photo has put together this Basic Accessory Kit to make your picture taking experience more enjoyable. In addition to the standard accessory package that is included by the manufacturer with the Sony Alpha NEX-5 Digital Camera with 18-55mm Lens the Basic Accessory Kit includes an 8GB memory card a camera bag for transport and storage a 49mm protection filter a lens cleaning kit a cap keeper an LCD screen protector and a 3-Year SAGEMAX Warranty Plan from NEW Customer Service Companies Inc. Alpha NEX-5 Digital Camera w/18-55mm Lens &amp; Basic Accessory Kit (Black) Alpha NEX-5 Digital Camera w/18-55mm Lens &amp; Basic Accessory Kit (Black), Extremely Compact HD Imaging System, 14.2MP APS (1.5x) Exmor CMOS Sensor, Interchangeable 18-55mm E-Series Lens, HD 1080/60i Video / Dolby Digital (AC-3), Tiltable 3&quot; 921600-dot TFT TruBlack LCD, Up to ISO 12800 / Up to 7 fps, Auto HDR capture / DRO Optimizer, In-Camera 226° Sweep Panoramas, Magnesium-alloy Body (8.1 oz), Memory Stick PRO Duo or SD/SDHC Cards</s:description>
+      <s:link>http://www.bhphotovideo.com/c/product/767753-REG/Sony_NEX5K_B_Alpha_NEX_5_Digital_Camera.html/BI/6609/kw/SONEX5KBE/kwid/KT100</s:link>
+      <s:brand>Sony</s:brand>
+      <s:condition>new</s:condition>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">866.5</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://www.bhphotovideo.com/images/images345x345/767753.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1057813/9096412099235057043</id>
+    <author>
+      <name>Adorama Camera</name>
+    </author>
+    <published>2011-01-06T00:45:54.000Z</published>
+    <updated>2011-05-21T23:39:45.000Z</updated>
+    <title>Canon EOS Rebel T2i EF-S Digital SLR Camera Kit,-- Black, USA Warranty - with 18-55mm Lens, 8GB SD Memory Card, Slinger Camera Bag, USB 2.0 SD Card Reader, Digital Camera &amp; Lens Cleaning Kit</title>
+    <content type="text">Canon EOS Rebel T 2 i EFS EF S Digital SLR Camera Kit, Kit, Black, USA Warranty with 1855mm 1855 mm 18 55 mm Lens, 8 GB SD Memory Card, Slinger Camera Bag, USB 2 . 0 SD Card Reader, Digital Camera &amp; Lens Cleaning Kit Canon EOS Rebel T2i</content>
+    <link rel="alternate" type="text/html" href="http://www.adorama.com/ICADRT2IKA.html?refby=gbase"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1057813/gid/9096412099235057043?alt=atom"/>
+    <s:product>
+      <s:googleId>9096412099235057043</s:googleId>
+      <s:author>
+        <s:name>Adorama Camera</s:name>
+        <s:accountId>1057813</s:accountId>
+      </s:author>
+      <s:creationTime>2011-01-06T00:45:54.000Z</s:creationTime>
+      <s:modificationTime>2011-05-21T23:39:45.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Canon EOS Rebel T2i EF-S Digital SLR Camera Kit,-- Black, USA Warranty - with 18-55mm Lens, 8GB SD Memory Card, Slinger Camera Bag, USB 2.0 SD Card Reader, Digital Camera &amp; Lens Cleaning Kit</s:title>
+      <s:description>Canon EOS Rebel T 2 i EFS EF S Digital SLR Camera Kit, Kit, Black, USA Warranty with 1855mm 1855 mm 18 55 mm Lens, 8 GB SD Memory Card, Slinger Camera Bag, USB 2 . 0 SD Card Reader, Digital Camera &amp; Lens Cleaning Kit Canon EOS Rebel T2i</s:description>
+      <s:link>http://www.adorama.com/ICADRT2IKA.html?refby=gbase</s:link>
+      <s:brand>Canon</s:brand>
+      <s:condition>new</s:condition>
+      <s:gtin>00013803123784</s:gtin>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">854.79</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://www.adorama.com/images/large/ICADRT2IKA.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/3359942/7715316089952819481</id>
+    <author>
+      <name>Meijer</name>
+    </author>
+    <published>2011-01-17T10:36:21.000Z</published>
+    <updated>2011-05-21T11:46:34.000Z</updated>
+    <title>Nikon D3100 14.2MP Digital Camera</title>
+    <content type="text">The D3100 brings a moving experience in digital photography that everyone can enjoy. Easily capture the beauty of life&apos;s fleeting moments with this camera, a feature-rich digital SLR that surprises you with simplicity and positively delights with superb results. Whether shooting casual snapshots, a delicately composed still life, or full HD movies, you&apos;ll love the ease with which D3100 does it all.</content>
+    <link rel="alternate" type="text/html" href="http://www.meijer.com/s/nikon-d3100-14-2mp-digital-camera/_/R-175861?cmpid=goobase&amp;CAWELAID=758284876"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/3359942/gid/7715316089952819481?alt=atom"/>
+    <s:product>
+      <s:googleId>7715316089952819481</s:googleId>
+      <s:author>
+        <s:name>Meijer</s:name>
+        <s:accountId>3359942</s:accountId>
+      </s:author>
+      <s:creationTime>2011-01-17T10:36:21.000Z</s:creationTime>
+      <s:modificationTime>2011-05-21T11:46:34.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Nikon D3100 14.2MP Digital Camera</s:title>
+      <s:description>The D3100 brings a moving experience in digital photography that everyone can enjoy. Easily capture the beauty of life&apos;s fleeting moments with this camera, a feature-rich digital SLR that surprises you with simplicity and positively delights with superb results. Whether shooting casual snapshots, a delicately composed still life, or full HD movies, you&apos;ll love the ease with which D3100 does it all.</s:description>
+      <s:link>http://www.meijer.com/s/nikon-d3100-14-2mp-digital-camera/_/R-175861?cmpid=goobase&amp;CAWELAID=758284876</s:link>
+      <s:brand>Nikon</s:brand>
+      <s:condition>new</s:condition>
+      <s:gtin>00018208254729</s:gtin>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">699.99</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://www.meijer.com/assets/product_images/styles/xlarge/1000473_NKND3100_A_400.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/7937/11548813226159134249</id>
+    <author>
+      <name>Crutchfield</name>
+    </author>
+    <published>2010-07-05T15:06:46.000Z</published>
+    <updated>2011-05-22T15:08:09.000Z</updated>
+    <title>Sony NEX-5K 14-megapixel digital camera with 18-55mm zoom lens (Black)</title>
+    <content type="text">Sony NEX-5K 14-megapixel digital camera with 18-55mm zoom lens</content>
+    <link rel="alternate" type="text/html" href="http://www.crutchfield.com/I-rgpscLF7/App/Product/Item/Main.aspx?I=158NEX5KK"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/7937/gid/11548813226159134249?alt=atom"/>
+    <s:product>
+      <s:googleId>11548813226159134249</s:googleId>
+      <s:author>
+        <s:name>Crutchfield</s:name>
+        <s:accountId>7937</s:accountId>
+      </s:author>
+      <s:creationTime>2010-07-05T15:06:46.000Z</s:creationTime>
+      <s:modificationTime>2011-05-22T15:08:09.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Sony NEX-5K 14-megapixel digital camera with 18-55mm zoom lens (Black)</s:title>
+      <s:description>Sony NEX-5K 14-megapixel digital camera with 18-55mm zoom lens</s:description>
+      <s:link>http://www.crutchfield.com/I-rgpscLF7/App/Product/Item/Main.aspx?I=158NEX5KK</s:link>
+      <s:brand>Sony</s:brand>
+      <s:condition>new</s:condition>
+      <s:gtin>00027242797505</s:gtin>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">699.99</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://a248.e.akamai.net/pix.crutchfield.com/products/2010/21/158/h158NEX5KK-f.jpeg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/7937/5658349951343017118</id>
+    <author>
+      <name>Crutchfield</name>
+    </author>
+    <published>2010-07-05T15:06:46.000Z</published>
+    <updated>2011-05-22T15:08:09.000Z</updated>
+    <title>Sony NEX-5K 14-megapixel digital camera with 18-55mm zoom lens</title>
+    <content type="text">Sony NEX-5K 14-megapixel digital camera with 18-55mm zoom lens</content>
+    <link rel="alternate" type="text/html" href="http://www.crutchfield.com/I-rgpscLF5/App/Product/Item/Main.aspx?I=158NEX5KS"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/7937/gid/5658349951343017118?alt=atom"/>
+    <s:product>
+      <s:googleId>5658349951343017118</s:googleId>
+      <s:author>
+        <s:name>Crutchfield</s:name>
+        <s:accountId>7937</s:accountId>
+      </s:author>
+      <s:creationTime>2010-07-05T15:06:46.000Z</s:creationTime>
+      <s:modificationTime>2011-05-22T15:08:09.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Sony NEX-5K 14-megapixel digital camera with 18-55mm zoom lens</s:title>
+      <s:description>Sony NEX-5K 14-megapixel digital camera with 18-55mm zoom lens</s:description>
+      <s:link>http://www.crutchfield.com/I-rgpscLF5/App/Product/Item/Main.aspx?I=158NEX5KS</s:link>
+      <s:brand>Sony</s:brand>
+      <s:condition>new</s:condition>
+      <s:gtin>00027242797529</s:gtin>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">699.99</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://a248.e.akamai.net/pix.crutchfield.com/products/2010/21/158/h158NEX5KS-f.jpeg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1172711/15607523117722839591</id>
+    <author>
+      <name>B&amp;H Photo-Video-Audio</name>
+    </author>
+    <published>2011-04-25T00:03:39.000Z</published>
+    <updated>2011-05-23T03:29:59.000Z</updated>
+    <title>Canon PowerShot G12 Digital Camera with Deluxe Accessory Kit</title>
+    <content type="text">When you purchase a new digital camera there are usually a few items you need to round out the camera&apos;s included accessory package. With that in mind B&amp;H Photo has put together this Deluxe Accessory Kit to make your picture taking experience more enjoyable.In addition to the standard accessory package that is included by the manufacturer with the Canon PowerShot G12 Camera the Deluxe Accessory Kit includes an 8GB memory card a camera pouch an extra rechargeable battery and a 3-year SAGEMAX Protection Plan from NEW Customer Service Companies Inc. PowerShot G12 Digital Camera with Deluxe Accessory Kit PowerShot G12 Digital Camera with Deluxe Accessory Kit, 10MP CCD Image Sensor, DIGIC 4 Image Processor, 1280 x 720p HD Video Capture, 2.8&quot; Vari-Angled LCD, JPEG and RAW File Image Capture, SD/SDHC/SDXC/MMC/MMC+/HCMMC+ Card Slot, 28mm Lens with 5x Optical Zoom Hybrid IS, Optical Image Stabilization, Stereo Sound for Video, Manual Exposure Control</content>
+    <link rel="alternate" type="text/html" href="http://www.bhphotovideo.com/c/product/737429-REG/Canon_4342B001_PowerShot_G12_Digital_Camera.html/BI/6609/kw/CAPSG12K2/kwid/KT100"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1172711/gid/15607523117722839591?alt=atom"/>
+    <s:product>
+      <s:googleId>15607523117722839591</s:googleId>
+      <s:author>
+        <s:name>B&amp;H Photo-Video-Audio</s:name>
+        <s:accountId>1172711</s:accountId>
+      </s:author>
+      <s:creationTime>2011-04-25T00:03:39.000Z</s:creationTime>
+      <s:modificationTime>2011-05-23T03:29:59.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Canon PowerShot G12 Digital Camera with Deluxe Accessory Kit</s:title>
+      <s:description>When you purchase a new digital camera there are usually a few items you need to round out the camera&apos;s included accessory package. With that in mind B&amp;H Photo has put together this Deluxe Accessory Kit to make your picture taking experience more enjoyable.In addition to the standard accessory package that is included by the manufacturer with the Canon PowerShot G12 Camera the Deluxe Accessory Kit includes an 8GB memory card a camera pouch an extra rechargeable battery and a 3-year SAGEMAX Protection Plan from NEW Customer Service Companies Inc. PowerShot G12 Digital Camera with Deluxe Accessory Kit PowerShot G12 Digital Camera with Deluxe Accessory Kit, 10MP CCD Image Sensor, DIGIC 4 Image Processor, 1280 x 720p HD Video Capture, 2.8&quot; Vari-Angled LCD, JPEG and RAW File Image Capture, SD/SDHC/SDXC/MMC/MMC+/HCMMC+ Card Slot, 28mm Lens with 5x Optical Zoom Hybrid IS, Optical Image Stabilization, Stereo Sound for Video, Manual Exposure Control</s:description>
+      <s:link>http://www.bhphotovideo.com/c/product/737429-REG/Canon_4342B001_PowerShot_G12_Digital_Camera.html/BI/6609/kw/CAPSG12K2/kwid/KT100</s:link>
+      <s:brand>Canon</s:brand>
+      <s:condition>new</s:condition>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">629.95</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://www.bhphotovideo.com/images/images345x345/737429.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/7937/2412218279883503973</id>
+    <author>
+      <name>Crutchfield</name>
+    </author>
+    <published>2010-06-30T07:31:25.000Z</published>
+    <updated>2011-05-22T15:08:09.000Z</updated>
+    <title>Sony NEX-3K 14-megapixel digital camera with 18-55mm zoom lens</title>
+    <content type="text">Sony NEX-3K 14-megapixel digital camera with 18-55mm zoom lens</content>
+    <link rel="alternate" type="text/html" href="http://www.crutchfield.com/I-rgpscLE5/App/Product/Item/Main.aspx?I=158NEX3KS"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/7937/gid/2412218279883503973?alt=atom"/>
+    <s:product>
+      <s:googleId>2412218279883503973</s:googleId>
+      <s:author>
+        <s:name>Crutchfield</s:name>
+        <s:accountId>7937</s:accountId>
+      </s:author>
+      <s:creationTime>2010-06-30T07:31:25.000Z</s:creationTime>
+      <s:modificationTime>2011-05-22T15:08:09.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Sony NEX-3K 14-megapixel digital camera with 18-55mm zoom lens</s:title>
+      <s:description>Sony NEX-3K 14-megapixel digital camera with 18-55mm zoom lens</s:description>
+      <s:link>http://www.crutchfield.com/I-rgpscLE5/App/Product/Item/Main.aspx?I=158NEX3KS</s:link>
+      <s:brand>Sony</s:brand>
+      <s:condition>new</s:condition>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">599.99</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://a248.e.akamai.net/pix.crutchfield.com/products/2010/21/158/h158NEX3KS-f.jpeg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/4257713/13568619479338025849</id>
+    <author>
+      <name>CDW</name>
+    </author>
+    <published>2010-05-14T21:48:19.000Z</published>
+    <updated>2011-05-03T19:37:40.000Z</updated>
+    <title>Sony a NEX 3K - digital camera</title>
+    <content type="text">Digital camera - mirrorless system - 14.2 Mpix - Sony 18-55mm OSS lens - optical zoom: 3 x - supported memory: MS Duo, SD, MS PRO Duo, SDXC, MS PRO-HG</content>
+    <link rel="alternate" type="text/html" href="http://www.cdw.com/shop/products/default.aspx?edc=2093580&amp;cm_mmc=ShoppingFeeds-_-GoogleBase-_-Digital%20Imaging-Camera/Scanner-_-2093580_Sony%20a%20NEX%203K%20-%20digital%20camera_SOD-NEX3K/S"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/4257713/gid/13568619479338025849?alt=atom"/>
+    <s:product>
+      <s:googleId>13568619479338025849</s:googleId>
+      <s:author>
+        <s:name>CDW</s:name>
+        <s:accountId>4257713</s:accountId>
+      </s:author>
+      <s:creationTime>2010-05-14T21:48:19.000Z</s:creationTime>
+      <s:modificationTime>2011-05-03T19:37:40.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Sony a NEX 3K - digital camera</s:title>
+      <s:description>Digital camera - mirrorless system - 14.2 Mpix - Sony 18-55mm OSS lens - optical zoom: 3 x - supported memory: MS Duo, SD, MS PRO Duo, SDXC, MS PRO-HG</s:description>
+      <s:link>http://www.cdw.com/shop/products/default.aspx?edc=2093580&amp;cm_mmc=ShoppingFeeds-_-GoogleBase-_-Digital%20Imaging-Camera/Scanner-_-2093580_Sony%20a%20NEX%203K%20-%20digital%20camera_SOD-NEX3K/S</s:link>
+      <s:brand>Sony Cameras</s:brand>
+      <s:condition>new</s:condition>
+      <s:gtin>00027242797628</s:gtin>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">599.99</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://webobjects2.cdw.com/is/image/CDW/2093580"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/4257713/9713711502248801067</id>
+    <author>
+      <name>CDW</name>
+    </author>
+    <published>2010-05-21T21:55:02.000Z</published>
+    <updated>2011-05-03T19:37:40.000Z</updated>
+    <title>Sony a NEX 3K - digital camera</title>
+    <content type="text">Digital camera - mirrorless system - 14.2 Mpix - Sony 18-55mm OSS lens - optical zoom: 3 x - supported memory: MS Duo, SD, MS PRO Duo, SDXC, MS PRO-HG</content>
+    <link rel="alternate" type="text/html" href="http://www.cdw.com/shop/products/default.aspx?edc=2093579&amp;cm_mmc=ShoppingFeeds-_-GoogleBase-_-Digital%20Imaging-Camera/Scanner-_-2093579_Sony%20a%20NEX%203K%20-%20digital%20camera_SOD-NEX3K/B"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/4257713/gid/9713711502248801067?alt=atom"/>
+    <s:product>
+      <s:googleId>9713711502248801067</s:googleId>
+      <s:author>
+        <s:name>CDW</s:name>
+        <s:accountId>4257713</s:accountId>
+      </s:author>
+      <s:creationTime>2010-05-21T21:55:02.000Z</s:creationTime>
+      <s:modificationTime>2011-05-03T19:37:40.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Sony a NEX 3K - digital camera</s:title>
+      <s:description>Digital camera - mirrorless system - 14.2 Mpix - Sony 18-55mm OSS lens - optical zoom: 3 x - supported memory: MS Duo, SD, MS PRO Duo, SDXC, MS PRO-HG</s:description>
+      <s:link>http://www.cdw.com/shop/products/default.aspx?edc=2093579&amp;cm_mmc=ShoppingFeeds-_-GoogleBase-_-Digital%20Imaging-Camera/Scanner-_-2093579_Sony%20a%20NEX%203K%20-%20digital%20camera_SOD-NEX3K/B</s:link>
+      <s:brand>Sony Cameras</s:brand>
+      <s:condition>new</s:condition>
+      <s:gtin>00027242797604</s:gtin>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">599.99</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://webobjects2.cdw.com/is/image/CDW/2093579"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1108019/15718836758156566391</id>
+    <author>
+      <name>J&amp;R Music and Computer World</name>
+    </author>
+    <published>2011-04-23T23:36:02.000Z</published>
+    <updated>2011-05-22T23:45:27.000Z</updated>
+    <title>Canon EOS Rebel T3 12 Megapixel SLR Digital Camera Kit - Black</title>
+    <content type="text">As you decide to transition to a DSLR camera to expand your creative photography, this Canon EOS Rebel T3 12 Megapixel SLR Digital Camera Kit is an outstanding starting point for a beginner and intermediate photo enthusiast.-Perfect for photographers ready to make the move to digital SLR photography, the new EOS Rebel T3 delivers beautiful photos and video, speed, simplicity and fun. It features a 12.2 Megapixel CMOS Image Sensor and Canon DIGIC 4 Image Processor for richly detailed images and quick camera response. It has Canon&apos;s amazing 63-zone, Dual-Layer metering for accurate exposures and features Canon&apos;s Basic+ function, HD video Recording and Live View shooting, plus a convenient in-camera Feature Guide. Available in a number of gorgeous colors, the EOS Rebel T3 is as beautiful as the pictures it takes.-Canon&apos;s CMOS (Complementary Metal Oxide Semiconductor) sensor captures images with exceptional clarity and tonal range, and offers the most Pixels in its class. It offers many of the same new technologies to maximize each pixel&apos;s light gathering efficiency that were first seen with the Professional EOS-1D Mark III model. It&apos;s an APS-C size sensor (22.2 x 14.8mm), and there&apos;s an effective 1.6x increase in the lens&apos;s marked focal length when attached. -The improved DIGIC 4 Image Processor ensures that images are captured, processed and saved with remarkable speed. The EOS Rebel T3 DSLR&apos;s new 3:2 multiple aspect ratio, in-camera RAW image processing, creative filters, image resizing and provided S2 and S3 image-recording quality are all possible thanks to the DIGIC 4 Image Processor. With dazzling results, the new DIGIC 4 Image Processor also works to capture and process Data of images shot at 12.2 Megapixels at 3.0 fps, as well as 14-Bit signal processing for excellent image gradation, enhanced Face Detection Live mode, Full HD video recording, Auto Lighting Optimizer and Lens Peripheral Optimization. -Features-12.2 Megapixel CMOS (APS-C) sensor and DIGIC 4 Image Processor for high image quality and speed. -ISO 100 - 6400 for shooting from bright to dim light. -Improved EOS HD Movie mode with expanded recording [HD: 30p (29.97) / 25p], with in-camera movie Editing options. -High speed, reliable 9-point AF system utilizing a high</content>
+    <link rel="alternate" type="text/html" href="http://www.jr.com/JRProductPage.process?Product_Id=4466991&amp;JRSource=googlebase.datafeed.CAN+REBELT3BKIT"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1108019/gid/15718836758156566391?alt=atom"/>
+    <s:product>
+      <s:googleId>15718836758156566391</s:googleId>
+      <s:author>
+        <s:name>J&amp;R Music and Computer World</s:name>
+        <s:accountId>1108019</s:accountId>
+      </s:author>
+      <s:creationTime>2011-04-23T23:36:02.000Z</s:creationTime>
+      <s:modificationTime>2011-05-22T23:45:27.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Canon EOS Rebel T3 12 Megapixel SLR Digital Camera Kit - Black</s:title>
+      <s:description>As you decide to transition to a DSLR camera to expand your creative photography, this Canon EOS Rebel T3 12 Megapixel SLR Digital Camera Kit is an outstanding starting point for a beginner and intermediate photo enthusiast.-Perfect for photographers ready to make the move to digital SLR photography, the new EOS Rebel T3 delivers beautiful photos and video, speed, simplicity and fun. It features a 12.2 Megapixel CMOS Image Sensor and Canon DIGIC 4 Image Processor for richly detailed images and quick camera response. It has Canon&apos;s amazing 63-zone, Dual-Layer metering for accurate exposures and features Canon&apos;s Basic+ function, HD video Recording and Live View shooting, plus a convenient in-camera Feature Guide. Available in a number of gorgeous colors, the EOS Rebel T3 is as beautiful as the pictures it takes.-Canon&apos;s CMOS (Complementary Metal Oxide Semiconductor) sensor captures images with exceptional clarity and tonal range, and offers the most Pixels in its class. It offers many of the same new technologies to maximize each pixel&apos;s light gathering efficiency that were first seen with the Professional EOS-1D Mark III model. It&apos;s an APS-C size sensor (22.2 x 14.8mm), and there&apos;s an effective 1.6x increase in the lens&apos;s marked focal length when attached. -The improved DIGIC 4 Image Processor ensures that images are captured, processed and saved with remarkable speed. The EOS Rebel T3 DSLR&apos;s new 3:2 multiple aspect ratio, in-camera RAW image processing, creative filters, image resizing and provided S2 and S3 image-recording quality are all possible thanks to the DIGIC 4 Image Processor. With dazzling results, the new DIGIC 4 Image Processor also works to capture and process Data of images shot at 12.2 Megapixels at 3.0 fps, as well as 14-Bit signal processing for excellent image gradation, enhanced Face Detection Live mode, Full HD video recording, Auto Lighting Optimizer and Lens Peripheral Optimization. -Features-12.2 Megapixel CMOS (APS-C) sensor and DIGIC 4 Image Processor for high image quality and speed. -ISO 100 - 6400 for shooting from bright to dim light. -Improved EOS HD Movie mode with expanded recording [HD: 30p (29.97) / 25p], with in-camera movie Editing options. -High speed, reliable 9-point AF system utilizing a high</s:description>
+      <s:link>http://www.jr.com/JRProductPage.process?Product_Id=4466991&amp;JRSource=googlebase.datafeed.CAN+REBELT3BKIT</s:link>
+      <s:brand>Canon</s:brand>
+      <s:condition>new</s:condition>
+      <s:gtin>00013803136340</s:gtin>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">599.99</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://images.jr.com/productimages/CANREBELT3BKIT.PNG?WID=150&amp;CVT=JPEG"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1172711/826709352615349642</id>
+    <author>
+      <name>B&amp;H Photo-Video-Audio</name>
+    </author>
+    <published>2011-04-24T05:28:50.000Z</published>
+    <updated>2011-05-23T03:29:59.000Z</updated>
+    <title>Olympus XZ-1 Digital Camera with Deluxe Accessory Kit (Black)</title>
+    <content type="text">When you purchase a new digital camera there are usually a few items you need to round out the camera&apos;s included accessory package. With that in mind B&amp;H Photo has put together this Deluxe Accessory Kit to make your picture taking experience more enjoyable.In addition to the standard accessory package that is included by the manufacturer with the Olympus XZ-1 Camera the Deluxe Accessory Kit includes an 8GB memory card a camera pouch an extra rechargeable battery and a 2-Year SAGEMAX Protection Plan from NEW Customer Service Companies Inc. XZ-1 Digital Camera with Deluxe Accessory Kit (Black) XZ-1 Digital Camera with Deluxe Accessory Kit (Black), 10MP Resolution w/Lg 1/1.63&quot; CCD Sensor, 3.0&quot; OLED Monitor, 4x Zoom Lens (35mm Equiv. 28-112mm), 720p HD Video with HDMI, In-Camera Art Filters, In-Camera Panorama, Dual Image Stabilization, Advanced Face Detection, Accessory Port for Optional EVF, Mic, AF Tracking</content>
+    <link rel="alternate" type="text/html" href="http://www.bhphotovideo.com/c/product/756476-REG/Olympus_228000_XZ_1_Digital_Camera_with.html/BI/6609/kw/OLXZ1BK2/kwid/KT100"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1172711/gid/826709352615349642?alt=atom"/>
+    <s:product>
+      <s:googleId>826709352615349642</s:googleId>
+      <s:author>
+        <s:name>B&amp;H Photo-Video-Audio</s:name>
+        <s:accountId>1172711</s:accountId>
+      </s:author>
+      <s:creationTime>2011-04-24T05:28:50.000Z</s:creationTime>
+      <s:modificationTime>2011-05-23T03:29:59.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Olympus XZ-1 Digital Camera with Deluxe Accessory Kit (Black)</s:title>
+      <s:description>When you purchase a new digital camera there are usually a few items you need to round out the camera&apos;s included accessory package. With that in mind B&amp;H Photo has put together this Deluxe Accessory Kit to make your picture taking experience more enjoyable.In addition to the standard accessory package that is included by the manufacturer with the Olympus XZ-1 Camera the Deluxe Accessory Kit includes an 8GB memory card a camera pouch an extra rechargeable battery and a 2-Year SAGEMAX Protection Plan from NEW Customer Service Companies Inc. XZ-1 Digital Camera with Deluxe Accessory Kit (Black) XZ-1 Digital Camera with Deluxe Accessory Kit (Black), 10MP Resolution w/Lg 1/1.63&quot; CCD Sensor, 3.0&quot; OLED Monitor, 4x Zoom Lens (35mm Equiv. 28-112mm), 720p HD Video with HDMI, In-Camera Art Filters, In-Camera Panorama, Dual Image Stabilization, Advanced Face Detection, Accessory Port for Optional EVF, Mic, AF Tracking</s:description>
+      <s:link>http://www.bhphotovideo.com/c/product/756476-REG/Olympus_228000_XZ_1_Digital_Camera_with.html/BI/6609/kw/OLXZ1BK2/kwid/KT100</s:link>
+      <s:brand>Olympus</s:brand>
+      <s:condition>new</s:condition>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">594.95</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://www.bhphotovideo.com/images/images345x345/756476.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1057813/16254727613676885625</id>
+    <author>
+      <name>Adorama Camera</name>
+    </author>
+    <published>2010-10-07T13:54:14.000Z</published>
+    <updated>2011-05-22T23:38:43.000Z</updated>
+    <title>Canon PowerShot G12 Compact Digital Camera Kit, with 8GB SD Memory Card, Spare NB-7L Type Lithium-ion Battery, Camera Case, Table Top Tripod, USB 2.0 SD Card Reader, Professional Lens Cleaning Kit</title>
+    <content type="text">Canon PowerShot G 12 Compact Digital Camera Kit, with 8 GB SD Memory Card, Spare NB7L NB 7 L NB 7 L Type Lithiumion Lithium ion Battery, Camera Case, Table Top Tripod, USB 2 . 0 SD Card Reader, Professional Lens Cleaning Kit Canon PowerShot G12 Comp</content>
+    <link rel="alternate" type="text/html" href="http://www.adorama.com/ICAG12B.html?refby=gbase"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1057813/gid/16254727613676885625?alt=atom"/>
+    <s:product>
+      <s:googleId>16254727613676885625</s:googleId>
+      <s:author>
+        <s:name>Adorama Camera</s:name>
+        <s:accountId>1057813</s:accountId>
+      </s:author>
+      <s:creationTime>2010-10-07T13:54:14.000Z</s:creationTime>
+      <s:modificationTime>2011-05-22T23:38:43.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Canon PowerShot G12 Compact Digital Camera Kit, with 8GB SD Memory Card, Spare NB-7L Type Lithium-ion Battery, Camera Case, Table Top Tripod, USB 2.0 SD Card Reader, Professional Lens Cleaning Kit</s:title>
+      <s:description>Canon PowerShot G 12 Compact Digital Camera Kit, with 8 GB SD Memory Card, Spare NB7L NB 7 L NB 7 L Type Lithiumion Lithium ion Battery, Camera Case, Table Top Tripod, USB 2 . 0 SD Card Reader, Professional Lens Cleaning Kit Canon PowerShot G12 Comp</s:description>
+      <s:link>http://www.adorama.com/ICAG12B.html?refby=gbase</s:link>
+      <s:brand>Canon</s:brand>
+      <s:condition>new</s:condition>
+      <s:gtin>00013803126815</s:gtin>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">562.78</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://www.adorama.com/images/large/ICAG12B.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1172711/6090927939933250930</id>
+    <author>
+      <name>B&amp;H Photo-Video-Audio</name>
+    </author>
+    <published>2011-04-23T22:18:01.000Z</published>
+    <updated>2011-05-23T03:29:59.000Z</updated>
+    <title>Fujifilm Finepix HS20EXR Digital Camera with Deluxe Accessory Kit</title>
+    <content type="text">When you purchase a new digital camera there are usually a few items you need to round out the camera&apos;s included accessory package. With that in mind B&amp;H Photo has put together this Deluxe Accessory Kit to make your picture taking experience more enjoyable.In addition to the standard accessory package that is included by the manufacturer with the Fujifilm Finepix HS20EXR Camera the Deluxe Accessory Kit includes an 8GB memory card a camera pouch a set of 4 rechargeable AA batteries and charger a UV protector filter and a 2-Year SAGEMAX Protection Plan from NEW Customer Service Companies Inc. Finepix HS20EXR Digital Camera with Deluxe Accessory Kit (Black) Finepix HS20EXR Digital Camera with Deluxe Accessory Kit (Black), 16MP Back Side Illuminated CMOS Sensor, 3&quot; 460K Resolution LCD, 30x Optical Zoom (24-720mm Equiv.) Lens, Stunning 1080p HD Movies, Motion Panorama Mode, Tracking Auto Focus, Smile/Blink Detection Mode, Face Detection/Red-Eye Removal, EXR Auto Recognizes 27 Scenes, Quick &amp; Simple Uploads to Facebook, Etc.</content>
+    <link rel="alternate" type="text/html" href="http://www.bhphotovideo.com/c/product/762025-REG/Fujifilm_16113421_Finepix_HS20EXR_Digital_Camera.html/BI/6609/kw/FUFPHS20K2/kwid/KT100"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1172711/gid/6090927939933250930?alt=atom"/>
+    <s:product>
+      <s:googleId>6090927939933250930</s:googleId>
+      <s:author>
+        <s:name>B&amp;H Photo-Video-Audio</s:name>
+        <s:accountId>1172711</s:accountId>
+      </s:author>
+      <s:creationTime>2011-04-23T22:18:01.000Z</s:creationTime>
+      <s:modificationTime>2011-05-23T03:29:59.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Fujifilm Finepix HS20EXR Digital Camera with Deluxe Accessory Kit</s:title>
+      <s:description>When you purchase a new digital camera there are usually a few items you need to round out the camera&apos;s included accessory package. With that in mind B&amp;H Photo has put together this Deluxe Accessory Kit to make your picture taking experience more enjoyable.In addition to the standard accessory package that is included by the manufacturer with the Fujifilm Finepix HS20EXR Camera the Deluxe Accessory Kit includes an 8GB memory card a camera pouch a set of 4 rechargeable AA batteries and charger a UV protector filter and a 2-Year SAGEMAX Protection Plan from NEW Customer Service Companies Inc. Finepix HS20EXR Digital Camera with Deluxe Accessory Kit (Black) Finepix HS20EXR Digital Camera with Deluxe Accessory Kit (Black), 16MP Back Side Illuminated CMOS Sensor, 3&quot; 460K Resolution LCD, 30x Optical Zoom (24-720mm Equiv.) Lens, Stunning 1080p HD Movies, Motion Panorama Mode, Tracking Auto Focus, Smile/Blink Detection Mode, Face Detection/Red-Eye Removal, EXR Auto Recognizes 27 Scenes, Quick &amp; Simple Uploads to Facebook, Etc.</s:description>
+      <s:link>http://www.bhphotovideo.com/c/product/762025-REG/Fujifilm_16113421_Finepix_HS20EXR_Digital_Camera.html/BI/6609/kw/FUFPHS20K2/kwid/KT100</s:link>
+      <s:brand>Fuji</s:brand>
+      <s:condition>new</s:condition>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">549.5</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://www.bhphotovideo.com/images/images345x345/762025.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1057813/8892615805048962508</id>
+    <author>
+      <name>Adorama Camera</name>
+    </author>
+    <published>2011-01-06T00:45:54.000Z</published>
+    <updated>2011-05-21T23:39:45.000Z</updated>
+    <title>Olympus PEN E-PL2 Digital Camera - Black with 14-42mm II Black Lens</title>
+    <content type="text">Olympus PEN EPL2 EPL 2 E PL 2 Digital Camera Black with 1442mm 1442 mm 14 42 mm II Black Lens Olympus PEN E-PL2 Digital Camera - Black with 14-42mm II Black Lens The PEN E-PL2 continues the PEN family&apos;s legacy of a small, light and simple design, in</content>
+    <link rel="alternate" type="text/html" href="http://www.adorama.com/IOMEPL2B14.html?refby=gbase"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1057813/gid/8892615805048962508?alt=atom"/>
+    <s:product>
+      <s:googleId>8892615805048962508</s:googleId>
+      <s:author>
+        <s:name>Adorama Camera</s:name>
+        <s:accountId>1057813</s:accountId>
+      </s:author>
+      <s:creationTime>2011-01-06T00:45:54.000Z</s:creationTime>
+      <s:modificationTime>2011-05-21T23:39:45.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Olympus PEN E-PL2 Digital Camera - Black with 14-42mm II Black Lens</s:title>
+      <s:description>Olympus PEN EPL2 EPL 2 E PL 2 Digital Camera Black with 1442mm 1442 mm 14 42 mm II Black Lens Olympus PEN E-PL2 Digital Camera - Black with 14-42mm II Black Lens The PEN E-PL2 continues the PEN family&apos;s legacy of a small, light and simple design, in</s:description>
+      <s:link>http://www.adorama.com/IOMEPL2B14.html?refby=gbase</s:link>
+      <s:brand>Olympus</s:brand>
+      <s:condition>new</s:condition>
+      <s:gtin>00050332176935</s:gtin>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">549.0</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://www.adorama.com/images/large/IOMEPL2B14.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1057813/3943871944256631689</id>
+    <author>
+      <name>Adorama Camera</name>
+    </author>
+    <published>2010-10-07T13:54:14.000Z</published>
+    <updated>2011-05-22T23:38:43.000Z</updated>
+    <title>Canon PowerShot G12 Compact Digital Camera Kit, with 4GB SD Memory Card, Spare NB-7L Type Lithium-ion Battery, Camera Case, Table Top Tripod,</title>
+    <content type="text">Canon PowerShot G 12 Compact Digital Camera Kit, with 4 GB SD Memory Card, Spare NB7L NB 7 L NB 7 L Type Lithiumion Lithium ion Battery, Camera Case, Table Top Tripod, Canon PowerShot G12 Compact Digital Camera Kit, with 4GB SD Memory Card, Spare NB-</content>
+    <link rel="alternate" type="text/html" href="http://www.adorama.com/ICAG12A.html?refby=gbase"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1057813/gid/3943871944256631689?alt=atom"/>
+    <s:product>
+      <s:googleId>3943871944256631689</s:googleId>
+      <s:author>
+        <s:name>Adorama Camera</s:name>
+        <s:accountId>1057813</s:accountId>
+      </s:author>
+      <s:creationTime>2010-10-07T13:54:14.000Z</s:creationTime>
+      <s:modificationTime>2011-05-22T23:38:43.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Canon PowerShot G12 Compact Digital Camera Kit, with 4GB SD Memory Card, Spare NB-7L Type Lithium-ion Battery, Camera Case, Table Top Tripod,</s:title>
+      <s:description>Canon PowerShot G 12 Compact Digital Camera Kit, with 4 GB SD Memory Card, Spare NB7L NB 7 L NB 7 L Type Lithiumion Lithium ion Battery, Camera Case, Table Top Tripod, Canon PowerShot G12 Compact Digital Camera Kit, with 4GB SD Memory Card, Spare NB-</s:description>
+      <s:link>http://www.adorama.com/ICAG12A.html?refby=gbase</s:link>
+      <s:brand>Canon</s:brand>
+      <s:condition>new</s:condition>
+      <s:gtin>00013803126815</s:gtin>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">545.66</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://www.adorama.com/images/large/ICAG12A.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1172711/989024503480948980</id>
+    <author>
+      <name>B&amp;H Photo-Video-Audio</name>
+    </author>
+    <published>2011-04-25T00:03:39.000Z</published>
+    <updated>2011-05-23T03:29:59.000Z</updated>
+    <title>Canon PowerShot G12 Digital Camera with Basic Accessory Kit</title>
+    <content type="text">When you purchase a new digital camera there are usually a few items you need to round out the camera&apos;s included accessory package. With that in mind B&amp;H Photo has put together this Basic Accessory Kit to make your picture taking experience more enjoyable.In addition to the standard accessory package that is included by the manufacturer with the Canon PowerShot G12 Camera the Basic Accessory Kit includes an 8GB memory card and a camera shoulder bag. PowerShot G12 Digital Camera with Basic Accessory Kit PowerShot G12 Digital Camera with Basic Accessory Kit, 10MP CCD Image Sensor, DIGIC 4 Image Processor, 1280 x 720p HD Video Capture, 2.8&quot; Vari-Angled LCD, JPEG and RAW File Image Capture, SD/SDHC/SDXC/MMC/MMC+/HCMMC+ Card Slot, 28mm Lens with 5x Optical Zoom Hybrid IS, Optical Image Stabilization, Stereo Sound for Video, Manual Exposure Control</content>
+    <link rel="alternate" type="text/html" href="http://www.bhphotovideo.com/c/product/737428-REG/Canon_4342B001_PowerShot_G12_Digital_Camera.html/BI/6609/kw/CAPSG12K1/kwid/KT100"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1172711/gid/989024503480948980?alt=atom"/>
+    <s:product>
+      <s:googleId>989024503480948980</s:googleId>
+      <s:author>
+        <s:name>B&amp;H Photo-Video-Audio</s:name>
+        <s:accountId>1172711</s:accountId>
+      </s:author>
+      <s:creationTime>2011-04-25T00:03:39.000Z</s:creationTime>
+      <s:modificationTime>2011-05-23T03:29:59.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Canon PowerShot G12 Digital Camera with Basic Accessory Kit</s:title>
+      <s:description>When you purchase a new digital camera there are usually a few items you need to round out the camera&apos;s included accessory package. With that in mind B&amp;H Photo has put together this Basic Accessory Kit to make your picture taking experience more enjoyable.In addition to the standard accessory package that is included by the manufacturer with the Canon PowerShot G12 Camera the Basic Accessory Kit includes an 8GB memory card and a camera shoulder bag. PowerShot G12 Digital Camera with Basic Accessory Kit PowerShot G12 Digital Camera with Basic Accessory Kit, 10MP CCD Image Sensor, DIGIC 4 Image Processor, 1280 x 720p HD Video Capture, 2.8&quot; Vari-Angled LCD, JPEG and RAW File Image Capture, SD/SDHC/SDXC/MMC/MMC+/HCMMC+ Card Slot, 28mm Lens with 5x Optical Zoom Hybrid IS, Optical Image Stabilization, Stereo Sound for Video, Manual Exposure Control</s:description>
+      <s:link>http://www.bhphotovideo.com/c/product/737428-REG/Canon_4342B001_PowerShot_G12_Digital_Camera.html/BI/6609/kw/CAPSG12K1/kwid/KT100</s:link>
+      <s:brand>Canon</s:brand>
+      <s:condition>new</s:condition>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">539.95</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://www.bhphotovideo.com/images/images345x345/737428.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1172711/15426340276601384314</id>
+    <author>
+      <name>B&amp;H Photo-Video-Audio</name>
+    </author>
+    <published>2011-04-25T00:03:39.000Z</published>
+    <updated>2011-05-23T03:29:59.000Z</updated>
+    <title>Nikon CoolPix P7000 Digital Camera with Deluxe Accessory Kit</title>
+    <content type="text">When you purchase a new digital camera there are usually a few items you need to round out the camera&apos;s included accessory package. With that in mind B&amp;H Photo has put together this Deluxe Accessory Kit to make your picture taking experience more enjoyable.In addition to the standard accessory package that is included by the manufacturer with the Nikon CoolPix P7000 Camera the Deluxe Accessory Kit includes an 8GB memory card a camera case and a 3-year SAGEMAX Protection Plan from NEW Customer Service Companies Inc. CoolPix P7000 Digital Camera with Deluxe Accessory Kit CoolPix P7000 Digital Camera with Deluxe Accessory Kit, 10.1MP High Resolution Sensor, 3&quot; Ultra High Resolution Display, 7.1x 28-200mm Zoom Lens (35mm Equiv.), HD Video at 720p Resolution, High-Speed Shooting at Up to 1.5 FPS, Subject Tracking Auto Focus, Greatly Enhanced Low-Light Photography, 18 Scene Modes, Smart Portrait for Better People Pix</content>
+    <link rel="alternate" type="text/html" href="http://www.bhphotovideo.com/c/product/737228-REG/Nikon_26233_CoolPix_P7000_Digital_Camera.html/BI/6609/kw/NICPP7000BK2/kwid/KT100"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1172711/gid/15426340276601384314?alt=atom"/>
+    <s:product>
+      <s:googleId>15426340276601384314</s:googleId>
+      <s:author>
+        <s:name>B&amp;H Photo-Video-Audio</s:name>
+        <s:accountId>1172711</s:accountId>
+      </s:author>
+      <s:creationTime>2011-04-25T00:03:39.000Z</s:creationTime>
+      <s:modificationTime>2011-05-23T03:29:59.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Nikon CoolPix P7000 Digital Camera with Deluxe Accessory Kit</s:title>
+      <s:description>When you purchase a new digital camera there are usually a few items you need to round out the camera&apos;s included accessory package. With that in mind B&amp;H Photo has put together this Deluxe Accessory Kit to make your picture taking experience more enjoyable.In addition to the standard accessory package that is included by the manufacturer with the Nikon CoolPix P7000 Camera the Deluxe Accessory Kit includes an 8GB memory card a camera case and a 3-year SAGEMAX Protection Plan from NEW Customer Service Companies Inc. CoolPix P7000 Digital Camera with Deluxe Accessory Kit CoolPix P7000 Digital Camera with Deluxe Accessory Kit, 10.1MP High Resolution Sensor, 3&quot; Ultra High Resolution Display, 7.1x 28-200mm Zoom Lens (35mm Equiv.), HD Video at 720p Resolution, High-Speed Shooting at Up to 1.5 FPS, Subject Tracking Auto Focus, Greatly Enhanced Low-Light Photography, 18 Scene Modes, Smart Portrait for Better People Pix</s:description>
+      <s:link>http://www.bhphotovideo.com/c/product/737228-REG/Nikon_26233_CoolPix_P7000_Digital_Camera.html/BI/6609/kw/NICPP7000BK2/kwid/KT100</s:link>
+      <s:brand>Nikon</s:brand>
+      <s:condition>new</s:condition>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">514.95</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://www.bhphotovideo.com/images/images345x345/737228.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/3693318/9668095020269062263</id>
+    <author>
+      <name>ShopNBC</name>
+    </author>
+    <published>2010-10-18T16:36:26.000Z</published>
+    <updated>2011-05-21T15:51:03.000Z</updated>
+    <title>Fuji 16082969 FinePix Real 3D Digital Camera</title>
+    <content type="text">Shop for Fuji 16082969 FinePix Real 3D Digital Camera at ShopNBC. The large 3.5&quot; LCD screen displays high-resolution, high-contrast 3D images and movies without the need for glasses. With its two 10 megapixel sensors it captures even the finest of details. And the image data captured by the twin lens-CCD system is processed by the newly developed RP (REAL Photo) processor 3D HD. This technology merges the left and right images into a single image. This processor is also the power behind 3D Auto: the function that lets even first-time users take stunning HD-quality images effortlessly! Specifications RP (Real Photo) Processor3D LCD Monitor System 3.5&quot; LCD monitor 10 million effective pixels1/2.3 inch CCD x2 sensor Approx. 34MB internal memory 3D and 2D shooting Fujinon 3x optical zoom lensSD/SDHC Memory Card slot HDMI output: HDMI 1.4 - 3D compliant, HDMI mini-terminal USB 2.0 High-Speed interfaceVideo output: NTSC/PAL selectable Item number: 16082969</content>
+    <link rel="alternate" type="text/html" href="http://www.shopnbc.com/product/?familyid=U121476&amp;rap=3505&amp;chid=ciGB&amp;ci_src=14110944&amp;ci_sku=U121476"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/3693318/gid/9668095020269062263?alt=atom"/>
+    <s:product>
+      <s:googleId>9668095020269062263</s:googleId>
+      <s:author>
+        <s:name>ShopNBC</s:name>
+        <s:accountId>3693318</s:accountId>
+      </s:author>
+      <s:creationTime>2010-10-18T16:36:26.000Z</s:creationTime>
+      <s:modificationTime>2011-05-21T15:51:03.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Fuji 16082969 FinePix Real 3D Digital Camera</s:title>
+      <s:description>Shop for Fuji 16082969 FinePix Real 3D Digital Camera at ShopNBC. The large 3.5&quot; LCD screen displays high-resolution, high-contrast 3D images and movies without the need for glasses. With its two 10 megapixel sensors it captures even the finest of details. And the image data captured by the twin lens-CCD system is processed by the newly developed RP (REAL Photo) processor 3D HD. This technology merges the left and right images into a single image. This processor is also the power behind 3D Auto: the function that lets even first-time users take stunning HD-quality images effortlessly! Specifications RP (Real Photo) Processor3D LCD Monitor System 3.5&quot; LCD monitor 10 million effective pixels1/2.3 inch CCD x2 sensor Approx. 34MB internal memory 3D and 2D shooting Fujinon 3x optical zoom lensSD/SDHC Memory Card slot HDMI output: HDMI 1.4 - 3D compliant, HDMI mini-terminal USB 2.0 High-Speed interfaceVideo output: NTSC/PAL selectable Item number: 16082969</s:description>
+      <s:link>http://www.shopnbc.com/product/?familyid=U121476&amp;rap=3505&amp;chid=ciGB&amp;ci_src=14110944&amp;ci_sku=U121476</s:link>
+      <s:brand>Fuji</s:brand>
+      <s:condition>new</s:condition>
+      <s:gtin>00074101004984</s:gtin>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">512.49</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://images.shopnbc.com/is/image/ShopNBC/u121476.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1057813/6699364511212036019</id>
+    <author>
+      <name>Adorama Camera</name>
+    </author>
+    <published>2011-05-05T23:43:30.000Z</published>
+    <updated>2011-05-20T23:39:56.000Z</updated>
+    <title>Sony DSC-HX100V/B Cyber-shot 16.2-Megapixel Digital Camera - Bundle - with 8GB SD Memory Card, Slinger Camera Bag, USB 2.0 SD Card Reader</title>
+    <content type="text">Sony DSCHX100V/B DSCHX 100 V/B DSC HX 100 V/B Cybershot Cyber shot 16.2Megapixel 16 . 2 Megapixel 16 . 2 Megapixel Digital Camera Bundle with 8 GB SD Memory Card, Slinger Camera Bag, USB 2 . 0 SD Card Reader Sony DSC-HX100V/B Cyber-shot 16.2</content>
+    <link rel="alternate" type="text/html" href="http://www.adorama.com/ISODSCHX100W.html?refby=gbase"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1057813/gid/6699364511212036019?alt=atom"/>
+    <s:product>
+      <s:googleId>6699364511212036019</s:googleId>
+      <s:author>
+        <s:name>Adorama Camera</s:name>
+        <s:accountId>1057813</s:accountId>
+      </s:author>
+      <s:creationTime>2011-05-05T23:43:30.000Z</s:creationTime>
+      <s:modificationTime>2011-05-20T23:39:56.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Sony DSC-HX100V/B Cyber-shot 16.2-Megapixel Digital Camera - Bundle - with 8GB SD Memory Card, Slinger Camera Bag, USB 2.0 SD Card Reader</s:title>
+      <s:description>Sony DSCHX100V/B DSCHX 100 V/B DSC HX 100 V/B Cybershot Cyber shot 16.2Megapixel 16 . 2 Megapixel 16 . 2 Megapixel Digital Camera Bundle with 8 GB SD Memory Card, Slinger Camera Bag, USB 2 . 0 SD Card Reader Sony DSC-HX100V/B Cyber-shot 16.2</s:description>
+      <s:link>http://www.adorama.com/ISODSCHX100W.html?refby=gbase</s:link>
+      <s:brand>Sony</s:brand>
+      <s:condition>new</s:condition>
+      <s:gtin>00027242808782</s:gtin>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">511.29</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://www.adorama.com/images/large/ISODSCHX100W.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1172711/5748899609638120542</id>
+    <author>
+      <name>B&amp;H Photo-Video-Audio</name>
+    </author>
+    <published>2011-04-23T22:18:01.000Z</published>
+    <updated>2011-05-23T03:29:59.000Z</updated>
+    <title>Panasonic Lumix DMC-FZ100 Digital Camera with Basic Accessory Kit</title>
+    <content type="text">When you purchase a new digital camera there are usually a few items you need to round out the camera&apos;s included accessory package. With that in mind B&amp;H Photo has put together this basic Accessory Kit to make your picture taking experience more enjoyable.In addition to the standard accessory package that is included by the manufacturer with the Panasonic Lumix DMC-FZ100 Camera the Basic Accessory Kit includes an 8GB memory card a UV protector filter and a camera pouch. Lumix DMC-FZ100 Digital Camera with Basic Accessory Kit Lumix DMC-FZ100 Digital Camera with Basic Accessory Kit, 14.1 Megapixels MOS Sensor, Leica 25mm Wide Angle 24x Optical Zoom, 3&quot; Rotating LCD &amp; Electronic Viewfinder, Venus Engine FHD Image Processor, Optical Image Stabilizer Stills &amp; Movies, Intelligent Auto Mode Stills &amp; Movies, AVCHD Full-HD Movies: 1920 x 1080, 11 fps Burst Mode at Full Resolution, High ISO Sensitivity (1600 - 6400), Manual Control for Stills &amp; Movies</content>
+    <link rel="alternate" type="text/html" href="http://www.bhphotovideo.com/c/product/727820-REG/Panasonic_DMC_FZ100K_Lumix_DMC_FZ100_Digital_Camera.html/BI/6609/kw/PADMCFZ100BK/kwid/KT100"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1172711/gid/5748899609638120542?alt=atom"/>
+    <s:product>
+      <s:googleId>5748899609638120542</s:googleId>
+      <s:author>
+        <s:name>B&amp;H Photo-Video-Audio</s:name>
+        <s:accountId>1172711</s:accountId>
+      </s:author>
+      <s:creationTime>2011-04-23T22:18:01.000Z</s:creationTime>
+      <s:modificationTime>2011-05-23T03:29:59.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Panasonic Lumix DMC-FZ100 Digital Camera with Basic Accessory Kit</s:title>
+      <s:description>When you purchase a new digital camera there are usually a few items you need to round out the camera&apos;s included accessory package. With that in mind B&amp;H Photo has put together this basic Accessory Kit to make your picture taking experience more enjoyable.In addition to the standard accessory package that is included by the manufacturer with the Panasonic Lumix DMC-FZ100 Camera the Basic Accessory Kit includes an 8GB memory card a UV protector filter and a camera pouch. Lumix DMC-FZ100 Digital Camera with Basic Accessory Kit Lumix DMC-FZ100 Digital Camera with Basic Accessory Kit, 14.1 Megapixels MOS Sensor, Leica 25mm Wide Angle 24x Optical Zoom, 3&quot; Rotating LCD &amp; Electronic Viewfinder, Venus Engine FHD Image Processor, Optical Image Stabilizer Stills &amp; Movies, Intelligent Auto Mode Stills &amp; Movies, AVCHD Full-HD Movies: 1920 x 1080, 11 fps Burst Mode at Full Resolution, High ISO Sensitivity (1600 - 6400), Manual Control for Stills &amp; Movies</s:description>
+      <s:link>http://www.bhphotovideo.com/c/product/727820-REG/Panasonic_DMC_FZ100K_Lumix_DMC_FZ100_Digital_Camera.html/BI/6609/kw/PADMCFZ100BK/kwid/KT100</s:link>
+      <s:brand>Panasonic</s:brand>
+      <s:condition>new</s:condition>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">504.95</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://www.bhphotovideo.com/images/images345x345/727820.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/4008471/2975650493084483724</id>
+    <author>
+      <name>Kmart</name>
+    </author>
+    <published>2011-03-25T16:22:29.000Z</published>
+    <updated>2011-05-22T16:39:11.000Z</updated>
+    <title>Nikon 25462 10.2 Megapixel Digital Camera 18-55mm Zoom W/ 3&quot;</title>
+    <content type="text">The D3000 is a high-performance DX-format SLR that delivers superb images and boasts a range of functions, which make photography simple and fun. Nikon&apos;s intelligent Guide Mode offers incredibly user-friendly in-camera assistance, enabling even beginners to capture wonderful images. Perfect for shots that you are not sure how to take, and guide mode will ask you about the image you want to capture and automatically optimize the camera settings for the best possible results. When you want to learn more, you can use Guide Mode to find out how to adjust the settings yourself. The 10.2-megapixel image sensor and fast autofocus performance ensure precise, detailed images. The large, 3-inch LCD screen is highly convenient for composing and reviewing images, and makes it easy to use the in-camera retouch menu that enables you to modify images without a computer. The D3000 - the camera that shows you how to capture stunning shots with ease.10.2-megapixel DX-format imaging sensorIt delivers extraordinary image quality for breathtaking prints up to 20 x 30 inches. Nikon&apos;s smallest D-SLRBeautifully styled - ready to go where life takes you. Easy-to-use - featuring Nikon guide modeIntuitive controls and the on-board guide mode assist you every step of the way. Split-second shutter responseIt eliminates the frustration of shutter delay, capturing moments that other cameras miss. Continuous shooting up to 3 frames-per-secondCapture fast action, precious moments and fleeting expressions confidently. 6 automatic exposure scene modesJust set the mode dial to portrait, landscape, child, sports, close-up or night portrait for stunning results in otherwise challenging conditions. 3-inch color LCD monitorIt is bright, high-resolution, 170-degree wide-angle viewing for easy picture review and sharing. In-camera image editingThe retouch menu provides creative freedom, without the need for a computer, offering 13 easy editing functions, including trim, red-eye correction and soft filter. Nikon EXPEED image processingIt assures breathtakingly rich image quality, managing color, contrast, exposure, noise and speed. Automatic image sensor cleaningUltrasonic process and exclusive airflow control combats the accumulation of dust in front of the image sensor, safeguarding image quality shot after shot. 11-point autofocusFast and accurate autofocus delivers razor-sharp pictures. 6 personal picture control settingsChoose from standard, neutral, vivid, monochrome, portrait, or landscape to apply a personal look and feel to your pictures. Active D-lightingIt restores picture-enhancing detail in shadows and highlights. ISO sensitivity from 100 - 1600Exceptional results, even in challenging low-light situations.</content>
+    <link rel="alternate" type="text/html" href="http://www.kmart.com/shc/s/p_10151_10104_020W014031810001P?vName=Computers%20&amp;%20Electronics&amp;cName=Cameras&amp;Camcorders&amp;sName=Digital%20SLR%20Cameras&amp;sid=KDx20070926x00003a&amp;ci_src=14110944&amp;ci_sku=020W014031810001P"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/4008471/gid/2975650493084483724?alt=atom"/>
+    <s:product>
+      <s:googleId>2975650493084483724</s:googleId>
+      <s:author>
+        <s:name>Kmart</s:name>
+        <s:accountId>4008471</s:accountId>
+      </s:author>
+      <s:creationTime>2011-03-25T16:22:29.000Z</s:creationTime>
+      <s:modificationTime>2011-05-22T16:39:11.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Nikon 25462 10.2 Megapixel Digital Camera 18-55mm Zoom W/ 3&quot;</s:title>
+      <s:description>The D3000 is a high-performance DX-format SLR that delivers superb images and boasts a range of functions, which make photography simple and fun. Nikon&apos;s intelligent Guide Mode offers incredibly user-friendly in-camera assistance, enabling even beginners to capture wonderful images. Perfect for shots that you are not sure how to take, and guide mode will ask you about the image you want to capture and automatically optimize the camera settings for the best possible results. When you want to learn more, you can use Guide Mode to find out how to adjust the settings yourself. The 10.2-megapixel image sensor and fast autofocus performance ensure precise, detailed images. The large, 3-inch LCD screen is highly convenient for composing and reviewing images, and makes it easy to use the in-camera retouch menu that enables you to modify images without a computer. The D3000 - the camera that shows you how to capture stunning shots with ease.10.2-megapixel DX-format imaging sensorIt delivers extraordinary image quality for breathtaking prints up to 20 x 30 inches. Nikon&apos;s smallest D-SLRBeautifully styled - ready to go where life takes you. Easy-to-use - featuring Nikon guide modeIntuitive controls and the on-board guide mode assist you every step of the way. Split-second shutter responseIt eliminates the frustration of shutter delay, capturing moments that other cameras miss. Continuous shooting up to 3 frames-per-secondCapture fast action, precious moments and fleeting expressions confidently. 6 automatic exposure scene modesJust set the mode dial to portrait, landscape, child, sports, close-up or night portrait for stunning results in otherwise challenging conditions. 3-inch color LCD monitorIt is bright, high-resolution, 170-degree wide-angle viewing for easy picture review and sharing. In-camera image editingThe retouch menu provides creative freedom, without the need for a computer, offering 13 easy editing functions, including trim, red-eye correction and soft filter. Nikon EXPEED image processingIt assures breathtakingly rich image quality, managing color, contrast, exposure, noise and speed. Automatic image sensor cleaningUltrasonic process and exclusive airflow control combats the accumulation of dust in front of the image sensor, safeguarding image quality shot after shot. 11-point autofocusFast and accurate autofocus delivers razor-sharp pictures. 6 personal picture control settingsChoose from standard, neutral, vivid, monochrome, portrait, or landscape to apply a personal look and feel to your pictures. Active D-lightingIt restores picture-enhancing detail in shadows and highlights. ISO sensitivity from 100 - 1600Exceptional results, even in challenging low-light situations.</s:description>
+      <s:link>http://www.kmart.com/shc/s/p_10151_10104_020W014031810001P?vName=Computers%20&amp;%20Electronics&amp;cName=Cameras&amp;Camcorders&amp;sName=Digital%20SLR%20Cameras&amp;sid=KDx20070926x00003a&amp;ci_src=14110944&amp;ci_sku=020W014031810001P</s:link>
+      <s:brand>Nikon</s:brand>
+      <s:condition>new</s:condition>
+      <s:gtin>00018208254620</s:gtin>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">499.99</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://s.shld.net/is/image/Sears/00353193000?hei=600&amp;wid=600&amp;op_sharpen=1"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1272666/4157887731973828889</id>
+    <author>
+      <name>Newegg.com</name>
+    </author>
+    <published>2011-05-22T00:21:21.000Z</published>
+    <updated>2011-05-23T00:19:31.000Z</updated>
+    <title>Canon PowerShot G12 Black 10.0 MP 28mm Wide Angle Digital Camera</title>
+    <content type="text">Canon adds their latest flagship digital camera to the award-winning G Series line – the PowerShot G12. The camera offers the advanced amateurs best-in-class flexibility and all-round premium performance, together with professional levels of control and support for a wide range of accessories. The G12 is still loaded with powerful technologies that have made the G Series cameras so renowned, like the Canon HS SYSTEM for exceptional low light performance, 2.8-inch Vari-angle PureColor System LCD with an optical viewfinder, and RAW mode. Now, this flagship camera paves the way with new upgrades like 720p HD recording with stereo sound, High Dynamic Range, Electronic Level, Tracking AF, a Front Dial and much more to give you even more creative control than before! Part#: 4342B001 Dimensions (WxHxD): 4.41&quot; x 3.00&quot; x 1.90&quot; Weight: 0.77 lbs. Type: Compact Image Sensor: 1/1.7&quot; CCD Gross Pixels: 10.4 MP Resolution: 16:9 Large: 3648 x 2048 Medium 1: 2816 x 1584 Medium 2: 1920 x 1080 Small: 640 x 360 3:2 Large: 3648 x 2432 Medium 1: 2816 x 1880 Medium 2: 1600 x 1064 Small: 640 x 424 4:3 Large: 3648 x 2736 Medium 1: 2816 x 2112 Medium 2: 1600 x Image Stabilization: Optical Image Stabilization</content>
+    <link rel="alternate" type="text/html" href="http://www.newegg.com/Product/Product.aspx?Item=N82E16830120468&amp;nm_mc=OTC-Froogle&amp;cm_mmc=OTC-Froogle-_-Point+++Shoot-_-Canon+USA-_-30120468"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1272666/gid/4157887731973828889?alt=atom"/>
+    <s:product>
+      <s:googleId>4157887731973828889</s:googleId>
+      <s:author>
+        <s:name>Newegg.com</s:name>
+        <s:accountId>1272666</s:accountId>
+      </s:author>
+      <s:creationTime>2011-05-22T00:21:21.000Z</s:creationTime>
+      <s:modificationTime>2011-05-23T00:19:31.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Canon PowerShot G12 Black 10.0 MP 28mm Wide Angle Digital Camera</s:title>
+      <s:description>Canon adds their latest flagship digital camera to the award-winning G Series line – the PowerShot G12. The camera offers the advanced amateurs best-in-class flexibility and all-round premium performance, together with professional levels of control and support for a wide range of accessories. The G12 is still loaded with powerful technologies that have made the G Series cameras so renowned, like the Canon HS SYSTEM for exceptional low light performance, 2.8-inch Vari-angle PureColor System LCD with an optical viewfinder, and RAW mode. Now, this flagship camera paves the way with new upgrades like 720p HD recording with stereo sound, High Dynamic Range, Electronic Level, Tracking AF, a Front Dial and much more to give you even more creative control than before! Part#: 4342B001 Dimensions (WxHxD): 4.41&quot; x 3.00&quot; x 1.90&quot; Weight: 0.77 lbs. Type: Compact Image Sensor: 1/1.7&quot; CCD Gross Pixels: 10.4 MP Resolution: 16:9 Large: 3648 x 2048 Medium 1: 2816 x 1584 Medium 2: 1920 x 1080 Small: 640 x 360 3:2 Large: 3648 x 2432 Medium 1: 2816 x 1880 Medium 2: 1600 x 1064 Small: 640 x 424 4:3 Large: 3648 x 2736 Medium 1: 2816 x 2112 Medium 2: 1600 x Image Stabilization: Optical Image Stabilization</s:description>
+      <s:link>http://www.newegg.com/Product/Product.aspx?Item=N82E16830120468&amp;nm_mc=OTC-Froogle&amp;cm_mmc=OTC-Froogle-_-Point+++Shoot-_-Canon+USA-_-30120468</s:link>
+      <s:brand>Canon</s:brand>
+      <s:condition>new</s:condition>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">499.99</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://images10.newegg.com/NeweggImage/productimage/30-120-468-03.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/7937/14985740831204532339</id>
+    <author>
+      <name>Crutchfield</name>
+    </author>
+    <published>2010-10-04T15:07:12.000Z</published>
+    <updated>2011-05-22T15:08:09.000Z</updated>
+    <title>Canon PowerShot G12 10-megapixel digital camera with 5X optical zoom</title>
+    <content type="text">Canon PowerShot G12 10-megapixel digital camera with 5X optical zoom</content>
+    <link rel="alternate" type="text/html" href="http://www.crutchfield.com/I-rgpscLYR/App/Product/Item/Main.aspx?I=280G12"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/7937/gid/14985740831204532339?alt=atom"/>
+    <s:product>
+      <s:googleId>14985740831204532339</s:googleId>
+      <s:author>
+        <s:name>Crutchfield</s:name>
+        <s:accountId>7937</s:accountId>
+      </s:author>
+      <s:creationTime>2010-10-04T15:07:12.000Z</s:creationTime>
+      <s:modificationTime>2011-05-22T15:08:09.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Canon PowerShot G12 10-megapixel digital camera with 5X optical zoom</s:title>
+      <s:description>Canon PowerShot G12 10-megapixel digital camera with 5X optical zoom</s:description>
+      <s:link>http://www.crutchfield.com/I-rgpscLYR/App/Product/Item/Main.aspx?I=280G12</s:link>
+      <s:brand>Canon</s:brand>
+      <s:condition>new</s:condition>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">499.99</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://a248.e.akamai.net/pix.crutchfield.com/products/2010/38/280/h280G12-F-1.jpeg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/4008471/4159336629154121723</id>
+    <author>
+      <name>Kmart</name>
+    </author>
+    <published>2011-03-22T16:22:27.000Z</published>
+    <updated>2011-05-22T16:39:11.000Z</updated>
+    <title>Olympus Olympus Xz1 10 Megapixel Digital Cameras Black</title>
+    <content type="text">Olympus 10.0MP Digital Camera features Fast, Super Bright F1.8 IZuiko 4x Wide-Angle Optical Lens, 4x Digital Zoom, High Sensitivity CCD, 3.0&quot; OLED, HD Movie Mode (720p) with HDMI control, TruePic V Image Processor, Dual Image Stabilization, In-Camera Filters, AF Live View with AF Tracking, 54.6MB of built-in memory, and SDHC/SDXC card slot. Includes rechargeable battery.</content>
+    <link rel="alternate" type="text/html" href="http://www.kmart.com/shc/s/p_10151_10104_020V003467122000P?vName=Computers%20&amp;%20Electronics&amp;cName=Cameras&amp;Camcorders&amp;sName=Digital%20Point%20&amp;%20Shoot%20Cameras&amp;sid=KDx20070926x00003a&amp;ci_src=14110944&amp;ci_sku=020V003467122000P"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/4008471/gid/4159336629154121723?alt=atom"/>
+    <s:product>
+      <s:googleId>4159336629154121723</s:googleId>
+      <s:author>
+        <s:name>Kmart</s:name>
+        <s:accountId>4008471</s:accountId>
+      </s:author>
+      <s:creationTime>2011-03-22T16:22:27.000Z</s:creationTime>
+      <s:modificationTime>2011-05-22T16:39:11.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Olympus Olympus Xz1 10 Megapixel Digital Cameras Black</s:title>
+      <s:description>Olympus 10.0MP Digital Camera features Fast, Super Bright F1.8 IZuiko 4x Wide-Angle Optical Lens, 4x Digital Zoom, High Sensitivity CCD, 3.0&quot; OLED, HD Movie Mode (720p) with HDMI control, TruePic V Image Processor, Dual Image Stabilization, In-Camera Filters, AF Live View with AF Tracking, 54.6MB of built-in memory, and SDHC/SDXC card slot. Includes rechargeable battery.</s:description>
+      <s:link>http://www.kmart.com/shc/s/p_10151_10104_020V003467122000P?vName=Computers%20&amp;%20Electronics&amp;cName=Cameras&amp;Camcorders&amp;sName=Digital%20Point%20&amp;%20Shoot%20Cameras&amp;sid=KDx20070926x00003a&amp;ci_src=14110944&amp;ci_sku=020V003467122000P</s:link>
+      <s:brand>Olympus</s:brand>
+      <s:condition>new</s:condition>
+      <s:gtin>00050332175853</s:gtin>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">499.99</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://s.shld.net/is/image/Sears/spin_prod_164374401?hei=600&amp;wid=600&amp;op_sharpen=1"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1368834/5189583147975297633</id>
+    <author>
+      <name>TigerDirect.com</name>
+    </author>
+    <published>2011-05-11T18:52:51.000Z</published>
+    <updated>2011-05-22T19:03:32.000Z</updated>
+    <title>Canon Powershot G12 10MP Digital Camera - 10 Megapixels, 5x Zoom, 2.8</title>
+    <content type="text">Canon Powershot G12 Digital Camera Feast your eyes on the Canon Powershot G12 Digital Camera, an updated G Series digital camera. It&apos;s ready to impress the advanced amateurs who have always celebrated the G Series. The Canon Powershot G12 is still loaded with powerful technologies that has made the G Series cameras so renowned, like the Canon HS SYSTEM, 2.8-inch Vari-angle PureColor System LCD, and RAW + JPEG image modes. Now, this flagship camera paves the way with these new upgrades like 720p HD Video with stereo sound to get crystal clear footage, multiple aspect ratios, High Dynamic Range, Electronic Level, Tracking AF, a Front Dial and much more to give you even more creative control than before! Order the Canon Powershot G12 Digital Camera today! What It Is and Why You Need It: 10.0 Megapixel sensor combined with the DIGIC 4 Image Processor create Canon&apos;s HS SYSTEM for improved low light performance and better image quality. Utilizes Canon&apos;s Hybrid IS to compensate for angular and shift camera shake during close-up shooting. High Dynamic Range scene mode combines multiple shots into one picture showing greater image detail.</content>
+    <link rel="alternate" type="text/html" href="http://www.tigerdirect.com/applications/searchtools/item-details.asp?EdpNo=6718254&amp;SRCCODE=GOOGLEBASE&amp;cm_mmc_o=VRqCjC7BBTkwCjCECjCE"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1368834/gid/5189583147975297633?alt=atom"/>
+    <s:product>
+      <s:googleId>5189583147975297633</s:googleId>
+      <s:author>
+        <s:name>TigerDirect.com</s:name>
+        <s:accountId>1368834</s:accountId>
+      </s:author>
+      <s:creationTime>2011-05-11T18:52:51.000Z</s:creationTime>
+      <s:modificationTime>2011-05-22T19:03:32.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Canon Powershot G12 10MP Digital Camera - 10 Megapixels, 5x Zoom, 2.8</s:title>
+      <s:description>Canon Powershot G12 Digital Camera Feast your eyes on the Canon Powershot G12 Digital Camera, an updated G Series digital camera. It&apos;s ready to impress the advanced amateurs who have always celebrated the G Series. The Canon Powershot G12 is still loaded with powerful technologies that has made the G Series cameras so renowned, like the Canon HS SYSTEM, 2.8-inch Vari-angle PureColor System LCD, and RAW + JPEG image modes. Now, this flagship camera paves the way with these new upgrades like 720p HD Video with stereo sound to get crystal clear footage, multiple aspect ratios, High Dynamic Range, Electronic Level, Tracking AF, a Front Dial and much more to give you even more creative control than before! Order the Canon Powershot G12 Digital Camera today! What It Is and Why You Need It: 10.0 Megapixel sensor combined with the DIGIC 4 Image Processor create Canon&apos;s HS SYSTEM for improved low light performance and better image quality. Utilizes Canon&apos;s Hybrid IS to compensate for angular and shift camera shake during close-up shooting. High Dynamic Range scene mode combines multiple shots into one picture showing greater image detail.</s:description>
+      <s:link>http://www.tigerdirect.com/applications/searchtools/item-details.asp?EdpNo=6718254&amp;SRCCODE=GOOGLEBASE&amp;cm_mmc_o=VRqCjC7BBTkwCjCECjCE</s:link>
+      <s:brand>Canon</s:brand>
+      <s:condition>new</s:condition>
+      <s:gtin>00013803126815</s:gtin>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">499.99</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://images.highspeedbackbone.net/SKUimages/medium/C930-1796-Main01-Bp.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1108019/14114579808157837188</id>
+    <author>
+      <name>J&amp;R Music and Computer World</name>
+    </author>
+    <published>2011-01-19T14:55:36.000Z</published>
+    <updated>2011-05-22T23:45:27.000Z</updated>
+    <title>Olympus XZ-1 X Series 10 Megapixel Digital Camera - Black</title>
+    <content type="text">Unleash your creative side with the first-ever Olympus X Series camera. Designed for those who want the quality of an SLR in a high-end Point-and-Shoot format, this camera provides a new, easy-to-use outlet for artistic expression. With the XZ-1 you&apos;ll capture high-quality still images and HD videos in any shooting environment thanks to its fast, super-bright, built-in Olympus iZuiko Lens and its large, super-sensitive CCD sensor. -Box Contents: XZ-1 Digital Camera, Quick Start Guide, USB Cable &amp; Charger, Instruction Manual, IB Software CD, A/V Cable, Neck Strap, Lithium-Ion Battery (LI-50B), Warranty Card-Features-10 MP - The 10 million Pixels in the high-resolution CCD create superior image quality-Large, High Sensitivity CCD - Providing the best image quality ever in a compact Olympus camera, the large 1/1.63-inch CCD enables greater dynamic range and smoother gradations from highlights to shadows-4x iZuiko Zoom Lens - Based on the Standards of Olympus DSLR lenses, the wide Aperture of the iZuiko f1.8-2.5 allows a rich and vibrant range of photographic expression. It allows faster shutter speeds in low light - and it allows for a shallower depth of field than most compact point-and-shoot cameras-Monitor - 3.0-inch OLED display-HD Movie 720p - A simple, one-touch button allows you to Record movies-AF Live View with AF Tracking - AF Live View works as seamlessly as a point-and-shoot to display subjects, in focus, on the LCD the instant the shutter is pressed half way-Dual Image stabilization - Dual Image Stabilization combines Sensor-Shift Image Stabilization with high ISO sensitivity and fast shutter speeds -Accessory Port - The XZ-1 includes a port for accessories including the SEMA-1 Microphone Adapter set and the VF-2 live-finder, a detachable electronic viewfinder-Specifications-Image Sensor: 1/1.63&quot; High-Se</content>
+    <link rel="alternate" type="text/html" href="http://www.jr.com/JRProductPage.process?Product_Id=4462208&amp;JRSource=googlebase.datafeed.OLM+XZ1"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1108019/gid/14114579808157837188?alt=atom"/>
+    <s:product>
+      <s:googleId>14114579808157837188</s:googleId>
+      <s:author>
+        <s:name>J&amp;R Music and Computer World</s:name>
+        <s:accountId>1108019</s:accountId>
+      </s:author>
+      <s:creationTime>2011-01-19T14:55:36.000Z</s:creationTime>
+      <s:modificationTime>2011-05-22T23:45:27.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Olympus XZ-1 X Series 10 Megapixel Digital Camera - Black</s:title>
+      <s:description>Unleash your creative side with the first-ever Olympus X Series camera. Designed for those who want the quality of an SLR in a high-end Point-and-Shoot format, this camera provides a new, easy-to-use outlet for artistic expression. With the XZ-1 you&apos;ll capture high-quality still images and HD videos in any shooting environment thanks to its fast, super-bright, built-in Olympus iZuiko Lens and its large, super-sensitive CCD sensor. -Box Contents: XZ-1 Digital Camera, Quick Start Guide, USB Cable &amp; Charger, Instruction Manual, IB Software CD, A/V Cable, Neck Strap, Lithium-Ion Battery (LI-50B), Warranty Card-Features-10 MP - The 10 million Pixels in the high-resolution CCD create superior image quality-Large, High Sensitivity CCD - Providing the best image quality ever in a compact Olympus camera, the large 1/1.63-inch CCD enables greater dynamic range and smoother gradations from highlights to shadows-4x iZuiko Zoom Lens - Based on the Standards of Olympus DSLR lenses, the wide Aperture of the iZuiko f1.8-2.5 allows a rich and vibrant range of photographic expression. It allows faster shutter speeds in low light - and it allows for a shallower depth of field than most compact point-and-shoot cameras-Monitor - 3.0-inch OLED display-HD Movie 720p - A simple, one-touch button allows you to Record movies-AF Live View with AF Tracking - AF Live View works as seamlessly as a point-and-shoot to display subjects, in focus, on the LCD the instant the shutter is pressed half way-Dual Image stabilization - Dual Image Stabilization combines Sensor-Shift Image Stabilization with high ISO sensitivity and fast shutter speeds -Accessory Port - The XZ-1 includes a port for accessories including the SEMA-1 Microphone Adapter set and the VF-2 live-finder, a detachable electronic viewfinder-Specifications-Image Sensor: 1/1.63&quot; High-Se</s:description>
+      <s:link>http://www.jr.com/JRProductPage.process?Product_Id=4462208&amp;JRSource=googlebase.datafeed.OLM+XZ1</s:link>
+      <s:brand>Olympus</s:brand>
+      <s:condition>new</s:condition>
+      <s:gtin>00050332175853</s:gtin>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">499.99</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://images.jr.com/productimages/OLMXZ1.PNG?WID=150&amp;CVT=JPEG"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1324698/1595882986779867993</id>
+    <author>
+      <name>toysrus.com</name>
+    </author>
+    <published>2011-04-20T06:03:24.000Z</published>
+    <updated>2011-05-22T05:57:27.000Z</updated>
+    <title>Olympus XZ-1 10MP Digital Camera - Black</title>
+    <content type="text">The Olympus XZ-1 10MP Digital Camera features:F1.8-2.5 iZuiko Digital Lens (28mm to 112mm)HD Movie/HDMI Control4x iZuiko Zoom1/1.63 High Sensitivity CCD</content>
+    <link rel="alternate" type="text/html" href="http://www.toysrus.com/entry.point?entry=11519761&amp;source=CAFGL_DF:11519761:TRUS&amp;CAWELAID=852182561"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1324698/gid/1595882986779867993?alt=atom"/>
+    <s:product>
+      <s:googleId>1595882986779867993</s:googleId>
+      <s:author>
+        <s:name>toysrus.com</s:name>
+        <s:accountId>1324698</s:accountId>
+      </s:author>
+      <s:creationTime>2011-04-20T06:03:24.000Z</s:creationTime>
+      <s:modificationTime>2011-05-22T05:57:27.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Olympus XZ-1 10MP Digital Camera - Black</s:title>
+      <s:description>The Olympus XZ-1 10MP Digital Camera features:F1.8-2.5 iZuiko Digital Lens (28mm to 112mm)HD Movie/HDMI Control4x iZuiko Zoom1/1.63 High Sensitivity CCD</s:description>
+      <s:link>http://www.toysrus.com/entry.point?entry=11519761&amp;source=CAFGL_DF:11519761:TRUS&amp;CAWELAID=852182561</s:link>
+      <s:brand>Olympus 1010403 1010403</s:brand>
+      <s:condition>new</s:condition>
+      <s:gtin>00050332175853</s:gtin>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">499.99</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://trus.imageg.net/graphics/product_images/pTRU1-10101344reg.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1324698/17858235591236636378</id>
+    <author>
+      <name>toysrus.com</name>
+    </author>
+    <published>2011-05-02T05:25:52.000Z</published>
+    <updated>2011-05-22T05:57:27.000Z</updated>
+    <title>FinePix HS20 16MP Digital Camera - Black</title>
+    <content type="text">Serious photographers seeking the versatility and performance of a D-SLR system without the bulk or expense now have the perfect solution in the shape of the new Fujifilm FinePix HS10. FinePix HS10 offers an unprecedented feature set that combines a powerful 30X optical zoom lens with sophisticated photographic controls, advanced functionality and D-SLR-like handling in a single compact, affordable unit.</content>
+    <link rel="alternate" type="text/html" href="http://www.toysrus.com/entry.point?entry=11514452&amp;source=CAFGL_DF:11514452:TRUS&amp;CAWELAID=863027625"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1324698/gid/17858235591236636378?alt=atom"/>
+    <s:product>
+      <s:googleId>17858235591236636378</s:googleId>
+      <s:author>
+        <s:name>toysrus.com</s:name>
+        <s:accountId>1324698</s:accountId>
+      </s:author>
+      <s:creationTime>2011-05-02T05:25:52.000Z</s:creationTime>
+      <s:modificationTime>2011-05-22T05:57:27.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>FinePix HS20 16MP Digital Camera - Black</s:title>
+      <s:description>Serious photographers seeking the versatility and performance of a D-SLR system without the bulk or expense now have the perfect solution in the shape of the new Fujifilm FinePix HS10. FinePix HS10 offers an unprecedented feature set that combines a powerful 30X optical zoom lens with sophisticated photographic controls, advanced functionality and D-SLR-like handling in a single compact, affordable unit.</s:description>
+      <s:link>http://www.toysrus.com/entry.point?entry=11514452&amp;source=CAFGL_DF:11514452:TRUS&amp;CAWELAID=863027625</s:link>
+      <s:brand>Fuji Photo</s:brand>
+      <s:condition>new</s:condition>
+      <s:gtin>00074101007671</s:gtin>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">499.99</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://trus.imageg.net/graphics/product_images/pTRU1-10087995reg.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1108019/8553748475148680399</id>
+    <author>
+      <name>J&amp;R Music and Computer World</name>
+    </author>
+    <published>2010-09-23T13:46:37.000Z</published>
+    <updated>2011-05-22T23:45:27.000Z</updated>
+    <title>Canon PowerShot G12 10 Megapixel Digital Camera</title>
+    <content type="text">Feast your eyes on an updated G Series Digital camera: The G12. It&apos;s ready to impress the advanced amateurs who have always celebrated the G Series. The G12 is still loaded with powerful technologies that has made the G Series cameras so renowned, like the Canon HS SYSTEM, 2.8-inch Vari-angle PureColor System LCD, and RAW + JPEG image modes. Now, this flagship camera paves the way with these new Upgrades like 720p HD Video with Stereo Sound to get crystal clear footage, multiple aspect ratios, High Dynamic Range, Electronic Level, Tracking AF, a Front Dial and much more to give you even more creative control than before! -Box Contents: PowerShot G12, Lithium Battery Pack NB-7L, Battery Charger CB-2LZ, Neck Strap, AV Cable, USB Cable, CD-ROM-Features-10.0 Megapixel Sensor combined with the DIGIC 4 Image Processor create Canon&apos;s HS SYSTEM for improved low light performance and better image quality.-Shoot beautiful 720p HD video in stereo sound and play back on an HDTV via the HDMI output.-Full range of shooting and Recording modes including RAW + JPEG for the ultimate creative control.-Utilizes Canon&apos;s Hybrid IS to compensate for angular and shift camera shake during close-up shooting.-Large, bright 2.8-inch Vari-angle LCD with 461000 dots for shooting at a variety of angles plus an Optical viewfinder.-A high-powered 5x Optical zoom with Optical Image Stabilizer, plus a 28mm Wide-Angle Lens gets you up close and Personal to your subjects, as well as capture more in your frame.-A host of Optional accessories including Speedlite flashes, underwater housing and Tele-Converter Lens are available.-High Dynamic Range scene mode combines multiple shots into one picture showing greater image detail.-Specifications-Type: 10.0 Megapixel, 1/1.7-inch type Charge Coupled Device (CCD)-Effective Pixels: Approx. 10.0 Megapixels -Lens: Canon 5x optical zoom -Foc</content>
+    <link rel="alternate" type="text/html" href="http://www.jr.com/JRProductPage.process?Product_Id=4431300&amp;JRSource=googlebase.datafeed.CAN+G12"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1108019/gid/8553748475148680399?alt=atom"/>
+    <s:product>
+      <s:googleId>8553748475148680399</s:googleId>
+      <s:author>
+        <s:name>J&amp;R Music and Computer World</s:name>
+        <s:accountId>1108019</s:accountId>
+      </s:author>
+      <s:creationTime>2010-09-23T13:46:37.000Z</s:creationTime>
+      <s:modificationTime>2011-05-22T23:45:27.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Canon PowerShot G12 10 Megapixel Digital Camera</s:title>
+      <s:description>Feast your eyes on an updated G Series Digital camera: The G12. It&apos;s ready to impress the advanced amateurs who have always celebrated the G Series. The G12 is still loaded with powerful technologies that has made the G Series cameras so renowned, like the Canon HS SYSTEM, 2.8-inch Vari-angle PureColor System LCD, and RAW + JPEG image modes. Now, this flagship camera paves the way with these new Upgrades like 720p HD Video with Stereo Sound to get crystal clear footage, multiple aspect ratios, High Dynamic Range, Electronic Level, Tracking AF, a Front Dial and much more to give you even more creative control than before! -Box Contents: PowerShot G12, Lithium Battery Pack NB-7L, Battery Charger CB-2LZ, Neck Strap, AV Cable, USB Cable, CD-ROM-Features-10.0 Megapixel Sensor combined with the DIGIC 4 Image Processor create Canon&apos;s HS SYSTEM for improved low light performance and better image quality.-Shoot beautiful 720p HD video in stereo sound and play back on an HDTV via the HDMI output.-Full range of shooting and Recording modes including RAW + JPEG for the ultimate creative control.-Utilizes Canon&apos;s Hybrid IS to compensate for angular and shift camera shake during close-up shooting.-Large, bright 2.8-inch Vari-angle LCD with 461000 dots for shooting at a variety of angles plus an Optical viewfinder.-A high-powered 5x Optical zoom with Optical Image Stabilizer, plus a 28mm Wide-Angle Lens gets you up close and Personal to your subjects, as well as capture more in your frame.-A host of Optional accessories including Speedlite flashes, underwater housing and Tele-Converter Lens are available.-High Dynamic Range scene mode combines multiple shots into one picture showing greater image detail.-Specifications-Type: 10.0 Megapixel, 1/1.7-inch type Charge Coupled Device (CCD)-Effective Pixels: Approx. 10.0 Megapixels -Lens: Canon 5x optical zoom -Foc</s:description>
+      <s:link>http://www.jr.com/JRProductPage.process?Product_Id=4431300&amp;JRSource=googlebase.datafeed.CAN+G12</s:link>
+      <s:brand>Canon</s:brand>
+      <s:condition>new</s:condition>
+      <s:gtin>00013803126815</s:gtin>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">499.99</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://images.jr.com/productimages/CANG12.PNG?WID=150&amp;CVT=JPEG"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1368834/17840159022885349767</id>
+    <author>
+      <name>TigerDirect.com</name>
+    </author>
+    <published>2011-05-04T18:14:48.000Z</published>
+    <updated>2011-05-22T19:03:32.000Z</updated>
+    <title>Nikon D3000 25462 DSLR Digital Camera and 18-55MM VR Lens - 10.2 Megap</title>
+    <content type="text">Nikon D3000 25462 DSLR Digital Camera and 18-55MM VR Lens Your photos will never have looked more vivid and spectacularly clear than when you equip yourself with the Nikon D3000 DSLR Digital Camera and 18-55MM VR Lens. Featuring a 10.2-megapixel DX-format Imaging sensor, this one-of-a-kind, versatile camera boasts an array of features that will exude stunning detail and precise accuracy in all your shots. Get an up-close view of your digital pictures as you take them via the large 3-inch display screen. The Nikon D3000 DSLR Digital Camera and 18-55MM VR Lens provides 3-frames-per second continuous shooting and an 11-point Autofocus for razor sharp visuals. Keep your image sensor clean and dust-free no matter where you take the Nikon D3000 DSLR Digital Camera and 18-55MM VR Lens with the exclusive Airflow Control. You&apos;ll also have the added convenience of editing your images right on the camera itself with 13 helpful options such as Trim, Red-Eye Correction, Soft Filter and more. And an ISO sensitivity from 100 - 1600 allows you to shoot in low-light settings, ensuring crystal clear images every time. Need more memory to store thousands of pictures? Grab any SD/SDHC card for additional capacity and voila! The Nikon D3000 DSLR Digital Camera and 18-55MM VR Lens is nothing more and nothing less than the camera you&apos;ve been waiting for. What It Is &amp; Why You Need It: Ideal to shoot breathtaking scenery and outdoor excursions Delivers superior performance and stunning shots with 10.2-megapixel sensor Nikon&apos;s smallest D-SLR makes it easy to use</content>
+    <link rel="alternate" type="text/html" href="http://www.tigerdirect.com/applications/searchtools/item-details.asp?EdpNo=5007270&amp;SRCCODE=GOOGLEBASE&amp;cm_mmc_o=VRqCjC7BBTkwCjCECjCE"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1368834/gid/17840159022885349767?alt=atom"/>
+    <s:product>
+      <s:googleId>17840159022885349767</s:googleId>
+      <s:author>
+        <s:name>TigerDirect.com</s:name>
+        <s:accountId>1368834</s:accountId>
+      </s:author>
+      <s:creationTime>2011-05-04T18:14:48.000Z</s:creationTime>
+      <s:modificationTime>2011-05-22T19:03:32.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Nikon D3000 25462 DSLR Digital Camera and 18-55MM VR Lens - 10.2 Megap</s:title>
+      <s:description>Nikon D3000 25462 DSLR Digital Camera and 18-55MM VR Lens Your photos will never have looked more vivid and spectacularly clear than when you equip yourself with the Nikon D3000 DSLR Digital Camera and 18-55MM VR Lens. Featuring a 10.2-megapixel DX-format Imaging sensor, this one-of-a-kind, versatile camera boasts an array of features that will exude stunning detail and precise accuracy in all your shots. Get an up-close view of your digital pictures as you take them via the large 3-inch display screen. The Nikon D3000 DSLR Digital Camera and 18-55MM VR Lens provides 3-frames-per second continuous shooting and an 11-point Autofocus for razor sharp visuals. Keep your image sensor clean and dust-free no matter where you take the Nikon D3000 DSLR Digital Camera and 18-55MM VR Lens with the exclusive Airflow Control. You&apos;ll also have the added convenience of editing your images right on the camera itself with 13 helpful options such as Trim, Red-Eye Correction, Soft Filter and more. And an ISO sensitivity from 100 - 1600 allows you to shoot in low-light settings, ensuring crystal clear images every time. Need more memory to store thousands of pictures? Grab any SD/SDHC card for additional capacity and voila! The Nikon D3000 DSLR Digital Camera and 18-55MM VR Lens is nothing more and nothing less than the camera you&apos;ve been waiting for. What It Is &amp; Why You Need It: Ideal to shoot breathtaking scenery and outdoor excursions Delivers superior performance and stunning shots with 10.2-megapixel sensor Nikon&apos;s smallest D-SLR makes it easy to use</s:description>
+      <s:link>http://www.tigerdirect.com/applications/searchtools/item-details.asp?EdpNo=5007270&amp;SRCCODE=GOOGLEBASE&amp;cm_mmc_o=VRqCjC7BBTkwCjCECjCE</s:link>
+      <s:brand>Nikon</s:brand>
+      <s:condition>new</s:condition>
+      <s:gtin>00018208254620</s:gtin>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">499.99</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://images.highspeedbackbone.net/SKUimages/medium/N13-4562-Main02-Bp.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1057813/16425050820100112459</id>
+    <author>
+      <name>Adorama Camera</name>
+    </author>
+    <published>2010-08-07T13:51:42.000Z</published>
+    <updated>2011-05-22T23:38:43.000Z</updated>
+    <title>Panasonic Lumix DMC-LX5 10.1 Megapixels Digital Camera with 3.8x 24mm Wide-Angle Leica Optical Zoom, 3.0in LCD Display - Black</title>
+    <content type="text">Panasonic Lumix DMCLX5 DMCLX 5 DMC LX 5 10 . 1 Megapixels Digital Camera with 3 . 8 x 24 mm WideAngle Wide Angle Leica Optical Zoom, 3 . 0 in LCD Display Black Panasonic Lumix DMC-LX5 10.1 Megapixels Digital Camera with 3.8x 24mm Wide-Angle Leic</content>
+    <link rel="alternate" type="text/html" href="http://www.adorama.com/IPCDMCLX5BK.html?refby=gbase"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1057813/gid/16425050820100112459?alt=atom"/>
+    <s:product>
+      <s:googleId>16425050820100112459</s:googleId>
+      <s:author>
+        <s:name>Adorama Camera</s:name>
+        <s:accountId>1057813</s:accountId>
+      </s:author>
+      <s:creationTime>2010-08-07T13:51:42.000Z</s:creationTime>
+      <s:modificationTime>2011-05-22T23:38:43.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Panasonic Lumix DMC-LX5 10.1 Megapixels Digital Camera with 3.8x 24mm Wide-Angle Leica Optical Zoom, 3.0in LCD Display - Black</s:title>
+      <s:description>Panasonic Lumix DMCLX5 DMCLX 5 DMC LX 5 10 . 1 Megapixels Digital Camera with 3 . 8 x 24 mm WideAngle Wide Angle Leica Optical Zoom, 3 . 0 in LCD Display Black Panasonic Lumix DMC-LX5 10.1 Megapixels Digital Camera with 3.8x 24mm Wide-Angle Leic</s:description>
+      <s:link>http://www.adorama.com/IPCDMCLX5BK.html?refby=gbase</s:link>
+      <s:brand>Panasonic</s:brand>
+      <s:condition>new</s:condition>
+      <s:gtin>00885170016170</s:gtin>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">499.99</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://www.adorama.com/images/large/IPCDMCLX5BK.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/3622330/686010790793079164</id>
+    <author>
+      <name>Apple Store</name>
+    </author>
+    <published>2010-10-21T20:31:02.000Z</published>
+    <updated>2011-05-20T20:20:46.000Z</updated>
+    <title>Canon PowerShot G12 Digital Camera</title>
+    <content type="text">A 10-Megapixel sensor combined with Digic 4 Processor create Canon&apos;s HS System for improved low light performance and better image quality.</content>
+    <link rel="alternate" type="text/html" href="http://store.apple.com/us/go/product/H2809ZM/A?aosid=p210&amp;cid=AOS-US-SHOP-Froogle&amp;src=frgl"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/3622330/gid/686010790793079164?alt=atom"/>
+    <s:product>
+      <s:googleId>686010790793079164</s:googleId>
+      <s:author>
+        <s:name>Apple Store</s:name>
+        <s:accountId>3622330</s:accountId>
+      </s:author>
+      <s:creationTime>2010-10-21T20:31:02.000Z</s:creationTime>
+      <s:modificationTime>2011-05-20T20:20:46.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Canon PowerShot G12 Digital Camera</s:title>
+      <s:description>A 10-Megapixel sensor combined with Digic 4 Processor create Canon&apos;s HS System for improved low light performance and better image quality.</s:description>
+      <s:link>http://store.apple.com/us/go/product/H2809ZM/A?aosid=p210&amp;cid=AOS-US-SHOP-Froogle&amp;src=frgl</s:link>
+      <s:brand>Canon</s:brand>
+      <s:condition>new</s:condition>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">499.95</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://storeimages.apple.com/1842/as-images.apple.com/is/image/AppleInc/H2809"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/7827/7449395197334256676</id>
+    <author>
+      <name>Dell</name>
+    </author>
+    <published>2011-04-15T15:11:00.000Z</published>
+    <updated>2011-05-21T15:11:53.000Z</updated>
+    <title>Fujifilm FinePix HS20EXR Black 16 MP 30X Zoom Digital Camera (16113421)</title>
+    <content type="text">Advanced, Innovative, and versatile; the FinePix HS20 EXR 16 MP 30X Zoom Digital Camera from Fujifilm is all this and so much more. The FinePix HS20 EXR is intuitive and easy to operate and packed full of useful features and technologies. The FinePix HS20 EXR is packed with both the power of the 30X zoom and the versatility of a mega 24mm - 720mm wide-angle Optical zoom lens in a stylish, compact body. The camera features 16M EXR BSI CMOS high speed sensor, with 16 megapixel resolution and advanced anti blur technology for clear pictures. Also, it comes with high speed continuous shooting capability, improved user interface and versatile video function. Plus, this HS20 EXR camera poses 3.0-inch high contrast (1000:1) LCD Display with heads up EVF LCD Eye sensor auto-switch. Besides, this camera has Manual zoom, H.264 high profile file format and HD Movie recording at 1080i with Stereo Sound at 30fps. Moreover, the camera has a mini HDMI interface, Continuous Burst Shooting at 7.6fps (16M) up to 8 frames and High Speed Movie recording at 320fps with Slow Motion Playback. Packed with all these features and more, the stylish FinePix HS20EXR is your essential traveling companion!</content>
+    <link rel="alternate" type="text/html" href="http://lt.dell.com/lt/lt.aspx?CID=27530&amp;LID=627063&amp;DGC=SS&amp;DGSeg=DHS&amp;DURL=http://accessories.us.dell.com/sna/productdetail.aspx?c=us%26l=en%26s=dhs%26cs=19%26sku=A4746195"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/7827/gid/7449395197334256676?alt=atom"/>
+    <s:product>
+      <s:googleId>7449395197334256676</s:googleId>
+      <s:author>
+        <s:name>Dell</s:name>
+        <s:accountId>7827</s:accountId>
+      </s:author>
+      <s:creationTime>2011-04-15T15:11:00.000Z</s:creationTime>
+      <s:modificationTime>2011-05-21T15:11:53.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Fujifilm FinePix HS20EXR Black 16 MP 30X Zoom Digital Camera (16113421)</s:title>
+      <s:description>Advanced, Innovative, and versatile; the FinePix HS20 EXR 16 MP 30X Zoom Digital Camera from Fujifilm is all this and so much more. The FinePix HS20 EXR is intuitive and easy to operate and packed full of useful features and technologies. The FinePix HS20 EXR is packed with both the power of the 30X zoom and the versatility of a mega 24mm - 720mm wide-angle Optical zoom lens in a stylish, compact body. The camera features 16M EXR BSI CMOS high speed sensor, with 16 megapixel resolution and advanced anti blur technology for clear pictures. Also, it comes with high speed continuous shooting capability, improved user interface and versatile video function. Plus, this HS20 EXR camera poses 3.0-inch high contrast (1000:1) LCD Display with heads up EVF LCD Eye sensor auto-switch. Besides, this camera has Manual zoom, H.264 high profile file format and HD Movie recording at 1080i with Stereo Sound at 30fps. Moreover, the camera has a mini HDMI interface, Continuous Burst Shooting at 7.6fps (16M) up to 8 frames and High Speed Movie recording at 320fps with Slow Motion Playback. Packed with all these features and more, the stylish FinePix HS20EXR is your essential traveling companion!</s:description>
+      <s:link>http://lt.dell.com/lt/lt.aspx?CID=27530&amp;LID=627063&amp;DGC=SS&amp;DGSeg=DHS&amp;DURL=http://accessories.us.dell.com/sna/productdetail.aspx?c=us%26l=en%26s=dhs%26cs=19%26sku=A4746195</s:link>
+      <s:brand>Fuji</s:brand>
+      <s:condition>new</s:condition>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">499.95</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://accessories.us.dell.com/sna/images/products/large/A4746195.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1057813/1846771884311833407</id>
+    <author>
+      <name>Adorama Camera</name>
+    </author>
+    <published>2010-09-15T13:52:42.000Z</published>
+    <updated>2011-05-22T23:38:43.000Z</updated>
+    <title>Canon PowerShot G12 Compact Digital Camera with 720p HD Video</title>
+    <content type="text">Canon PowerShot G 12 Compact Digital Camera with 720 p HD Video Canon PowerShot G12 Compact Digital Camera with 720p HD Video Let the G Series Inspire You. Feast your eyes on an updated G Series digital camera: The G12. It&apos;s ready to impress the advan</content>
+    <link rel="alternate" type="text/html" href="http://www.adorama.com/ICAG12.html?refby=gbase"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1057813/gid/1846771884311833407?alt=atom"/>
+    <s:product>
+      <s:googleId>1846771884311833407</s:googleId>
+      <s:author>
+        <s:name>Adorama Camera</s:name>
+        <s:accountId>1057813</s:accountId>
+      </s:author>
+      <s:creationTime>2010-09-15T13:52:42.000Z</s:creationTime>
+      <s:modificationTime>2011-05-22T23:38:43.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Canon PowerShot G12 Compact Digital Camera with 720p HD Video</s:title>
+      <s:description>Canon PowerShot G 12 Compact Digital Camera with 720 p HD Video Canon PowerShot G12 Compact Digital Camera with 720p HD Video Let the G Series Inspire You. Feast your eyes on an updated G Series digital camera: The G12. It&apos;s ready to impress the advan</s:description>
+      <s:link>http://www.adorama.com/ICAG12.html?refby=gbase</s:link>
+      <s:brand>Canon</s:brand>
+      <s:condition>new</s:condition>
+      <s:gtin>00013803126815</s:gtin>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">499.95</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://www.adorama.com/images/large/ICAG12.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1057813/181214288038824181</id>
+    <author>
+      <name>Adorama Camera</name>
+    </author>
+    <published>2011-01-06T00:45:54.000Z</published>
+    <updated>2011-05-21T23:39:45.000Z</updated>
+    <title>Olympus XZ-1 10 Megapixel Digital Camera, f1.8-2.5, 4x iZuiko Digital Lens, Amoled 3.0 inch Monitor, HD Movie/HDMI Control, 1/1.63in CCD, Black</title>
+    <content type="text">Olympus XZ1 XZ 1 XZ 1 10 Megapixel Digital Camera, f1.82.5, f 1 . 82 . 5 , f 1 . 8 2 . 5 , 4 x iZuiko Digital Lens, Amoled 3 . 0 inch Monitor, HD Movie/HDMI Control, 1 / 1 . 63 in CCD, Black Olympus XZ-1 10 Megapixel Digital Camera, f1.8-2.5, 4x iZu</content>
+    <link rel="alternate" type="text/html" href="http://www.adorama.com/IOMXZ1BK.html?refby=gbase"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1057813/gid/181214288038824181?alt=atom"/>
+    <s:product>
+      <s:googleId>181214288038824181</s:googleId>
+      <s:author>
+        <s:name>Adorama Camera</s:name>
+        <s:accountId>1057813</s:accountId>
+      </s:author>
+      <s:creationTime>2011-01-06T00:45:54.000Z</s:creationTime>
+      <s:modificationTime>2011-05-21T23:39:45.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Olympus XZ-1 10 Megapixel Digital Camera, f1.8-2.5, 4x iZuiko Digital Lens, Amoled 3.0 inch Monitor, HD Movie/HDMI Control, 1/1.63in CCD, Black</s:title>
+      <s:description>Olympus XZ1 XZ 1 XZ 1 10 Megapixel Digital Camera, f1.82.5, f 1 . 82 . 5 , f 1 . 8 2 . 5 , 4 x iZuiko Digital Lens, Amoled 3 . 0 inch Monitor, HD Movie/HDMI Control, 1 / 1 . 63 in CCD, Black Olympus XZ-1 10 Megapixel Digital Camera, f1.8-2.5, 4x iZu</s:description>
+      <s:link>http://www.adorama.com/IOMXZ1BK.html?refby=gbase</s:link>
+      <s:brand>Olympus</s:brand>
+      <s:condition>new</s:condition>
+      <s:gtin>00050332175853</s:gtin>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">499.0</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://www.adorama.com/images/large/IOMXZ1BK.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1172711/3418560046172403197</id>
+    <author>
+      <name>B&amp;H Photo-Video-Audio</name>
+    </author>
+    <published>2011-04-23T22:18:01.000Z</published>
+    <updated>2011-05-23T03:29:59.000Z</updated>
+    <title>Canon PowerShot SX30 IS Digital Camera with Deluxe Accessory Ki</title>
+    <content type="text">When you purchase a new digital camera there are usually a few items you need to round out the camera&apos;s included accessory package. With that in mind B&amp;H Photo has put together this Deluxe Accessory Kit to make your picture taking experience more enjoyable.In addition to the standard accessory package that is included by the manufacturer with the Canon PowerShot SX30 IS Camera the Deluxe Accessory Kit includes an 8GB memory card a camera pouch an extra rechargeable battery and a 2-year SAGEMAX Protection Plan from NEW Customer Service Companies Inc. PowerShot SX30 IS Digital Camera with Deluxe Accessory Kit PowerShot SX30 IS Digital Camera with Deluxe Accessory Kit, 35x Zoom Lens (24-840mm Equivalent), Zoom Framing Assist for Telephoto Photos, 14.1MP High Resolution, 2.7&quot; Wide Vari-angle LCD Display, 720p HD Video With Stereo Sound, Use Stabilization &amp; Zoom for Video, Advanced Smart AUTO for 23 Situations, Optical Image Stabilizer for Sharp Pix, Powerful DIGIC 4 Image Processor, Lithium-ion Rechargeable Batteries</content>
+    <link rel="alternate" type="text/html" href="http://www.bhphotovideo.com/c/product/737499-REG/Canon_4344B001_PowerShot_SX30_IS_Digital.html/BI/6609/kw/CAPSSX30K2/kwid/KT100"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1172711/gid/3418560046172403197?alt=atom"/>
+    <s:product>
+      <s:googleId>3418560046172403197</s:googleId>
+      <s:author>
+        <s:name>B&amp;H Photo-Video-Audio</s:name>
+        <s:accountId>1172711</s:accountId>
+      </s:author>
+      <s:creationTime>2011-04-23T22:18:01.000Z</s:creationTime>
+      <s:modificationTime>2011-05-23T03:29:59.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Canon PowerShot SX30 IS Digital Camera with Deluxe Accessory Ki</s:title>
+      <s:description>When you purchase a new digital camera there are usually a few items you need to round out the camera&apos;s included accessory package. With that in mind B&amp;H Photo has put together this Deluxe Accessory Kit to make your picture taking experience more enjoyable.In addition to the standard accessory package that is included by the manufacturer with the Canon PowerShot SX30 IS Camera the Deluxe Accessory Kit includes an 8GB memory card a camera pouch an extra rechargeable battery and a 2-year SAGEMAX Protection Plan from NEW Customer Service Companies Inc. PowerShot SX30 IS Digital Camera with Deluxe Accessory Kit PowerShot SX30 IS Digital Camera with Deluxe Accessory Kit, 35x Zoom Lens (24-840mm Equivalent), Zoom Framing Assist for Telephoto Photos, 14.1MP High Resolution, 2.7&quot; Wide Vari-angle LCD Display, 720p HD Video With Stereo Sound, Use Stabilization &amp; Zoom for Video, Advanced Smart AUTO for 23 Situations, Optical Image Stabilizer for Sharp Pix, Powerful DIGIC 4 Image Processor, Lithium-ion Rechargeable Batteries</s:description>
+      <s:link>http://www.bhphotovideo.com/c/product/737499-REG/Canon_4344B001_PowerShot_SX30_IS_Digital.html/BI/6609/kw/CAPSSX30K2/kwid/KT100</s:link>
+      <s:brand>Canon</s:brand>
+      <s:condition>new</s:condition>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">498.95</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://www.bhphotovideo.com/images/images345x345/737499.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1057813/11458913395184535194</id>
+    <author>
+      <name>Adorama Camera</name>
+    </author>
+    <published>2010-08-25T13:53:33.000Z</published>
+    <updated>2011-05-22T23:38:43.000Z</updated>
+    <title>Canon PowerShot S95 Digital Camera Kit, with 8GB SD Memory Card, Spare NB-6L Type Lithium-ion Battery, Camera Case, Professional Lens Cleaning Kit, Table Top Tripod, USB 2.0 SD Card Reader</title>
+    <content type="text">Canon PowerShot S 95 Digital Camera Kit, with 8 GB SD Memory Card, Spare NB6L NB 6 L NB 6 L Type Lithiumion Lithium ion Battery, Camera Case, Professional Lens Cleaning Kit, Table Top Tripod, USB 2 . 0 SD Card Reader Canon PowerShot S95 Digital Came</content>
+    <link rel="alternate" type="text/html" href="http://www.adorama.com/ICAS95KB.html?refby=gbase"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1057813/gid/11458913395184535194?alt=atom"/>
+    <s:product>
+      <s:googleId>11458913395184535194</s:googleId>
+      <s:author>
+        <s:name>Adorama Camera</s:name>
+        <s:accountId>1057813</s:accountId>
+      </s:author>
+      <s:creationTime>2010-08-25T13:53:33.000Z</s:creationTime>
+      <s:modificationTime>2011-05-22T23:38:43.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Canon PowerShot S95 Digital Camera Kit, with 8GB SD Memory Card, Spare NB-6L Type Lithium-ion Battery, Camera Case, Professional Lens Cleaning Kit, Table Top Tripod, USB 2.0 SD Card Reader</s:title>
+      <s:description>Canon PowerShot S 95 Digital Camera Kit, with 8 GB SD Memory Card, Spare NB6L NB 6 L NB 6 L Type Lithiumion Lithium ion Battery, Camera Case, Professional Lens Cleaning Kit, Table Top Tripod, USB 2 . 0 SD Card Reader Canon PowerShot S95 Digital Came</s:description>
+      <s:link>http://www.adorama.com/ICAS95KB.html?refby=gbase</s:link>
+      <s:brand>Canon</s:brand>
+      <s:condition>new</s:condition>
+      <s:gtin>00013803126556</s:gtin>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">498.53</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://www.adorama.com/images/large/ICAS95KB.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1172711/2305828802489892478</id>
+    <author>
+      <name>B&amp;H Photo-Video-Audio</name>
+    </author>
+    <published>2011-04-24T05:28:50.000Z</published>
+    <updated>2011-05-23T03:29:59.000Z</updated>
+    <title>Nikon Coolpix P500 Digital Camera with Deluxe Accessory Kit (Bl</title>
+    <content type="text">When you purchase a new digital camera there are usually a few items you need to round out the camera&apos;s included accessory package. With that in mind B&amp;H Photo has put together this Deluxe Accessory Kit to make your picture taking experience more enjoyable.In addition to the standard accessory package that is included by the manufacturer with the Nikon Coolpix P500 Camera the Deluxe Accessory Kit includes an 8GB memory card a camera pouch a spare battery and a 2-Year SAGEMAX Protection Plan from NEW Customer Service Companies Inc. Coolpix P500 Digital Camera with Deluxe Accessory Kit (Black) Coolpix P500 Digital Camera with Deluxe Accessory Kit (Black), 12.1MP CMOS Sensor, 36x Wide-Angle 22.5-810mm Lens, Full 1920x1080 HD Video w/ Stereo Sound, 5fps at Full 12.1MP Resolution, 3&quot; Vari-Angle Hi Res 921K-Dot Display, 19 Scene Modes, Sensitivity Up to 3200 ISO, 5-Way VR Image Stabilization, Smart Portrait System, Dual Processing--Improved Quality, Speed</content>
+    <link rel="alternate" type="text/html" href="http://www.bhphotovideo.com/c/product/759465-REG/Nikon_26256_Coolpix_P500_Digital_Camera.html/BI/6609/kw/NICPP500BK2/kwid/KT100"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1172711/gid/2305828802489892478?alt=atom"/>
+    <s:product>
+      <s:googleId>2305828802489892478</s:googleId>
+      <s:author>
+        <s:name>B&amp;H Photo-Video-Audio</s:name>
+        <s:accountId>1172711</s:accountId>
+      </s:author>
+      <s:creationTime>2011-04-24T05:28:50.000Z</s:creationTime>
+      <s:modificationTime>2011-05-23T03:29:59.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Nikon Coolpix P500 Digital Camera with Deluxe Accessory Kit (Bl</s:title>
+      <s:description>When you purchase a new digital camera there are usually a few items you need to round out the camera&apos;s included accessory package. With that in mind B&amp;H Photo has put together this Deluxe Accessory Kit to make your picture taking experience more enjoyable.In addition to the standard accessory package that is included by the manufacturer with the Nikon Coolpix P500 Camera the Deluxe Accessory Kit includes an 8GB memory card a camera pouch a spare battery and a 2-Year SAGEMAX Protection Plan from NEW Customer Service Companies Inc. Coolpix P500 Digital Camera with Deluxe Accessory Kit (Black) Coolpix P500 Digital Camera with Deluxe Accessory Kit (Black), 12.1MP CMOS Sensor, 36x Wide-Angle 22.5-810mm Lens, Full 1920x1080 HD Video w/ Stereo Sound, 5fps at Full 12.1MP Resolution, 3&quot; Vari-Angle Hi Res 921K-Dot Display, 19 Scene Modes, Sensitivity Up to 3200 ISO, 5-Way VR Image Stabilization, Smart Portrait System, Dual Processing--Improved Quality, Speed</s:description>
+      <s:link>http://www.bhphotovideo.com/c/product/759465-REG/Nikon_26256_Coolpix_P500_Digital_Camera.html/BI/6609/kw/NICPP500BK2/kwid/KT100</s:link>
+      <s:brand>Nikon</s:brand>
+      <s:condition>new</s:condition>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">488.95</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://www.bhphotovideo.com/images/images345x345/759465.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1172711/13500862733042712532</id>
+    <author>
+      <name>B&amp;H Photo-Video-Audio</name>
+    </author>
+    <published>2011-05-04T15:12:54.000Z</published>
+    <updated>2011-05-23T03:29:59.000Z</updated>
+    <title>Olympus SZ-30MR Digital Camera with Deluxe Accessory Kit</title>
+    <content type="text">When you purchase a new digital camera there are usually a few items you need to round out the camera&apos;s included accessory package. With that in mind B&amp;H Photo has put together this Deluxe Accessory Kit to make your picture taking experience more enjoyable.In addition to the standard accessory package that is included by the manufacturer with the Olympus SZ-30MR Camera the Deluxe Accessory Kit includes an 8GB memory card a camera pouch a spare battery and a 2-year SAGEMAX Protection Plan from NEW Customer Service Companies Inc. SZ-30MR Digital Camera with Deluxe Accessory Kit SZ-30MR Digital Camera with Deluxe Accessory Kit, 16MP CMOS Sensor, 1080p HD Video, SD/SDHC/SDXC Memory Card Slot, 3.0&quot; LCD Display, 24x Optical Zoom, Dual Image Stabilization, HD Movie and Still Multi-Recording, TruePic III+ Technology, Wi-Fi Compatibility, 3D Photos</content>
+    <link rel="alternate" type="text/html" href="http://www.bhphotovideo.com/c/product/767504-REG/Olympus_228825_SZ_30MR_Digital_Camera_with.html/BI/6609/kw/OLSZ30SK2/kwid/KT100"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1172711/gid/13500862733042712532?alt=atom"/>
+    <s:product>
+      <s:googleId>13500862733042712532</s:googleId>
+      <s:author>
+        <s:name>B&amp;H Photo-Video-Audio</s:name>
+        <s:accountId>1172711</s:accountId>
+      </s:author>
+      <s:creationTime>2011-05-04T15:12:54.000Z</s:creationTime>
+      <s:modificationTime>2011-05-23T03:29:59.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Olympus SZ-30MR Digital Camera with Deluxe Accessory Kit</s:title>
+      <s:description>When you purchase a new digital camera there are usually a few items you need to round out the camera&apos;s included accessory package. With that in mind B&amp;H Photo has put together this Deluxe Accessory Kit to make your picture taking experience more enjoyable.In addition to the standard accessory package that is included by the manufacturer with the Olympus SZ-30MR Camera the Deluxe Accessory Kit includes an 8GB memory card a camera pouch a spare battery and a 2-year SAGEMAX Protection Plan from NEW Customer Service Companies Inc. SZ-30MR Digital Camera with Deluxe Accessory Kit SZ-30MR Digital Camera with Deluxe Accessory Kit, 16MP CMOS Sensor, 1080p HD Video, SD/SDHC/SDXC Memory Card Slot, 3.0&quot; LCD Display, 24x Optical Zoom, Dual Image Stabilization, HD Movie and Still Multi-Recording, TruePic III+ Technology, Wi-Fi Compatibility, 3D Photos</s:description>
+      <s:link>http://www.bhphotovideo.com/c/product/767504-REG/Olympus_228825_SZ_30MR_Digital_Camera_with.html/BI/6609/kw/OLSZ30SK2/kwid/KT100</s:link>
+      <s:brand>Olympus</s:brand>
+      <s:condition>new</s:condition>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">487.95</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://www.bhphotovideo.com/images/images345x345/767504.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1057813/8529010367915868324</id>
+    <author>
+      <name>Adorama Camera</name>
+    </author>
+    <published>2010-09-21T13:58:52.000Z</published>
+    <updated>2011-05-21T23:39:45.000Z</updated>
+    <title>Canon PowerShot SX30 IS, Digital Camera Kit, with 4GB SD Memory Card, Spare NB-7L Type Lithium-ion Battery, Camera Case, Table Top Tripod,</title>
+    <content type="text">Canon PowerShot SX 30 IS, Digital Camera Kit, with 4 GB SD Memory Card, Spare NB7L NB 7 L NB 7 L Type Lithiumion Lithium ion Battery, Camera Case, Table Top Tripod, Canon PowerShot SX30 IS, Digital Camera Kit, with 4GB SD Memory Card, Spare NB-7L Typ</content>
+    <link rel="alternate" type="text/html" href="http://www.adorama.com/ICASX30A.html?refby=gbase"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1057813/gid/8529010367915868324?alt=atom"/>
+    <s:product>
+      <s:googleId>8529010367915868324</s:googleId>
+      <s:author>
+        <s:name>Adorama Camera</s:name>
+        <s:accountId>1057813</s:accountId>
+      </s:author>
+      <s:creationTime>2010-09-21T13:58:52.000Z</s:creationTime>
+      <s:modificationTime>2011-05-21T23:39:45.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Canon PowerShot SX30 IS, Digital Camera Kit, with 4GB SD Memory Card, Spare NB-7L Type Lithium-ion Battery, Camera Case, Table Top Tripod,</s:title>
+      <s:description>Canon PowerShot SX 30 IS, Digital Camera Kit, with 4 GB SD Memory Card, Spare NB7L NB 7 L NB 7 L Type Lithiumion Lithium ion Battery, Camera Case, Table Top Tripod, Canon PowerShot SX30 IS, Digital Camera Kit, with 4GB SD Memory Card, Spare NB-7L Typ</s:description>
+      <s:link>http://www.adorama.com/ICASX30A.html?refby=gbase</s:link>
+      <s:brand>Canon</s:brand>
+      <s:condition>new</s:condition>
+      <s:gtin>00013803127348</s:gtin>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">476.72</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://www.adorama.com/images/large/ICASX30A.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1172711/8050050834960858057</id>
+    <author>
+      <name>B&amp;H Photo-Video-Audio</name>
+    </author>
+    <published>2011-04-23T22:18:01.000Z</published>
+    <updated>2011-05-23T03:29:59.000Z</updated>
+    <title>Fujifilm Finepix HS20EXR Digital Camera with Basic Accessory Kit (</title>
+    <content type="text">When you purchase a new digital camera there are usually a few items you need to round out the camera&apos;s included accessory package. With that in mind B&amp;H Photo has put together this Basic Accessory Kit to make your picture taking experience more enjoyable.In addition to the standard accessory package that is included by the manufacturer with the Fujifilm Finepix HS20EXR Camera the Basic Accessory Kit includes an 8GB memory card and a camera pouch. Finepix HS20EXR Digital Camera with Basic Accessory Kit (Black) Finepix HS20EXR Digital Camera with Basic Accessory Kit (Black), 16MP Back Side Illuminated CMOS Sensor, 3&quot; 460K Resolution LCD, 30x Optical Zoom (24-720mm Equiv.) Lens, Stunning 1080p HD Movies, Motion Panorama Mode, Tracking Auto Focus, Smile/Blink Detection Mode, Face Detection/Red-Eye Removal, EXR Auto Recognizes 27 Scenes, Quick &amp; Simple Uploads to Facebook, Etc.</content>
+    <link rel="alternate" type="text/html" href="http://www.bhphotovideo.com/c/product/762024-REG/Fujifilm_16113421_Finepix_HS20EXR_Digital_Camera.html/BI/6609/kw/FUFPHS20K1/kwid/KT100"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1172711/gid/8050050834960858057?alt=atom"/>
+    <s:product>
+      <s:googleId>8050050834960858057</s:googleId>
+      <s:author>
+        <s:name>B&amp;H Photo-Video-Audio</s:name>
+        <s:accountId>1172711</s:accountId>
+      </s:author>
+      <s:creationTime>2011-04-23T22:18:01.000Z</s:creationTime>
+      <s:modificationTime>2011-05-23T03:29:59.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Fujifilm Finepix HS20EXR Digital Camera with Basic Accessory Kit (</s:title>
+      <s:description>When you purchase a new digital camera there are usually a few items you need to round out the camera&apos;s included accessory package. With that in mind B&amp;H Photo has put together this Basic Accessory Kit to make your picture taking experience more enjoyable.In addition to the standard accessory package that is included by the manufacturer with the Fujifilm Finepix HS20EXR Camera the Basic Accessory Kit includes an 8GB memory card and a camera pouch. Finepix HS20EXR Digital Camera with Basic Accessory Kit (Black) Finepix HS20EXR Digital Camera with Basic Accessory Kit (Black), 16MP Back Side Illuminated CMOS Sensor, 3&quot; 460K Resolution LCD, 30x Optical Zoom (24-720mm Equiv.) Lens, Stunning 1080p HD Movies, Motion Panorama Mode, Tracking Auto Focus, Smile/Blink Detection Mode, Face Detection/Red-Eye Removal, EXR Auto Recognizes 27 Scenes, Quick &amp; Simple Uploads to Facebook, Etc.</s:description>
+      <s:link>http://www.bhphotovideo.com/c/product/762024-REG/Fujifilm_16113421_Finepix_HS20EXR_Digital_Camera.html/BI/6609/kw/FUFPHS20K1/kwid/KT100</s:link>
+      <s:brand>Fuji</s:brand>
+      <s:condition>new</s:condition>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">472.5</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://www.bhphotovideo.com/images/images345x345/762024.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1172711/8054774938045074082</id>
+    <author>
+      <name>B&amp;H Photo-Video-Audio</name>
+    </author>
+    <published>2011-04-23T22:18:01.000Z</published>
+    <updated>2011-05-23T03:29:59.000Z</updated>
+    <title>Panasonic Lumix DMC-TS3 Digital Camera with Deluxe Accessory Kit (O</title>
+    <content type="text">When you purchase a new digital camera there are usually a few items you need to round out the camera&apos;s included accessory package. With that in mind B&amp;H Photo has put together this Deluxe Accessory Kit to make your picture taking experience more enjoyable.In addition to the standard accessory package that is included by the manufacturer with the Panasonic DMC-TS3 Camera the Deluxe Accessory Kit includes an 8GB memory card a camera pouch a spare battery and a 2-Year SAGEMAX Protection Plan from NEW Customer Service Companies Inc. Lumix DMC-TS3 Digital Camera with Deluxe Accessory Kit (Orange) Lumix DMC-TS3 Digital Camera with Deluxe Accessory Kit (Orange), 12.1MP Hi-Speed CCD Sensor, Waterproof to 40&apos; (12m), Shockproof at 6.6&apos; (2m) Drop, Dustproof, GPS, Compass, Altimeter, Barometer Inc., Leica 4.6x Wide-Angle 28-128mm Zoom Lens, 1920x1080 Full HD Video, Very Fast Autofocus, Short Shutter Lag, 2.7&quot; LCD Monitor--230000-Dot Resolution, Easy Upload for Facebook/YouTube</content>
+    <link rel="alternate" type="text/html" href="http://www.bhphotovideo.com/c/product/761332-REG/Panasonic_DMC_TS3D_Lumix_DMC_TS3_Digital_Camera.html/BI/6609/kw/PADMCTS3OK2/kwid/KT100"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1172711/gid/8054774938045074082?alt=atom"/>
+    <s:product>
+      <s:googleId>8054774938045074082</s:googleId>
+      <s:author>
+        <s:name>B&amp;H Photo-Video-Audio</s:name>
+        <s:accountId>1172711</s:accountId>
+      </s:author>
+      <s:creationTime>2011-04-23T22:18:01.000Z</s:creationTime>
+      <s:modificationTime>2011-05-23T03:29:59.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Panasonic Lumix DMC-TS3 Digital Camera with Deluxe Accessory Kit (O</s:title>
+      <s:description>When you purchase a new digital camera there are usually a few items you need to round out the camera&apos;s included accessory package. With that in mind B&amp;H Photo has put together this Deluxe Accessory Kit to make your picture taking experience more enjoyable.In addition to the standard accessory package that is included by the manufacturer with the Panasonic DMC-TS3 Camera the Deluxe Accessory Kit includes an 8GB memory card a camera pouch a spare battery and a 2-Year SAGEMAX Protection Plan from NEW Customer Service Companies Inc. Lumix DMC-TS3 Digital Camera with Deluxe Accessory Kit (Orange) Lumix DMC-TS3 Digital Camera with Deluxe Accessory Kit (Orange), 12.1MP Hi-Speed CCD Sensor, Waterproof to 40&apos; (12m), Shockproof at 6.6&apos; (2m) Drop, Dustproof, GPS, Compass, Altimeter, Barometer Inc., Leica 4.6x Wide-Angle 28-128mm Zoom Lens, 1920x1080 Full HD Video, Very Fast Autofocus, Short Shutter Lag, 2.7&quot; LCD Monitor--230000-Dot Resolution, Easy Upload for Facebook/YouTube</s:description>
+      <s:link>http://www.bhphotovideo.com/c/product/761332-REG/Panasonic_DMC_TS3D_Lumix_DMC_TS3_Digital_Camera.html/BI/6609/kw/PADMCTS3OK2/kwid/KT100</s:link>
+      <s:brand>Panasonic</s:brand>
+      <s:condition>new</s:condition>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">446.5</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://www.bhphotovideo.com/images/images345x345/761332.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+  <entry gd:kind="shopping#product">
+    <id>tag:google.com,2010:shopping/products/1172711/6542804298876122305</id>
+    <author>
+      <name>B&amp;H Photo-Video-Audio</name>
+    </author>
+    <published>2011-03-09T22:33:06.000Z</published>
+    <updated>2011-05-23T03:29:59.000Z</updated>
+    <title>Canon PowerShot SX30 IS Digital Camera with Basic Accessory Kit</title>
+    <content type="text">When you purchase a new digital camera there are usually a few items you need to round out the camera&apos;s included accessory package. With that in mind B&amp;H Photo has put together this Basic Accessory Kit to make your picture taking experience more enjoyable.In addition to the standard accessory package that is included by the manufacturer with the Canon PowerShot SX30 IS Camera the Basic Accessory Kit includes an 8GB memory card and a camera pouch. PowerShot SX30 IS Digital Camera with Basic Accessory Kit PowerShot SX30 IS Digital Camera with Basic Accessory Kit, 35x Zoom Lens (24-840mm Equivalent), Zoom Framing Assist for Telephoto Photos, 14.1MP High Resolution, 2.7&quot; Wide Vari-angle LCD Display, 720p HD Video With Stereo Sound, Use Stabilization &amp; Zoom for Video, Advanced Smart AUTO for 23 Situations, Optical Image Stabilizer for Sharp Pix, Powerful DIGIC 4 Image Processor, Lithium-ion Rechargeable Batteries</content>
+    <link rel="alternate" type="text/html" href="http://www.bhphotovideo.com/c/product/737497-REG/Canon_4344B001_PowerShot_SX30_IS_Digital.html/BI/6609/kw/CAPSSX30K1/kwid/KT100"/>
+    <link rel="self" type="application/atom+xml" href="https://www.googleapis.com/shopping/search/v1/public/products/1172711/gid/6542804298876122305?alt=atom"/>
+    <s:product>
+      <s:googleId>6542804298876122305</s:googleId>
+      <s:author>
+        <s:name>B&amp;H Photo-Video-Audio</s:name>
+        <s:accountId>1172711</s:accountId>
+      </s:author>
+      <s:creationTime>2011-03-09T22:33:06.000Z</s:creationTime>
+      <s:modificationTime>2011-05-23T03:29:59.000Z</s:modificationTime>
+      <s:country>US</s:country>
+      <s:language>en</s:language>
+      <s:title>Canon PowerShot SX30 IS Digital Camera with Basic Accessory Kit</s:title>
+      <s:description>When you purchase a new digital camera there are usually a few items you need to round out the camera&apos;s included accessory package. With that in mind B&amp;H Photo has put together this Basic Accessory Kit to make your picture taking experience more enjoyable.In addition to the standard accessory package that is included by the manufacturer with the Canon PowerShot SX30 IS Camera the Basic Accessory Kit includes an 8GB memory card and a camera pouch. PowerShot SX30 IS Digital Camera with Basic Accessory Kit PowerShot SX30 IS Digital Camera with Basic Accessory Kit, 35x Zoom Lens (24-840mm Equivalent), Zoom Framing Assist for Telephoto Photos, 14.1MP High Resolution, 2.7&quot; Wide Vari-angle LCD Display, 720p HD Video With Stereo Sound, Use Stabilization &amp; Zoom for Video, Advanced Smart AUTO for 23 Situations, Optical Image Stabilizer for Sharp Pix, Powerful DIGIC 4 Image Processor, Lithium-ion Rechargeable Batteries</s:description>
+      <s:link>http://www.bhphotovideo.com/c/product/737497-REG/Canon_4344B001_PowerShot_SX30_IS_Digital.html/BI/6609/kw/CAPSSX30K1/kwid/KT100</s:link>
+      <s:brand>Canon</s:brand>
+      <s:condition>new</s:condition>
+      <s:inventories>
+        <s:inventory channel="online" availability="inStock">
+          <s:price currency="USD">436.95</s:price>
+        </s:inventory>
+      </s:inventories>
+      <s:images>
+        <s:image link="http://www.bhphotovideo.com/images/images345x345/737497.jpg"/>
+      </s:images>
+    </s:product>
+  </entry>
+</feed>
+
+
+
+
+
+
+
+<graph caption='WeUnite Items Trend' xAxisName='eBay Items' decimalPrecision='0' showNames='1' numberSuffix='' rotateNames='1' formatNumberScale='0' >
+  <set name='48" 24 LED Moonlight Aquarium Moon Light with Dim' value='439' link='javascript:eBayItemWebService(28559,0)'/>
+  <set name='3-STAGE CANISTER AQUARIUM FILTER FOR FRESH/SALT W' value='354' link='javascript:eBayItemWebService(28560,0)'/>
+  <set name='NEW! MARINELAND BIO WHEEL 350 AQUARIUM POWER FILT' value='339' link='javascript:eBayItemWebService(28561,0)'/>
+</graph>
