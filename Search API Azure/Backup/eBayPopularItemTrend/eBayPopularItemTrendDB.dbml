@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="searchresults" Class="eBayPopularItemTrendDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=j9n5679f9g.database.windows.net;Initial Catalog=searchresults;Persist Security Info=True;User ID=Weunitedev01@j9n5679f9g" SettingsObjectName="eBayPopularItemTrend.Properties.Settings" SettingsPropertyName="searchresultsConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.eBayCategory" Member="eBayCategories">
+    <Type Name="eBayCategory">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CategoryId" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="CategoryName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="eBaySiteId" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.eBayCountrySiteId" Member="eBayCountrySiteIds">
+    <Type Name="eBayCountrySiteId">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="eBaySiteId" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="SiteName" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="GlobalID" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.eBayPopularItemTrend" Member="eBayPopularItemTrends">
+    <Type Name="eBayPopularItemTrend">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ExecutionDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="UnderCategory" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="UnderCategoryId" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ItemID" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="EndTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ViewItemURLForNaturalSearch" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ListingType" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="GalleryURL" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="PrimaryCategoryID" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="PrimaryCategoryName" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="BidCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ConvertedCurrentPrice" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="ListingStatus" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="currencyID" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ShippingServiceCost" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="ShippingType" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ListedShippingServiceCost" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="WatchCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="eBaySiteId" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.eBaySubCategory" Member="eBaySubCategories">
+    <Type Name="eBaySubCategory">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CategoryId" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="SubCategoryId" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="SubCategoryName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="eBaySiteId" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.eBayTrendMasterSetting" Member="eBayTrendMasterSettings">
+    <Type Name="eBayTrendMasterSetting">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NextExecutionDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="StartDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CompleteDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Type" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="eBaySiteId" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.SP_eBayPopularItemTrend" Method="SP_eBayPopularItemTrend">
+    <Parameter Name="ExecutionDate" Parameter="executionDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="UnderCategory" Parameter="underCategory" Type="System.String" DbType="VarChar(250)" />
+    <Parameter Name="ItemID" Parameter="itemID" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="EndTime" Parameter="endTime" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="ViewItemURLForNaturalSearch" Parameter="viewItemURLForNaturalSearch" Type="System.String" DbType="VarChar(250)" />
+    <Parameter Name="ListingType" Parameter="listingType" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="GalleryURL" Parameter="galleryURL" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="PrimaryCategoryID" Parameter="primaryCategoryID" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="PrimaryCategoryName" Parameter="primaryCategoryName" Type="System.String" DbType="VarChar(250)" />
+    <Parameter Name="BidCount" Parameter="bidCount" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ConvertedCurrentPrice" Parameter="convertedCurrentPrice" Type="System.Decimal" DbType="Decimal(10,2)" />
+    <Parameter Name="ListingStatus" Parameter="listingStatus" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="currencyID" Type="System.String" DbType="VarChar(5)" />
+    <Parameter Name="Title" Parameter="title" Type="System.String" DbType="VarChar(250)" />
+    <Parameter Name="ShippingServiceCost" Parameter="shippingServiceCost" Type="System.Decimal" DbType="Decimal(10,2)" />
+    <Parameter Name="ShippingType" Parameter="shippingType" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="ListedShippingServiceCost" Parameter="listedShippingServiceCost" Type="System.Decimal" DbType="Decimal(10,2)" />
+    <Parameter Name="WatchCount" Parameter="watchCount" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Output" Parameter="output" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_eBaySetting" Method="SP_eBaySetting">
+    <Parameter Name="Action" Parameter="action" Type="System.Int32" DbType="Int" />
+    <Parameter Name="NextExecutionDate" Parameter="nextExecutionDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="StartDateTime" Parameter="startDateTime" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="CompleteDateTime" Parameter="completeDateTime" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="Status" Parameter="status" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="Output" Parameter="output" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.eBayCategorySchedule" Method="eBayCategorySchedule">
+    <Parameter Name="eBaySiteId" Type="System.String" DbType="VarChar(5)" />
+    <Parameter Name="executionDate" Type="System.String" DbType="VarChar(13)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.eBayPopularItemCallSchedular" Method="eBayPopularItemCallSchedular">
+    <Parameter Name="eBaySiteId" Type="System.String" DbType="VarChar(5)" />
+    <Parameter Name="executionDate" Type="System.String" DbType="VarChar(13)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.eBaySubCategorySchedule" Method="eBaySubCategorySchedule">
+    <Parameter Name="eBaySiteId" Type="System.String" DbType="VarChar(5)" />
+    <Parameter Name="executionDate" Type="System.String" DbType="VarChar(13)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>
