@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="WindowsAzureProject2" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="1" osVersion="*">
+  <Role name="WeUniteRESTService">
+    <Instances count="2" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=weuniteazurediagnostics;AccountKey=my706m1sQXIVTuZ5SMBM2sJCNppjUpW8BC91ZUwYiq88TE7jt246WFCANbzKSb54KXFTf75EGGgaSHEYrsLicw==" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>

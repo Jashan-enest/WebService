@@ -1,0 +1,2526 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Guard">
+            <summary>
+            Implements the common guard methods.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Guard.ArgumentNotNullOrEmptyString(System.String,System.String)">
+            <summary>
+            Checks a string argument to ensure it isn't null or empty.
+            </summary>
+            <param name="argumentValue">The argument value to check.</param>
+            <param name="argumentName">The name of the argument.</param>
+            <returns>The return value should be ignored. It is intended to be used only when validating arguments during instance creation (e.g. when calling base constructor).</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Guard.ArgumentNotNull(System.Object,System.String)">
+            <summary>
+            Checks an argument to ensure it isn't null.
+            </summary>
+            <param name="argumentValue">The argument value to check.</param>
+            <param name="argumentName">The name of the argument.</param>
+            /// <returns>The return value should be ignored. It is intended to be used only when validating arguments during instance creation (e.g. when calling base constructor).</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Guard.ArgumentNotDefaultValue``1(``0,System.String)">
+            <summary>
+            Checks an argument to ensure that its value is not the default value for its type.
+            </summary>
+            <typeparam name="T">The type of the argument.</typeparam>
+            <param name="argumentValue">The value of the argument.</param>
+            <param name="argumentName">The name of the argument for diagnostic purposes.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Guard.ArgumentNotZeroOrNegativeValue(System.Int32,System.String)">
+            <summary>
+            Checks an argument to ensure that its value is not zero or negative.
+            </summary>
+            <param name="argumentValue">The value of the argument.</param>
+            <param name="argumentName">The name of the argument for diagnostic purposes.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Guard.ArgumentNotNegativeValue(System.Int32,System.String)">
+            <summary>
+            Checks an argument to ensure that its value is not negative.
+            </summary>
+            <param name="argumentValue">The <see cref="T:System.Int32"/> value of the argument.</param>
+            <param name="argumentName">The name of the argument for diagnostic purposes.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Guard.ArgumentNotNegativeValue(System.Int64,System.String)">
+            <summary>
+            Checks an argument to ensure that its value is not negative.
+            </summary>
+            <param name="argumentValue">The <see cref="T:System.Int64"/> value of the argument.</param>
+            <param name="argumentName">The name of the argument for diagnostic purposes.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Guard.ArgumentNotGreaterThan(System.Double,System.Double,System.String)">
+            <summary>
+            Checks an argument to ensure that its value doesn't exceed the specified ceiling baseline.
+            </summary>
+            <param name="argumentValue">The <see cref="T:System.Double"/> value of the argument.</param>
+            <param name="ceilingValue">The <see cref="T:System.Double"/> ceiling value of the argument.</param>
+            <param name="argumentName">The name of the argument for diagnostic purposes.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Guard.EnumValueIsDefined(System.Type,System.Object,System.String)">
+            <summary>
+            Checks an Enum argument to ensure that its value is defined by the specified Enum type.
+            </summary>
+            <param name="enumType">The Enum type the value should correspond to.</param>
+            <param name="value">The value to check for.</param>
+            <param name="argumentName">The name of the argument holding the value.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Guard.TypeIsAssignableFromType(System.Type,System.Type,System.String)">
+            <summary>
+            Verifies that an argument type is assignable from the provided type (meaning
+            interfaces are implemented, or classes exist in the base class hierarchy).
+            </summary>
+            <param name="assignee">The argument type.</param>
+            <param name="providedType">The type it must be assignable from.</param>
+            <param name="argumentName">The argument name.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Guard.IsValueDefined``1(``0)">
+            <summary>
+            Checks the specified value to ensure that its value is defined, i.e. not null and not default value.
+            </summary>
+            <typeparam name="T">The type of the value to be checked.</typeparam>
+            <param name="value">The value to be checked.</param>
+            <returns>True if the value is defined or false if it's null or represents a default value for its type.</returns>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.ApplicationConfiguration">
+            <summary>
+            Helper class that exposes all strongly-typed configuration sections and also provides an ability to save the
+            configuration changes for custom sections.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.ApplicationConfiguration.currentConfiguration">
+            <summary>
+            A pre-initialized instance of the current configuration.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.ApplicationConfiguration.initLock">
+            <summary>
+            A lock object.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.ApplicationConfiguration.configSectionCache">
+            <summary>
+            A dictionary object containing cached instances of the configuration sections.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.ApplicationConfiguration.configSectionCacheLock">
+            <summary>
+            A lock object for the configuration section cache.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.ApplicationConfiguration.#ctor">
+            <summary>
+            Initializes a new instance of the ApplicationConfiguration class using default configuration source.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.ApplicationConfiguration.GetConfigurationSection``1">
+            <summary>
+            Returns a configuration section defined by the given type <typeparamref name="T"/> and name that corresponds to the type's fully qualified name.
+            </summary>
+            <typeparam name="T">The type of the configuration section.</typeparam>
+            <returns>An instance of the type <typeparamref name="T"/> containing the configuration section or a null reference if configuration section was not found.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.ApplicationConfiguration.GetConfigurationSection``1(System.String)">
+            <summary>
+            Returns a configuration section defined by the given type <typeparamref name="T"/> and specified section name.
+            </summary>
+            <typeparam name="T">The type of the configuration section.</typeparam>
+            <param name="sectionName">The name of the configuration section.</param>
+            <returns>An instance of the type <typeparamref name="T"/> containing the configuration section or a null reference if configuration section was not found.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.ApplicationConfiguration.Unload">
+            <summary>
+            Signals the configuration manager to unload all currently loaded configuration sections by removing them from in-memory cache.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.ApplicationConfiguration.Current">
+            <summary>
+            Returns an instance of the ApplicationConfiguration class by enforcing a singleton design pattern with a lazy initialization.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryCallbackDelegate">
+            <summary>
+            Defines a callback delegate which will be invoked whenever a retry condition is encountered.
+            </summary>
+            <param name="currentRetryCount">The current retry attempt count.</param>
+            <param name="lastException">The exception which caused the retry conditions to occur.</param>
+            <param name="delay">The delay indicating how long the current thread will be suspended for before the next iteration will be invoked.</param>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy">
+            <summary>
+            Provides the base implementation of the retry mechanism for unreliable actions and transient conditions.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy.DefaultClientRetryCount">
+            <summary>
+            The default number of retry attempts.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy.DefaultClientBackoff">
+            <summary>
+            The default amount of time used when calculating a random delta in the exponential delay between retries.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy.DefaultMaxBackoff">
+            <summary>
+            The default maximum amount of time used when calculating the exponential delay between retries.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy.DefaultMinBackoff">
+            <summary>
+            The default minimum amount of time used when calculating the exponential delay between retries.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy.DefaultRetryInterval">
+            <summary>
+            The default amount of time defining an interval between retries.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy.DefaultRetryIncrement">
+            <summary>
+            The default amount of time defining a time increment between retry attempts in the progressive delay policy.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy.NoRetry">
+            <summary>
+            Returns a default policy that does no retries, it just invokes action exactly once.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy.DefaultFixed">
+            <summary>
+            Returns a default policy that implements a fixed retry interval configured with <see cref="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy.DefaultClientRetryCount"/> and <see cref="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy.DefaultRetryInterval"/> parameters.
+            The default retry policy treats all caught exceptions as transient errors.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy.DefaultProgressive">
+            <summary>
+            Returns a default policy that implements a progressive retry interval configured with <see cref="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy.DefaultClientRetryCount"/>, <see cref="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy.DefaultRetryInterval"/> and <see cref="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy.DefaultRetryIncrement"/> parameters.
+            The default retry policy treats all caught exceptions as transient errors.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy.DefaultExponential">
+            <summary>
+            Returns a default policy that implements a random exponential retry interval configured with <see cref="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy.DefaultClientRetryCount"/>, <see cref="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy.DefaultMinBackoff"/>, <see cref="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy.DefaultMaxBackoff"/> and <see cref="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy.DefaultClientBackoff"/> parameters.
+            The default retry policy treats all caught exceptions as transient errors.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy.ExecuteAction(System.Action)">
+            <summary>
+            Repetitively executes the specified action while it satisfies the current retry policy.
+            </summary>
+            <param name="action">A delegate representing the executable action which doesn't return any results.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy.ExecuteAction(System.Action{System.AsyncCallback},System.Action{System.IAsyncResult},System.Action{System.Exception})">
+            <summary>
+            Repetitively executes the specified asynchronous action while it satisfies the current retry policy.
+            </summary>
+            <param name="action">A delegate representing the executable action that must invoke an asynchronous operation and return its <see cref="T:System.IAsyncResult"/>.</param>
+            <param name="callback">The callback delegate that will be triggered when the main asynchronous operation completes.</param>
+            <param name="faultHandler">The fault handler delegate that will be triggered if the operation cannot be successfully invoked despite retry attempts.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy.ExecuteAction``1(System.Func{``0})">
+            <summary>
+            Repetitively executes the specified action while it satisfies the current retry policy.
+            </summary>
+            <typeparam name="T">The type of result expected from the executable action.</typeparam>
+            <param name="func">A delegate representing the executable action which returns the result of type T.</param>
+            <returns>The result from the action.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy.OnRetryOccurred(System.Int32,System.Exception,System.TimeSpan)">
+            <summary>
+            Notifies the subscribers whenever a retry condition is encountered.
+            </summary>
+            <param name="retryCount">The current retry attempt count.</param>
+            <param name="lastError">The exception which caused the retry conditions to occur.</param>
+            <param name="delay">The delay indicating how long the current thread will be suspended for before the next iteration will be invoked.</param>
+        </member>
+        <member name="E:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy.RetryOccurred">
+            <summary>
+            An instance of a callback delegate which will be invoked whenever a retry condition is encountered.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy.FastFirstRetry">
+            <summary>
+            Gets or sets a flag indicating whether or not the very first retry attempt will be made immediately
+            whereas the subsequent retries will remain subject to retry interval.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy.TransientErrorIgnoreStrategy">
+            <summary>
+            Implements a strategy that ignores any transient errors.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.ITransientErrorDetectionStrategy">
+            <summary>
+            Defines an interface which must be implemented by custom components responsible for detecting specific transient conditions.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.ITransientErrorDetectionStrategy.IsTransient(System.Exception)">
+            <summary>
+            Determines whether the specified exception represents a transient failure that can be compensated by a retry.
+            </summary>
+            <param name="ex">The exception object to be verified.</param>
+            <returns>True if the specified exception is considered as transient, otherwise false.</returns>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy.TransientErrorCatchAllStrategy">
+            <summary>
+            Implements a strategy that treats all exceptions as transient errors.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy`1">
+            <summary>
+            Extends the base <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy"/> implementation with strategy objects capable of detecting transient conditions.
+            </summary>
+            <typeparam name="T">The type implementing the <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.ITransientErrorDetectionStrategy"/> interface which is responsible for detecting transient conditions.</typeparam>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy`1.#ctor">
+            <summary>
+            Initializes a new instance of the RetryPolicy class with default settings.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy`1.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the RetryPolicy class with the specified number of retry attempts and default fixed time interval between retries.
+            </summary>
+            <param name="retryCount">The number of retry attempts.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy`1.#ctor(System.Int32,System.TimeSpan)">
+            <summary>
+            Initializes a new instance of the RetryPolicy class with the specified number of retry attempts and fixed time interval between retries.
+            </summary>
+            <param name="retryCount">The number of retry attempts.</param>
+            <param name="retryInterval">The interval between retries.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy`1.#ctor(System.Int32,System.TimeSpan,System.TimeSpan,System.TimeSpan)">
+            <summary>
+            Initializes a new instance of the RetryPolicy class with the specified number of retry attempts and back-off parameters for calculating the exponential delay between retries.
+            </summary>
+            <param name="retryCount">The number of retry attempts.</param>
+            <param name="minBackoff">The minimum back-off time.</param>
+            <param name="maxBackoff">The maximum back-off time.</param>
+            <param name="deltaBackoff">The time value which will be used for calculating a random delta in the exponential delay between retries.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy`1.#ctor(System.Int32,System.TimeSpan,System.TimeSpan)">
+            <summary>
+            Initializes a new instance of the RetryPolicy class with the specified number of retry attempts and parameters defining the progressive delay between retries.
+            </summary>
+            <param name="retryCount">The number of retry attempts.</param>
+            <param name="initialInterval">The initial interval which will apply for the first retry.</param>
+            <param name="increment">The incremental time value which will be used for calculating the progressive delay between retries.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy`1.ExecuteAction(System.Action)">
+            <summary>
+            Repetitively executes the specified action while it satisfies the current retry policy.
+            </summary>
+            <param name="action">A delegate representing the executable action which doesn't return any results.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy`1.ExecuteAction``1(System.Func{``0})">
+            <summary>
+            Repetitively executes the specified action while it satisfies the current retry policy.
+            </summary>
+            <typeparam name="R">The type of result expected from the executable action.</typeparam>
+            <param name="func">A delegate representing the executable action which returns the result of type R.</param>
+            <returns>The result from the action.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy`1.ExecuteAction(System.Action{System.AsyncCallback},System.Action{System.IAsyncResult},System.Action{System.Exception})">
+            <summary>
+            Repetitively executes the specified asynchronous action while it satisfies the current retry policy.
+            </summary>
+            <param name="action">A delegate representing the executable action that must invoke an asynchronous operation and return its <see cref="T:System.IAsyncResult"/>.</param>
+            <param name="callback">The callback delegate that will be triggered when the main asynchronous operation completes.</param>
+            <param name="faultHandler">The fault handler delegate that will be triggered if the operation cannot be successfully invoked despite retry attempts.</param>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy`1.ShouldRetry">
+            <summary>
+            Defines a delegate that is responsible for notifying the subscribers whenever a retry condition is encountered.
+            </summary>
+            <param name="retryCount">The current retry attempt count.</param>
+            <param name="lastException">The exception which caused the retry conditions to occur.</param>
+            <param name="delay">The delay indicating how long the current thread will be suspended for before the next iteration will be invoked.</param>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryLimitExceededException">
+            <summary>
+            The special type of exception that provides managed exit from a retry loop. The user code can use this
+            exception to notify the retry policy that no further retry attempts are required.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryLimitExceededException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryLimitExceededException"/> class with a default error message.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryLimitExceededException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryLimitExceededException"/> class with a specified error message.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryLimitExceededException.#ctor(System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryLimitExceededException"/> class with a reference to the inner exception
+            that is the cause of this exception.
+            </summary>
+            <param name="innerException">The exception that is the cause of the current exception.</param>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Properties.Resources.DebugTraceEventMessageFormatString">
+            <summary>
+              Looks up a localized string similar to {0} (Event Type: {1}, Event ID: {2}, Source: {3}).
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Properties.Resources.ExceptionDetails">
+            <summary>
+              Looks up a localized string similar to Exception Information Details:.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Properties.Resources.ExceptionFormatterHeader">
+            <summary>
+              Looks up a localized string similar to HEADER.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Properties.Resources.ExceptionStackTraceDetails">
+            <summary>
+              Looks up a localized string similar to Stack Trace Information Details:.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Properties.Resources.ExceptionSummary">
+            <summary>
+              Looks up a localized string similar to Exception Summary.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Properties.Resources.ExceptionTextRetryLimitExceeded">
+            <summary>
+              Looks up a localized string similar to The action has exceeded its defined retry limit..
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Properties.Resources.ExceptionType">
+            <summary>
+              Looks up a localized string similar to Exception Type.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Properties.Resources.GetErrorCodeRegEx">
+            <summary>
+              Looks up a localized string similar to &lt;code&gt;(\w+)&lt;/code&gt;.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlXmlReader">
+            <summary>
+            Provides a disposable wrapper for SQL XML data reader which synchronizes the SQL connection
+            disposal with its own lifecycle.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlXmlReader.#ctor(System.Data.SqlClient.SqlCommand)">
+            <summary>
+            Initializes a new instance of a <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlXmlReader"/> object associated with the specified SQL command.
+            </summary>
+            <param name="command">The associated SQL command providing access to the XML data for the reader.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlXmlReader.#ctor(System.Data.IDbConnection,System.Xml.XmlReader)">
+            <summary>
+            Initializes a new instance of a <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlXmlReader"/> object associated with the specified SQL connection and the original XML reader.
+            </summary>
+            <param name="connection">The associated SQL connection providing access to the XML data for this reader.</param>
+            <param name="innerReader">The original XML reader access to the XML data for this reader.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlXmlReader.Close">
+            <summary>
+            Closes both the original <see cref="T:System.Xml.XmlReader"/> as well as associated SQL connection.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlXmlReader.GetAttribute(System.Int32)">
+            <summary>
+            Returns the value of the attribute with the specified index.
+            </summary>
+            <param name="i">The index of the attribute. The index is zero-based. (The first attribute has index 0.)</param>
+            <returns>The value of the specified attribute. This method does not move the reader.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlXmlReader.GetAttribute(System.String,System.String)">
+            <summary>
+            Returns the value of the attribute with the specified <see cref="P:System.Xml.XmlReader.LocalName"/> and <see cref="P:System.Xml.XmlReader.NamespaceURI"/>.
+            </summary>
+            <param name="name">The local name of the attribute.</param>
+            <param name="namespaceURI">The namespace URI of the attribute.</param>
+            <returns>The value of the specified attribute. If the attribute is not found or the value is <see cref="F:System.String.Empty"/>, null is returned. This method does not move the reader.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlXmlReader.GetAttribute(System.String)">
+            <summary>
+            Returns the value of the attribute with the specified <see cref="P:System.Xml.XmlReader.Name"/>.
+            </summary>
+            <param name="name">The qualified name of the attribute.</param>
+            <returns>The value of the specified attribute. If the attribute is not found or the value is <see cref="F:System.String.Empty"/>, null is returned.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlXmlReader.LookupNamespace(System.String)">
+            <summary>
+            Resolves a namespace prefix in the current element's scope
+            </summary>
+            <param name="prefix">The prefix whose namespace URI you want to resolve. To match the default namespace, pass an empty string.</param>
+            <returns>The namespace URI to which the prefix maps or null if no matching prefix is found.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlXmlReader.MoveToAttribute(System.String,System.String)">
+            <summary>
+            Moves to the attribute with the specified <see cref="P:System.Xml.XmlReader.LocalName"/> and <see cref="P:System.Xml.XmlReader.NamespaceURI"/>.
+            </summary>
+            <param name="name">The local name of the attribute.</param>
+            <param name="ns">The namespace URI of the attribute.</param>
+            <returns>True if the attribute is found; otherwise, false. If false, the reader's position does not change.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlXmlReader.MoveToAttribute(System.String)">
+            <summary>
+            Moves to the attribute with the specified <see cref="P:System.Xml.XmlReader.Name"/>.
+            </summary>
+            <param name="name">The qualified name of the attribute.</param>
+            <returns>True if the attribute is found; otherwise, false. If false, the reader's position does not change.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlXmlReader.MoveToElement">
+            <summary>
+            Moves to the element that contains the current attribute node.
+            </summary>
+            <returns>True if the reader is positioned on an attribute (the reader moves to the element that owns the attribute); false if the reader is not positioned on an attribute (the position of the reader does not change).</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlXmlReader.MoveToFirstAttribute">
+            <summary>
+            Moves to the first attribute.
+            </summary>
+            <returns>True if an attribute exists (the reader moves to the first attribute); otherwise, false (the position of the reader does not change).</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlXmlReader.MoveToNextAttribute">
+            <summary>
+            Moves to the next attribute.
+            </summary>
+            <returns>True if there is a next attribute; false if there are no more attributes.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlXmlReader.Read">
+            <summary>
+            Reads the next node from the stream.
+            </summary>
+            <returns>True if the next node was read successfully; false if there are no more nodes to read.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlXmlReader.ReadAttributeValue">
+            <summary>
+            Parses the attribute value into one or more Text, EntityReference, or EndEntity nodes.
+            </summary>
+            <returns>True if there are nodes to return, false if the reader is not positioned on an attribute node when the initial call is made or if all the attribute values have been read. An empty attribute, such as, misc="", returns true with a single node with a value of <see cref="F:System.String.Empty"/>.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlXmlReader.ResolveEntity">
+            <summary>
+            Resolves the entity reference for EntityReference nodes.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlXmlReader.AttributeCount">
+            <summary>
+            Returns the number of attributes on the current node.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlXmlReader.BaseURI">
+            <summary>
+            Returns the base URI of the current node.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlXmlReader.Depth">
+            <summary>
+            Returns the depth of the current node in the XML document.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlXmlReader.EOF">
+            <summary>
+            Returns a value indicating whether the reader is positioned at the end of the stream.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlXmlReader.HasValue">
+            <summary>
+            Returns a value indicating whether the current node can have a <see cref="P:System.Xml.XmlReader.Value"/>.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlXmlReader.IsEmptyElement">
+            <summary>
+            Returns a value indicating whether the current node is an empty element.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlXmlReader.LocalName">
+            <summary>
+            Returns the local name of the current node.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlXmlReader.NameTable">
+            <summary>
+            Returns the <see cref="T:System.Xml.XmlNameTable"/> associated with this implementation.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlXmlReader.NamespaceURI">
+            <summary>
+            Returns the namespace URI (as defined in the W3C Namespace specification) of the node on which the reader is positioned.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlXmlReader.NodeType">
+            <summary>
+            Returns the type of the current node.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlXmlReader.Prefix">
+            <summary>
+            Returns the namespace prefix associated with the current node
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlXmlReader.ReadState">
+            <summary>
+            Returns the state of the reader.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlXmlReader.Value">
+            <summary>
+            Returns the text value of the current node.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlConnectionExtensions">
+            <summary>
+            Provides a set of extension methods adding retry capabilities into the standard <see cref="T:System.Data.SqlClient.SqlConnection"/> implementation.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlConnectionExtensions.OpenWithRetry(System.Data.SqlClient.SqlConnection)">
+            <summary>
+            Opens a database connection with the connection settings specified in the ConnectionString property of the connection object.
+            Uses the default retry policy when opening the connection.
+            </summary>
+            <param name="connection">The connection object which is required as per extension method declaration.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlConnectionExtensions.OpenWithRetry(System.Data.SqlClient.SqlConnection,Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy)">
+            <summary>
+            Opens a database connection with the connection settings specified in the ConnectionString property of the connection object.
+            Uses the specified retry policy when opening the connection.
+            </summary>
+            <param name="connection">The connection object which is required as per extension method declaration.</param>
+            <param name="retryPolicy">The retry policy defining whether to retry a request if the connection fails to be opened.</param>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottlingCondition">
+            <summary>
+            Implements an object holding the decoded reason code returned from SQL Azure when encountering throttling conditions.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottlingCondition.ThrottlingErrorNumber">
+            <summary>
+            Returns the error number that corresponds to throttling conditions reported by SQL Azure.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottlingCondition.throttledResources">
+            <summary>
+            Maintains a collection of key-value pairs where a key is resource type and a value is the type of throttling applied to the given resource type.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottlingCondition.sqlErrorCodeRegEx">
+            <summary>
+            Provides a compiled regular expression used for extracting the reason code from the error message.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottlingCondition.FromException(System.Data.SqlClient.SqlException)">
+            <summary>
+            Determines throttling conditions from the specified SQL exception.
+            </summary>
+            <param name="ex">The <see cref="T:System.Data.SqlClient.SqlException"/> object containing information relevant to an error returned by SQL Server when encountering throttling conditions.</param>
+            <returns>An instance of the object holding the decoded reason codes returned from SQL Azure upon encountering throttling conditions.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottlingCondition.FromError(System.Data.SqlClient.SqlError)">
+            <summary>
+            Determines the throttling conditions from the specified SQL error.
+            </summary>
+            <param name="error">The <see cref="T:System.Data.SqlClient.SqlError"/> object containing information relevant to a warning or error returned by SQL Server.</param>
+            <returns>An instance of the object holding the decoded reason codes returned from SQL Azure when encountering throttling conditions.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottlingCondition.FromReasonCode(System.Int32)">
+            <summary>
+            Determines the throttling conditions from the specified reason code.
+            </summary>
+            <param name="reasonCode">The reason code returned by SQL Azure which contains the throttling mode and the exceeded resource types.</param>
+            <returns>An instance of the object holding the decoded reason codes returned from SQL Azure when encountering throttling conditions.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottlingCondition.ToString">
+            <summary>
+             Returns a textual representation the current ThrottlingCondition object including the information held with respect to throttled resources.
+            </summary>
+            <returns>A string that represents the current ThrottlingCondition object.</returns>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottlingCondition.ThrottlingMode">
+            <summary>
+            Returns the value that reflects the throttling mode in SQL Azure.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottlingCondition.ThrottledResources">
+            <summary>
+            Returns the list of resources in SQL Azure that were subject to throttling conditions.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottlingCondition.Unknown">
+            <summary>
+            Returns an unknown throttling condition in the event the actual throttling condition cannot be determined.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottlingCondition.IsThrottledOnDataSpace">
+            <summary>
+            Returns a flag indicating that physical data file space throttling was reported by SQL Azure.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottlingCondition.IsThrottledOnLogSpace">
+            <summary>
+            Returns a flag indicating that physical log space throttling was reported by SQL Azure.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottlingCondition.IsThrottledOnLogWrite">
+            <summary>
+            Returns a flag indicating that transaction activity throttling was reported by SQL Azure.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottlingCondition.IsThrottledOnDataRead">
+            <summary>
+            Returns a flag indicating that data read activity throttling was reported by SQL Azure.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottlingCondition.IsThrottledOnCPU">
+            <summary>
+            Returns a flag indicating that CPU throttling was reported by SQL Azure.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottlingCondition.IsThrottledOnDatabaseSize">
+            <summary>
+            Returns a flag indicating that database size throttling was reported by SQL Azure.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottlingCondition.IsThrottledOnWorkerThreads">
+            <summary>
+            Returns a flag indicating that concurrent requests throttling was reported by SQL Azure.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottlingCondition.IsUnknown">
+            <summary>
+            Returns a flag indicating that throttling conditions were not determined with certainty.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottlingMode">
+            <summary>
+            Defines the possible throttling modes in SQL Azure.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottlingMode.NoThrottling">
+            <summary>
+            Corresponds to "No Throttling" throttling mode whereby all SQL statements can be processed.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottlingMode.RejectUpdateInsert">
+            <summary>
+            Corresponds to "Reject Update / Insert" throttling mode whereby SQL statements such as INSERT, UPDATE, CREATE TABLE and CREATE INDEX are rejected.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottlingMode.RejectAllWrites">
+            <summary>
+            Corresponds to "Reject All Writes" throttling mode whereby SQL statements such as INSERT, UPDATE, DELETE, CREATE, DROP are rejected.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottlingMode.RejectAll">
+            <summary>
+            Corresponds to "Reject All" throttling mode whereby all SQL statements are rejected.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottlingMode.Unknown">
+            <summary>
+            Corresponds to an unknown throttling mode whereby throttling mode cannot be determined with certainty.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottlingType">
+            <summary>
+            Defines the possible throttling types in SQL Azure.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottlingType.None">
+            <summary>
+            Indicates that no throttling was applied to a given resource.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottlingType.Soft">
+            <summary>
+            Corresponds to a Soft throttling type. Soft throttling is applied when machine resources such as, CPU, IO, storage, and worker threads exceed 
+            predefined safety thresholds despite the load balancer’s best efforts. 
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottlingType.Hard">
+            <summary>
+            Corresponds to a Hard throttling type. Hard throttling is applied when the machine is out of resources, for example storage space.
+            With hard throttling, no new connections are allowed to the databases hosted on the machine until resources are freed up.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottlingType.Unknown">
+            <summary>
+            Corresponds to an unknown throttling type in the event when the throttling type cannot be determined with certainty.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottledResourceType">
+            <summary>
+            Defines the types of resources in SQL Azure which may be subject to throttling conditions.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottledResourceType.PhysicalDatabaseSpace">
+            <summary>
+            Corresponds to "Physical Database Space" resource which may be subject to throttling.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottledResourceType.PhysicalLogSpace">
+            <summary>
+            Corresponds to "Physical Log File Space" resource which may be subject to throttling.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottledResourceType.LogWriteIODelay">
+            <summary>
+            Corresponds to "Transaction Log Write IO Delay" resource which may be subject to throttling.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottledResourceType.DataReadIODelay">
+            <summary>
+            Corresponds to "Database Read IO Delay" resource which may be subject to throttling.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottledResourceType.CPU">
+            <summary>
+            Corresponds to "CPU" resource which may be subject to throttling.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottledResourceType.DatabaseSize">
+            <summary>
+            Corresponds to "Database Size" resource which may be subject to throttling.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottledResourceType.WorkerThreads">
+            <summary>
+            Corresponds to "SQL Worker Thread Pool" resource which may be subject to throttling.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottledResourceType.Internal">
+            <summary>
+            Corresponds to an internal resource which may be subject to throttling.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ThrottledResourceType.Unknown">
+            <summary>
+            Corresponds to an unknown resource type in the event when the actual resource cannot be determined with certainty.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ExceptionTextFormatter">
+            <summary>
+            Provides exception formatting capability to construct a detailed message about an exception for logging and tracing purposes.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ExceptionTextFormatter.Header">
+            <summary>
+            Name of the additional information entry that holds the header.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ExceptionTextFormatter.#ctor">
+            <summary>
+            Initialize a new instance of the <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ExceptionTextFormatter"/> class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ExceptionTextFormatter.#ctor(System.String)">
+            <summary>
+            Initialize a new instance of the <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ExceptionTextFormatter"/> class with the application name.
+            </summary>
+            <param name="applicationName">The application name.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ExceptionTextFormatter.#ctor(System.String,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Initialize a new instance of the <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ExceptionTextFormatter"/> class with the additional information and the application name.
+            </summary>
+            <param name="additionalInfo">The additional information to log.</param>
+            <param name="applicationName">The application name.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ExceptionTextFormatter.Format(System.Exception)">
+            <summary>
+            Gets the formatted message to be logged.
+            </summary>
+            <param name="exception">The exception object whose information should be written to log file.</param>
+            <returns>The formatted message.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ExceptionTextFormatter.FormatException(System.Exception)">
+            <summary>
+            Gets the formatted message to be logged.
+            </summary>
+            <param name="exception">The exception object whose information should be written to log file.</param>
+            <returns>The formatted message.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ExceptionTextFormatter.FormatException(System.Exception,System.Boolean)">
+            <summary>
+            Gets the formatted message to be logged.
+            </summary>
+            <param name="exception">The exception object whose information should be written to log file.</param>
+            <param name="includeStackTrace">A flag indicating whether or not call stack details should be included.</param>
+            <returns>The formatted message.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ExceptionTextFormatter.CollectAdditionalInfo">
+            <devdoc>
+            Add additional environmental information. 
+            </devdoc>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Cache.CacheTransientErrorDetectionStrategy">
+            <summary>
+            Provides the transient error detection logic that can recognize transient faults when dealing with Windows Azure AppFabric Caching Service.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Cache.CacheTransientErrorDetectionStrategy.IsTransient(System.Exception)">
+            <summary>
+            Checks whether or not the specified exception belongs to a category of transient failures that can be compensated by a retry.
+            </summary>
+            <param name="ex">The exception object to be verified.</param>
+            <returns>A Boolean result indicating whether or not the specified exception belongs to the category of transient errors.</returns>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.TransactionRetryScope">
+            <summary>
+            Provides support for retry policy-aware transactional scope.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.TransactionRetryScope.#ctor(System.Action)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.TransactionRetryScope"/> class. 
+            Implements no retry policy, it just invokes the unit of work exactly once.
+            </summary>
+            <param name="unitOfWork">A delegate representing the executable unit of work which will be retried if fails.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.TransactionRetryScope.#ctor(Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy,System.Action)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.TransactionRetryScope"/> class with the specified retry policy.
+            </summary>
+            <param name="retryPolicy">The retry policy defining whether to retry the execution of the entire scope should a transient fault be encountered.</param>
+            <param name="unitOfWork">A delegate representing the executable unit of work which will be retried if fails.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.TransactionRetryScope.#ctor(System.Transactions.TransactionScopeOption,System.Action)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.TransactionRetryScope"/> class with the specified requirements.
+            Implements no retry policy, it just invokes the unit of work exactly once.
+            </summary>
+            <param name="scopeOption">An instance of the <see cref="T:System.Transactions.TransactionScopeOption"/> enumeration that describes the transaction requirements associated with this transaction scope.</param>
+            <param name="unitOfWork">A delegate representing the executable unit of work which will be retried if fails.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.TransactionRetryScope.#ctor(System.Transactions.TransactionScopeOption,System.TimeSpan,System.Action)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.TransactionRetryScope"/> class with the specified timeout value and requirements.
+            Implements no retry policy, it just invokes the unit of work exactly once.
+            </summary>
+            <param name="scopeOption">An instance of the <see cref="T:System.Transactions.TransactionScopeOption"/> enumeration that describes the transaction requirements associated with this transaction scope.</param>
+            <param name="scopeTimeout">The TimeSpan after which the transaction scope times out and aborts the transaction.</param>
+            <param name="unitOfWork">A delegate representing the executable unit of work which will be retried if fails.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.TransactionRetryScope.#ctor(System.Transactions.TransactionScopeOption,System.TimeSpan,Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy,System.Action)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.TransactionRetryScope"/> class with the specified timeout value, transaction scope options and retry policy.
+            Uses the ReadCommitted isolation level by default.
+            </summary>
+            <param name="scopeOption">An instance of the <see cref="T:System.Transactions.TransactionScopeOption"/> enumeration that describes the transaction requirements associated with this transaction scope.</param>
+            <param name="scopeTimeout">The TimeSpan after which the transaction scope times out and aborts the transaction.</param>
+            <param name="retryPolicy">The retry policy defining whether to retry the execution of the entire scope should a transient fault be encountered.</param>
+            <param name="unitOfWork">A delegate representing the executable unit of work which will be retried if fails.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.TransactionRetryScope.#ctor(System.Transactions.TransactionScopeOption,System.Transactions.TransactionOptions,System.Action)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.TransactionRetryScope"/> class with the specified requirements.
+            Implements no retry policy, it just invokes the unit of work exactly once.
+            </summary>
+            <param name="scopeOption">An instance of the <see cref="T:System.Transactions.TransactionScopeOption"/> enumeration that describes the transaction requirements associated with this transaction scope.</param>
+            <param name="transactionOptions">A <see cref="T:System.Transactions.TransactionOptions"/> structure that describes the transaction options to use if a new transaction is created. If an existing transaction is used, the timeout value in this parameter applies to the transaction scope. If that time expires before the scope is disposed, the transaction is aborted.</param>
+            <param name="unitOfWork">A delegate representing the executable unit of work which will be retried if fails.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.TransactionRetryScope.#ctor(System.Transactions.TransactionScopeOption,System.Transactions.TransactionOptions,Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy,System.Action)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.TransactionRetryScope"/> class with the specified requirements and specified retry policy.
+            </summary>
+            <param name="scopeOption">An instance of the <see cref="T:System.Transactions.TransactionScopeOption"/> enumeration that describes the transaction requirements associated with this transaction scope.</param>
+            <param name="txOptions">A <see cref="T:System.Transactions.TransactionOptions"/> structure that describes the transaction options to use if a new transaction is created. If an existing transaction is used, the timeout value in this parameter applies to the transaction scope. If that time expires before the scope is disposed, the transaction is aborted.</param>
+            <param name="retryPolicy">The retry policy defining whether to retry the execution of the entire scope should a transient fault be encountered.</param>
+            <param name="unitOfWork">A delegate representing the executable unit of work which will be retried if fails.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.TransactionRetryScope.#ctor(System.Transactions.TransactionScopeOption,Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy,System.Action)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.TransactionRetryScope"/> class with the specified requirements and retry policy.
+            Uses the ReadCommitted isolation level by default.
+            </summary>
+            <param name="scopeOption">An instance of the <see cref="T:System.Transactions.TransactionScopeOption"/> enumeration that describes the transaction requirements associated with this transaction scope.</param>
+            <param name="retryPolicy">The retry policy defining whether to retry the execution of the entire scope should a transient fault be encountered.</param>
+            <param name="unitOfWork">A delegate representing the executable unit of work which will be retried if fails.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.TransactionRetryScope.#ctor(System.Transactions.Transaction,System.Action)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.TransactionRetryScope"/> class and sets the specified transaction as the ambient transaction, 
+            so that transactional work done inside the scope uses this transaction. Implements no retry policy, it just invokes the unit of work exactly once.
+            </summary>
+            <param name="tx">The transaction to be set as the ambient transaction, so that transactional work done inside the scope uses this transaction.</param>
+            <param name="unitOfWork">A delegate representing the executable unit of work which will be retried if fails.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.TransactionRetryScope.#ctor(System.Transactions.Transaction,Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy,System.Action)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.TransactionRetryScope"/> class with the specified retry policy and sets the specified transaction as the ambient transaction, 
+            so that transactional work done inside the scope uses this transaction.
+            </summary>
+            <param name="tx">The transaction to be set as the ambient transaction, so that transactional work done inside the scope uses this transaction.</param>
+            <param name="retryPolicy">The retry policy defining whether to retry the execution of the entire scope should a transient fault be encountered.</param>
+            <param name="unitOfWork">A delegate representing the executable unit of work which will be retried if fails.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.TransactionRetryScope.#ctor(System.Transactions.Transaction,System.TimeSpan,System.Action)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.TransactionRetryScope"/> class with the specified timeout value, and sets the specified transaction as the ambient transaction, 
+            so that transactional work done inside the scope uses this transaction. Implements no retry policy, it just invokes the unit of work exactly once.
+            </summary>
+            <param name="tx">The transaction to be set as the ambient transaction, so that transactional work done inside the scope uses this transaction.</param>
+            <param name="scopeTimeout">The TimeSpan after which the transaction scope times out and aborts the transaction.</param>
+            <param name="unitOfWork">A delegate representing the executable unit of work which will be retried if fails.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.TransactionRetryScope.#ctor(System.Transactions.Transaction,System.TimeSpan,Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy,System.Action)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.TransactionRetryScope"/> class with the specified timeout value, and sets the specified transaction as the ambient transaction, 
+            so that transactional work done inside the scope uses this transaction. Uses the with the specified retry policy.
+            </summary>
+            <param name="tx">The transaction to be set as the ambient transaction, so that transactional work done inside the scope uses this transaction.</param>
+            <param name="scopeTimeout">The TimeSpan after which the transaction scope times out and aborts the transaction.</param>
+            <param name="retryPolicy">The retry policy defining whether to retry the execution of the entire scope should a transient fault be encountered.</param>
+            <param name="unitOfWork">A delegate representing the executable unit of work which will be retried if fails.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.TransactionRetryScope.InvokeUnitOfWork">
+            <summary>
+            Executes the underlying unit of work and retries as prescribed by the current retry policy.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.TransactionRetryScope.Complete">
+            <summary>
+            Indicates that all operations within the scope are completed successfully.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.TransactionRetryScope.System#IDisposable#Dispose">
+            <summary>
+            Ends the transaction scope.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.TransactionRetryScope.InitializeRetryPolicy">
+            <summary>
+            Configures the specified retry policy to work with a transactional scope.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.TransactionRetryScope.InvokeUnitOfWork(System.Action)">
+            <summary>
+            Executes the specified unit of work as prescribed by the current retry policy.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.TransactionRetryScope.RetryPolicy">
+            <summary>
+            Returns the policy which defines whether to retry the execution of the entire scope should a transient fault be encountered.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.ServiceBus.ServiceBusTransientErrorDetectionStrategy">
+            <summary>
+            Provides the transient error detection logic that can recognize transient faults when dealing with Windows Azure AppFabric Service Bus.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.ServiceBus.ServiceBusTransientErrorDetectionStrategy.IsTransient(System.Exception)">
+            <summary>
+            Determines whether the specified exception represents a transient failure that can be compensated by a retry.
+            </summary>
+            <param name="ex">The exception object to be verified.</param>
+            <returns>True if the specified exception is considered as transient, otherwise false.</returns>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.TraceManager">
+            <summary>
+            The main tracing component which is intended to be invoked from user code.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.TraceManager.PipelineComponent">
+            <summary>
+            The trace provider for user code in the custom pipeline components.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.TraceManager.WorkflowComponent">
+            <summary>
+            The trace provider for user code in workflows (such as expression shapes in the BizTalk orchestrations).
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.TraceManager.DataAccessComponent">
+            <summary>
+            The trace provider for user code in the custom components responsible for data access operations.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.TraceManager.TransformComponent">
+            <summary>
+            The trace provider for user code in the transformation components (such as scripting functoids in the BizTalk maps).
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.TraceManager.ServiceComponent">
+            <summary>
+            The trace provider for user code in the service components (such as Web Service, WCF Service or service proxy components).
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.TraceManager.RulesComponent">
+            <summary>
+            The trace provider for user code in the Business Rules components (such as custom fact retrievers, policy executors).
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.TraceManager.TrackingComponent">
+            <summary>
+            The trace provider for user code in the business activity tracking components (such as BAM activities).
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.TraceManager.CustomComponent">
+            <summary>
+            The trace provider for user code in any other custom components which don't fall into any of the standard categories such as Pipeline, Workflow, DataAccess, Transform.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.TraceManager.WorkerRoleComponent">
+            <summary>
+            The trace provider for user code in the Azure worker roles.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.TraceManager.CloudStorageComponent">
+            <summary>
+            The trace provider reserved for the Azure components responsible for storage-related operations.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.TraceManager.DebugComponent">
+            <summary>
+            The trace provider reserved for DEBUG mode.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyInfo">
+            <summary>
+            Implements a configuration element holding retry policy parameters.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyInfo.#ctor">
+            <summary>
+            Initializes a new instance of a <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyInfo"/> object with default settings.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyInfo.CreatePolicy``1">
+            <summary>
+            Returns an instance of the <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy"/> object based on the parameters in the current policy definition object.
+            </summary>
+            <typeparam name="T">The type implementing the <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.ITransientErrorDetectionStrategy"/> interface which is responsible for detecting transient conditions.</typeparam>
+            <returns>The retry policy initialized from the current policy definition, or a null reference if method was unable to detect the type of retry method.</returns>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyInfo.Name">
+            <summary>
+            Gets or sets the unique name of the retry policy under which it is registered and referenced in the application configuration.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyInfo.MaxRetryCount">
+            <summary>
+            Gets or sets the maximum number of retry attempts. This parameter is compulsory.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyInfo.RetryInterval">
+            <summary>
+            Gets or sets the interval in milliseconds between retry attempts.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyInfo.MinBackoff">
+            <summary>
+            Gets or sets the minimum back-off time in milliseconds.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyInfo.MaxBackoff">
+            <summary>
+            Gets or sets the maximum back-off time in milliseconds.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyInfo.DeltaBackoff">
+            <summary>
+            Gets or sets the delta value in milliseconds to calculate random exponential delay between retry attempts.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyInfo.RetryIncrement">
+            <summary>
+            Gets or sets the incremental time value in milliseconds for calculating progressive delay between retry attempts.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlCommandFactory">
+            <summary>
+            Provides factory methods for instantiating SQL commands.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlCommandFactory.DefaultCommandTimeoutSeconds">
+            <summary>
+            Returns the default timeout which will be applied to all SQL commands constructed by this factory class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlCommandFactory.CreateCommand(System.Data.IDbConnection)">
+            <summary>
+            Creates a generic command of type Stored Procedure and assigns the default command timeout.
+            </summary>
+            <param name="connection">The database connection object to be associated with the new command.</param>
+            <returns>A new SQL command initialized with the respective command type and initial settings.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlCommandFactory.CreateCommand(System.Data.IDbConnection,System.String)">
+            <summary>
+            Creates a generic command of type Stored Procedure and assigns the specified command text and default command timeout.
+            </summary>
+            <param name="connection">The database connection object to be associated with the new command.</param>
+            <param name="commandText">The text of the command to run against the data source.</param>
+            <returns>A new SQL command initialized with the respective command type, text and initial settings.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlCommandFactory.CreateGetContextInfoCommand(System.Data.IDbConnection)">
+            <summary>
+            Creates a SQL command that is intended to return the connection's context ID which is useful for tracing purposes.
+            </summary>
+            <param name="connection">The database connection object to be associated with the new command.</param>
+            <returns>A new SQL command initialized with the respective command type, text and initial settings.</returns>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection">
+            <summary>
+            Provides a reliable way of opening connections to and executing commands against the SQL Azure 
+            databases taking into account potential network unreliability and a requirement for connection retry.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the SqlAzureConnection class with a given connection string. Uses the default
+            retry policy for connections and commands unless retry settings are provided in the connection string.
+            </summary>
+            <param name="connectionString">The connection string used to open the SQL Azure database.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection.#ctor(System.String,Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy)">
+            <summary>
+            Initializes a new instance of the SqlAzureConnection class with a given connection string
+            and a policy defining whether to retry a request if the connection fails to be opened or a command
+            fails to be successfully executed.
+            </summary>
+            <param name="connectionString">The connection string used to open the SQL Azure database.</param>
+            <param name="retryPolicy">The retry policy defining whether to retry a request if a connection or a command fails.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection.#ctor(System.String,Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy,Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy)">
+            <summary>
+            Initializes a new instance of the SqlAzureConnection class with a given connection string
+            and a policy defining whether to retry a request if the connection fails to be opened or a command
+            fails to be successfully executed.
+            </summary>
+            <param name="connectionString">The connection string used to open the SQL Azure database.</param>
+            <param name="connectionRetryPolicy">The retry policy defining whether to retry a request if a connection fails to be established.</param>
+            <param name="commandRetryPolicy">The retry policy defining whether to retry a request if a command fails to be executed.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection.Open">
+            <summary>
+            Opens a database connection with the settings specified by the ConnectionString and ConnectionRetryPolicy properties.
+            </summary>
+            <returns>An object representing the open connection.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection.Open(Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy)">
+            <summary>
+            Opens a database connection with the settings specified by the ConnectionString and specified retry policy.
+            </summary>
+            <param name="retryPolicy">The retry policy defining whether to retry a request if the connection fails to be opened.</param>
+            <returns>An object representing the open connection.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection.ExecuteCommand``1(System.Data.IDbCommand)">
+            <summary>
+            Executes a SQL command and returns a result defined by the specified type <typeparamref name="T"/>. This method uses the retry policy specified when 
+            instantiating the SqlAzureConnection class (or the default retry policy if no policy was set at construction time).
+            </summary>
+            <typeparam name="T">Either IDataReader, XmlReader or any .NET type defining the type of result to be returned.</typeparam>
+            <param name="command">A SqlCommand object containing the SQL command to be executed.</param>
+            <returns>An instance of an IDataReader, XmlReader or any .NET object containing the result.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection.ExecuteCommand``1(System.Data.IDbCommand,System.Data.CommandBehavior)">
+            <summary>
+            Executes a SQL command and returns a result defined by the specified type <typeparamref name="T"/>. This method uses the retry policy specified when 
+            instantiating the SqlAzureConnection class (or the default retry policy if no policy was set at construction time).
+            </summary>
+            <typeparam name="T">Either IDataReader, XmlReader or any .NET type defining the type of result to be returned.</typeparam>
+            <param name="command">A SqlCommand object containing the SQL command to be executed.</param>
+            <param name="behavior">Provides a description of the results of the query and its effect on the database.</param>
+            <returns>An instance of an IDataReader, XmlReader or any .NET object containing the result.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection.ExecuteCommand``1(System.Data.IDbCommand,Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy)">
+            <summary>
+            Executes a SQL command using the specified retry policy and returns a result defined by the specified type <typeparamref name="T"/>
+            </summary>
+            <typeparam name="T">Either IDataReader, XmlReader or any .NET type defining the type of result to be returned.</typeparam>
+            <param name="command">A SqlCommand object containing the SQL command to be executed.</param>
+            <param name="retryPolicy">The retry policy defining whether to retry a command if a connection fails while executing the command.</param>
+            <returns>An instance of an IDataReader, XmlReader or any .NET object containing the result.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection.ExecuteCommand``1(System.Data.IDbCommand,Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy,System.Data.CommandBehavior)">
+            <summary>
+            Executes a SQL command using the specified retry policy and returns a result defined by the specified type <typeparamref name="T"/>
+            </summary>
+            <typeparam name="T">Either IDataReader, XmlReader or any .NET type defining the type of result to be returned.</typeparam>
+            <param name="command">A SqlCommand object containing the SQL command to be executed.</param>
+            <param name="retryPolicy">The retry policy defining whether to retry a command if a connection fails while executing the command.</param>
+            <param name="behavior">Provides a description of the results of the query and its effect on the database.</param>
+            <returns>An instance of an IDataReader, XmlReader or any .NET object containing the result.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection.ExecuteCommand(System.Data.IDbCommand)">
+            <summary>
+            Executes a SQL command and returns the number of rows affected.
+            </summary>
+            <param name="command">A SqlCommand object containing the SQL command to be executed.</param>
+            <returns>The number of rows affected.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection.ExecuteCommand(System.Data.IDbCommand,Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy)">
+            <summary>
+            Executes a SQL command and returns the number of rows affected.
+            </summary>
+            <param name="command">A SqlCommand object containing the SQL command to be executed.</param>
+            <param name="retryPolicy">The retry policy defining whether to retry a command if a connection fails while executing the command.</param>
+            <returns>The number of rows affected.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection.GetDnsSafeConnectionString(System.String,System.Boolean)">
+            <summary>
+            Modifies the specified connection string to potentially improve reliability of a connection to SQL Azure database. If asynchronous mode is
+            requested, modifications are performed in background and may not be reflected immediately.
+            </summary>
+            <param name="connectionString">The connection string that will be parsed and modified if required.</param>
+            <param name="async">True if action needs to be asynchronous, otherwise false. When asynchronous action is requested, modifications are performed in the background and may not be reflected immediately.</param>
+            <returns>The modified connection string some parameters of which are modified to improve reliability of the connection to a SQL Azure database.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection.ClearConnectionStringCache">
+            <summary>
+            Clears the connection string cache. 
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection.BeginTransaction(System.Data.IsolationLevel)">
+            <summary>
+            Begins a database transaction with the specified System.Data.IsolationLevel value.
+            </summary>
+            <param name="level">One of the System.Data.IsolationLevel values.</param>
+            <returns>An object representing the new transaction.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection.BeginTransaction">
+            <summary>
+            Begins a database transaction.
+            </summary>
+            <returns>An object representing the new transaction.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection.ChangeDatabase(System.String)">
+            <summary>
+            Changes the current database for an open Connection object.
+            </summary>
+            <param name="databaseName">The name of the database to use in place of the current database.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection.System#Data#IDbConnection#Open">
+            <summary>
+            Opens a database connection with the settings specified by the ConnectionString
+            property of the provider-specific Connection object.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection.Close">
+            <summary>
+            Closes the connection to the database.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection.CreateCommand">
+            <summary>
+            Creates and returns a SqlCommand object associated with the underlying SqlConnection.
+            </summary>
+            <returns>A System.Data.SqlClient.SqlCommand object.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection.System#Data#IDbConnection#CreateCommand">
+            <summary>
+            Creates and returns an object implementing the IDbCommand interface which is associated 
+            with the underlying SqlConnection.
+            </summary>
+            <returns>A System.Data.SqlClient.SqlCommand object.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection.System#ICloneable#Clone">
+            <summary>
+            Creates a new connection that is a copy of the current instance including the connection
+            string, connection retry policy and command retry policy.
+            </summary>
+            <returns>A new object that is a copy of this instance.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or
+            resetting managed and unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection.Dispose(System.Boolean)">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or
+            resetting managed and unmanaged resources.
+            </summary>
+            <param name="disposing">A flag indicating that managed resources must be released.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection.ChooseBetween(Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy,Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy)">
+            <summary>
+            Allows to choose the retry policy from a selection of the main and default one depending on whether or not the main policy is specified.
+            </summary>
+            <param name="mainPolicy">The main policy to be chosen if not null.</param>
+            <param name="defaultPolicy">The default policy to be chosen as an alternative.</param>
+            <returns>The chosen policy object.</returns>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection.ConnectionString">
+            <summary>
+            Gets or sets the connection string for opening a connection to the SQL Azure database.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection.ConnectionRetryPolicy">
+            <summary>
+            Specified the policy which decides whether to retry a connection request, based on how many 
+            times the request has been made and the reason for the last failure. 
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection.CommandRetryPolicy">
+            <summary>
+            Specified the policy which decides whether to retry a command, based on how many 
+            times the request has been made and the reason for the last failure. 
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection.Current">
+            <summary>
+            An instance of the SqlConnection object that represents the connection to an instance of SQL Azure database.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection.SessionTracingId">
+            <summary>
+            Returns the CONTEXT_INFO value that was set for the current session. This value can be used for tracing the query execution problems. 
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection.ConnectionTimeout">
+            <summary>
+            Gets the time to wait while trying to establish a connection before terminating
+            the attempt and generating an error.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection.Database">
+            <summary>
+            Gets the name of the current database or the database to be used after a
+            connection is opened.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection.State">
+            <summary>
+            Gets the current state of the connection.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection.NonQueryResult">
+            <summary>
+            This helpers class is intended to be used exclusively for fetching the number of affected records when executing a command using ExecuteNonQuery.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.ReliableSqlConnection.NetworkConnectivityErrorDetectionStrategy">
+            <summary>
+            Implements a strategy that detects network connectivity errors such as host not found.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.DebugTraceEventProvider">
+            <summary>
+            Implements a tracing provider that emits trace events into the Wind32 Debug API.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ITraceEventProvider">
+            <summary>
+            Defines an interface which must be supported by custom implementations of tracing event providers.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ITraceEventProvider.TraceInfo(System.String,System.Object[])">
+            <summary>
+            Writes an information message to the trace.
+            </summary>
+            <param name="format">A string containing zero or more format items.</param>
+            <param name="parameters">A list containing zero or more data items to format.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ITraceEventProvider.TraceInfo(System.String)">
+            <summary>
+            Writes an information message to the trace. This method is provided for optimal performance when
+            tracing simple messages which don't require a format string.
+            </summary>
+            <param name="message">A string containing the message to be traced.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ITraceEventProvider.TraceInfo(System.Func{System.String})">
+            <summary>
+            Writes an information message to the trace. This method is intended to be used when the data that needs to be
+            written to the trace is expensive to be fetched. The method represented by the Func(T) delegate will only be invoked if
+            tracing is enabled.
+            </summary>
+            <param name="expensiveDataProvider">A method that has no parameters and returns a value that needs to be traced.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ITraceEventProvider.TraceWarning(System.String,System.Object[])">
+            <summary>
+            Writes a warning message to the trace.
+            </summary>
+            <param name="format">A string containing zero or more format items.</param>
+            <param name="parameters">A list containing zero or more data items to format.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ITraceEventProvider.TraceWarning(System.String)">
+            <summary>
+            Writes a warning message to the trace. This method is provided for optimal performance when
+            tracing simple messages which don't require a format string.
+            </summary>
+            <param name="message">A string containing the message to be traced.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ITraceEventProvider.TraceDetails(System.String,System.Object[])">
+            <summary>
+            Writes a message to the trace. This method can be used to trace detailed information
+            which is only required in particular cases.
+            </summary>
+            <param name="format">A string containing zero or more format items.</param>
+            <param name="parameters">A list containing zero or more data items to format.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ITraceEventProvider.TraceDetails(System.Func{System.String})">
+            <summary>
+            Writes a message to the trace. This method can be used to trace detailed information
+            which is only required in particular cases. The method represented by the Func(T) 
+            delegate will only be invoked if tracing is enabled.
+            </summary>
+            <param name="expensiveDataProvider">A method that has no parameters and returns a value that needs to be traced.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ITraceEventProvider.TraceError(System.String,System.Object[])">
+            <summary>
+            Writes an error message to the trace.
+            </summary>
+            <param name="format">A string containing zero or more format items.</param>
+            <param name="parameters">A list containing zero or more data items to format.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ITraceEventProvider.TraceError(System.String)">
+            <summary>
+            Writes an error message to the trace. This method is provided for optimal performance when
+            tracing simple messages which don't require a format string.
+            </summary>
+            <param name="message">A string containing the error message to be traced.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ITraceEventProvider.TraceError(System.Exception)">
+            <summary>
+            Writes the exception details to the trace.
+            </summary>
+            <param name="ex">An exception to be formatted and written to the trace.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ITraceEventProvider.TraceError(System.Exception,System.Guid)">
+            <summary>
+            Writes the exception details to the trace.
+            </summary>
+            <param name="ex">An exception to be formatted and written to the trace.</param>
+            <param name="callToken">An unique value which is used as a correlation token to correlate TraceIn and TraceError calls.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ITraceEventProvider.TraceError(System.Exception,System.Boolean)">
+            <summary>
+            Writes the exception details to the trace.
+            </summary>
+            <param name="ex">An exception to be formatted and written to the trace.</param>
+            <param name="includeStackTrace">A flag indicating whether or not call stack details should be included.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ITraceEventProvider.TraceError(System.Exception,System.Boolean,System.Guid)">
+            <summary>
+            Writes the exception details to the trace.
+            </summary>
+            <param name="ex">An exception to be formatted and written to the trace.</param>
+            <param name="includeStackTrace">A flag indicating whether or not call stack details should be included.</param>
+            <param name="callToken">An unique value which is used as a correlation token to correlate TraceIn and TraceError calls.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ITraceEventProvider.TraceIn(System.Object[])">
+            <summary>
+            Writes an informational event into the trace log indicating that a method is invoked. This can be useful for tracing method calls to help analyze the 
+            code execution flow. The method will also write the same event into default System.Diagnostics trace listener, however this will only occur in the DEBUG code.
+            A call to the TraceIn method would typically be at the very beginning of an instrumented code.
+            </summary>
+            <param name="inParameters">The method parameters which will be included into the traced event (make sure you do not supply any sensitive data).</param>
+            <returns>An unique value which can be used as a correlation token to correlate TraceIn and TraceOut calls.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ITraceEventProvider.TraceIn">
+            <summary>
+            Writes an informational event into the trace log indicating that a method is invoked. This can be useful for tracing method calls to help analyze the 
+            code execution flow. The method will also write the same event into default System.Diagnostics trace listener, however this will only occur in the DEBUG code.
+            A call to the TraceIn method would typically be at the very beginning of an instrumented code.
+            This method is provided to ensure optimal performance when no parameters are required to be traced.
+            </summary>
+            <returns>An unique value which can be used as a correlation token to correlate TraceIn and TraceOut calls.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ITraceEventProvider.TraceIn(System.Guid)">
+            <summary>
+            Writes an informational event into the trace log indicating that a method is invoked. This can be useful for tracing method calls to help analyze the 
+            code execution flow. The method will also write the same event into default System.Diagnostics trace listener, however this will only occur in the DEBUG code.
+            A call to the TraceIn method would typically be at the very beginning of an instrumented code.
+            This overload should be used when correlation token (callToken) is defined by the calling code.
+            </summary>
+            <param name="callToken">An unique value which is used as a correlation token to correlate TraceIn and TraceOut calls.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ITraceEventProvider.TraceOut(System.Object[])">
+            <summary>
+            Writes an informational event into the trace log indicating that a method is about to complete. This can be useful for tracing method calls to help analyze the 
+            code execution flow. The method will also write the same event into default System.Diagnostics trace listener, however this will only occur in the DEBUG code.
+            A call to the TraceIn method would typically be at the very end of an instrumented code, before the code returns its result (if any).
+            </summary>
+            <param name="outParameters">The method parameters which will be included into the traced event (make sure you do not supply any sensitive data).</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ITraceEventProvider.TraceOut">
+            <summary>
+            Writes an informational event into the trace log indicating that a method is about to complete. This can be useful for tracing method calls to help analyze the 
+            code execution flow. The method will also write the same event into default System.Diagnostics trace listener, however this will only occur in the DEBUG code.
+            A call to the TraceIn method would typically be at the very end of an instrumented code, before the code returns its result (if any).
+            This method is provided to ensure optimal performance when no parameters are required to be traced.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ITraceEventProvider.TraceOut(System.Guid,System.Object[])">
+            <summary>
+            Writes an informational event into the trace log indicating that a method is about to complete. This can be useful for tracing method calls to help analyze the 
+            code execution flow. The method will also write the same event into default System.Diagnostics trace listener, however this will only occur in the DEBUG code.
+            A call to the TraceIn method would typically be at the very end of an instrumented code, before the code returns its result (if any).
+            </summary>
+            <param name="callToken">An unique value which is used as a correlation token to correlate TraceIn and TraceOut calls.</param>
+            <param name="outParameters">The method parameters which will be included into the traced event (make sure you do not supply any sensitive data).</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ITraceEventProvider.TraceStartScope(System.String,System.Object[])">
+            <summary>
+            Writes an informational event into the trace log indicating a start of a scope for which duration will be measured.
+            </summary>
+            <param name="scope">A textual identity of a scope for which duration will be traced.</param>
+            <param name="parameters">A list containing zero or more data items to be included into scope details.</param>
+            <returns>The number of ticks that represent the date and time when it was invoked. This date/time will be used later when tracing the end of the scope.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ITraceEventProvider.TraceStartScope(System.String)">
+            <summary>
+            Writes an informational event into the trace log indicating the start of a scope for which duration will be measured.
+            This method is provided in order to ensure optimal performance when no parameters are available for tracing.
+            </summary>
+            <param name="scope">A textual identity of a scope for which duration will be traced.</param>
+            <returns>The number of ticks that represent the date and time when it was invoked. This date/time will be used later when tracing the end of the scope.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ITraceEventProvider.TraceStartScope(System.String,System.Guid)">
+            <summary>
+            Writes an informational event into the trace log indicating the start of a scope for which duration will be measured.
+            This method is provided in order to ensure optimal performance when only 1 parameter of type Guid is available for tracing.
+            </summary>
+            <param name="scope">A textual identity of a scope for which duration will be traced.</param>
+            <param name="callToken">An unique value which is used as a correlation token to correlate TraceStartScope and TraceEndScope calls.</param>
+            <returns>The number of ticks that represent the date and time when it was invoked. This date/time will be used later when tracing the end of the scope.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ITraceEventProvider.TraceEndScope(System.String,System.Int64)">
+            <summary>
+            Writes an informational event into the trace log indicating the end of a scope for which duration will be measured.
+            </summary>
+            <param name="scope">A textual identity of a scope for which duration will be traced.</param>
+            <param name="startTicks">The number of ticks that represent the date and time when the code entered the scope.</param>
+            <returns>The calculated duration.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.ITraceEventProvider.TraceEndScope(System.String,System.Int64,System.Guid)">
+            <summary>
+            Writes an informational event into the trace log indicating the end of a scope for which duration will be measured.
+            </summary>
+            <param name="scope">A textual identity of a scope for which duration will be traced.</param>
+            <param name="startTicks">The number of ticks that represent the date and time when the code entered the scope.</param>
+            <param name="callToken">An unique value which is used as a correlation token to correlate TraceStartScope and TraceEndScope calls.</param>
+            <returns>The calculated duration.</returns>   
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.DebugTraceEventProvider.#ctor">
+            <summary>
+            Initializes a new instance of a <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.DebugTraceEventProvider"/> object configured with default settings.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.DebugTraceEventProvider.TraceInfo(System.String,System.Object[])">
+            <summary>
+            Writes an information message to the trace.
+            </summary>
+            <param name="format">A string containing zero or more format items.</param>
+            <param name="parameters">A list containing zero or more data items to format.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.DebugTraceEventProvider.TraceInfo(System.String)">
+            <summary>
+            Writes an information message to the trace. This method is provided for optimal performance when
+            tracing simple messages which don't require a format string.
+            </summary>
+            <param name="message">A string containing the message to be traced.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.DebugTraceEventProvider.TraceInfo(System.Func{System.String})">
+            <summary>
+            Writes an information message to the trace. This method is intended to be used when the data that needs to be
+            written to the trace is expensive to be fetched. The method represented by the Func(T) delegate will only be invoked if
+            tracing is enabled.
+            </summary>
+            <param name="expensiveDataProvider">A method that has no parameters and returns a value that needs to be traced.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.DebugTraceEventProvider.TraceDetails(System.String,System.Object[])">
+            <summary>
+            Writes a message to the trace. This method can be used to trace detailed information
+            which is only required in particular cases.
+            </summary>
+            <param name="format">A string containing zero or more format items.</param>
+            <param name="parameters">A list containing zero or more data items to format.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.DebugTraceEventProvider.TraceDetails(System.Func{System.String})">
+            <summary>
+            Writes a message to the trace. This method can be used to trace detailed information
+            which is only required in particular cases. The method represented by the Func(T) 
+            delegate will only be invoked if tracing is enabled.
+            </summary>
+            <param name="expensiveDataProvider">A method that has no parameters and returns a value that needs to be traced.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.DebugTraceEventProvider.TraceWarning(System.String,System.Object[])">
+            <summary>
+            Writes a warning message to the trace.
+            </summary>
+            <param name="format">A string containing zero or more format items.</param>
+            <param name="parameters">A list containing zero or more data items to format.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.DebugTraceEventProvider.TraceWarning(System.String)">
+            <summary>
+            Writes a warning message to the trace. This method is provided for optimal performance when
+            tracing simple messages which don't require a format string.
+            </summary>
+            <param name="message">A string containing the message to be traced.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.DebugTraceEventProvider.TraceError(System.String,System.Object[])">
+            <summary>
+            Writes an error message to the trace.
+            </summary>
+            <param name="format">A string containing zero or more format items.</param>
+            <param name="parameters">A list containing zero or more data items to format.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.DebugTraceEventProvider.TraceError(System.String)">
+            <summary>
+            Writes an error message to the trace. This method is provided for optimal performance when
+            tracing simple messages which don't require a format string.
+            </summary>
+            <param name="message">A string containing the error message to be traced.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.DebugTraceEventProvider.TraceError(System.Exception)">
+            <summary>
+            Writes the exception details to the trace.
+            </summary>
+            <param name="ex">An exception to be formatted and written to the trace.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.DebugTraceEventProvider.TraceError(System.Exception,System.Guid)">
+            <summary>
+            Writes the exception details to the trace.
+            </summary>
+            <param name="ex">An exception to be formatted and written to the trace.</param>
+            <param name="callToken">An unique value which is used as a correlation token to correlate TraceIn and TraceError calls.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.DebugTraceEventProvider.TraceError(System.Exception,System.Boolean)">
+            <summary>
+            Writes the exception details to the trace.
+            </summary>
+            <param name="ex">An exception to be formatted and written to the trace.</param>
+            <param name="includeStackTrace">A flag indicating whether or not call stack details should be included.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.DebugTraceEventProvider.TraceError(System.Exception,System.Boolean,System.Guid)">
+            <summary>
+            Writes the exception details to the trace.
+            </summary>
+            <param name="ex">An exception to be formatted and written to the trace.</param>
+            <param name="includeStackTrace">A flag indicating whether or not call stack details should be included.</param>
+            <param name="callToken">An unique value which is used as a correlation token to correlate TraceIn and TraceError calls.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.DebugTraceEventProvider.TraceIn(System.Object[])">
+            <summary>
+            Writes an informational event into the trace log indicating that a method is invoked. This can be useful for tracing method calls to help analyze the 
+            code execution flow. The method will also write the same event into default System.Diagnostics trace listener, however this will only occur in the DEBUG code.
+            A call to the TraceIn method would typically be at the very beginning of an instrumented code.
+            </summary>
+            <param name="parameters">The method parameters which will be included into the traced event (make sure you do not supply any sensitive data).</param>
+            <returns>An unique value which can be used as a correlation token to correlate TraceIn and TraceOut calls.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.DebugTraceEventProvider.TraceIn">
+            <summary>
+            Writes an informational event into the trace log indicating that a method is invoked. This can be useful for tracing method calls to help analyze the 
+            code execution flow. The method will also write the same event into default System.Diagnostics trace listener, however this will only occur in the DEBUG code.
+            A call to the TraceIn method would typically be at the very beginning of an instrumented code.
+            This method is provided to ensure optimal performance when no parameters are required to be traced.
+            </summary>
+            <returns>An unique value which can be used as a correlation token to correlate TraceIn and TraceOut calls.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.DebugTraceEventProvider.TraceIn(System.Guid)">
+            <summary>
+            Writes an informational event into the trace log indicating that a method is invoked. This can be useful for tracing method calls to help analyze the 
+            code execution flow. The method will also write the same event into default System.Diagnostics trace listener, however this will only occur in the DEBUG code.
+            A call to the TraceIn method would typically be at the very beginning of an instrumented code.
+            This overload should be used when correlation token (callToken) is defined by the calling code.
+            </summary>
+            <param name="callToken">An unique value which is used as a correlation token to correlate TraceIn and TraceOut calls.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.DebugTraceEventProvider.TraceOut(System.Object[])">
+            <summary>
+            Writes an informational event into the trace log indicating that a method is about to complete. This can be useful for tracing method calls to help analyze the 
+            code execution flow. The method will also write the same event into default System.Diagnostics trace listener, however this will only occur in the DEBUG code.
+            A call to the TraceOut method would typically be at the very end of an instrumented code, before the code returns its result (if any).
+            </summary>
+            <param name="outParameters">The method parameters which will be included into the traced event (make sure you do not supply any sensitive data).</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.DebugTraceEventProvider.TraceOut">
+            <summary>
+            Writes an informational event into the trace log indicating that a method is about to complete. This can be useful for tracing method calls to help analyze the 
+            code execution flow. The method will also write the same event into default System.Diagnostics trace listener, however this will only occur in the DEBUG code.
+            A call to the TraceOut method would typically be at the very end of an instrumented code, before the code returns its result (if any).
+            This method is provided to ensure optimal performance when no parameters are required to be traced.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.DebugTraceEventProvider.TraceOut(System.Guid,System.Object[])">
+            <summary>
+            Writes an informational event into the trace log indicating that a method is about to complete. This can be useful for tracing method calls to help analyze the 
+            code execution flow. The method will also write the same event into default System.Diagnostics trace listener, however this will only occur in the DEBUG code.
+            A call to the TraceOut method would typically be at the very end of an instrumented code, before the code returns its result (if any).
+            </summary>
+            <param name="callToken">An unique value which is used as a correlation token to correlate TraceIn and TraceOut calls.</param>
+            <param name="outParameters">The method parameters which will be included into the traced event (make sure you do not supply any sensitive data).</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.DebugTraceEventProvider.TraceStartScope(System.String,System.Object[])">
+            <summary>
+            Writes an informational event into the trace log indicating a start of a scope for which duration will be measured.
+            </summary>
+            <param name="scope">A textual identity of a scope for which duration will be traced.</param>
+            <param name="parameters">A list containing zero or more data items to be included into scope details.</param>
+            <returns>The number of ticks that represent the date and time when it was invoked. This date/time will be used later when tracing the end of the scope.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.DebugTraceEventProvider.TraceStartScope(System.String)">
+            <summary>
+            Writes an informational event into the trace log indicating the start of a scope for which duration will be measured.
+            This method is provided in order to ensure optimal performance when no parameters are available for tracing.
+            </summary>
+            <param name="scope">A textual identity of a scope for which duration will be traced.</param>
+            <returns>The number of ticks that represent the date and time when it was invoked. This date/time will be used later when tracing the end of the scope.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.DebugTraceEventProvider.TraceStartScope(System.String,System.Guid)">
+            <summary>
+            Writes an informational event into the trace log indicating the start of a scope for which duration will be measured.
+            This method is provided in order to ensure optimal performance when only 1 parameter of type Guid is available for tracing.
+            </summary>
+            <param name="scope">A textual identity of a scope for which duration will be traced.</param>
+            <param name="callToken">An unique value which is used as a correlation token to correlate TraceStartScope and TraceEndScope calls.</param>
+            <returns>The number of ticks that represent the date and time when it was invoked. This date/time will be used later when tracing the end of the scope.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.DebugTraceEventProvider.TraceEndScope(System.String,System.Int64)">
+            <summary>
+            Writes an informational event into the trace log indicating the end of a scope for which duration will be measured.
+            </summary>
+            <param name="scope">A textual identity of a scope for which duration will be traced.</param>
+            <param name="startTicks">The number of ticks that represent the date and time when the code entered the scope.</param>
+            <returns>The calculated duration.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.DebugTraceEventProvider.TraceEndScope(System.String,System.Int64,System.Guid)">
+            <summary>
+            Writes an informational event into the trace log indicating the end of a scope for which duration will be measured.
+            </summary>
+            <param name="scope">A textual identity of a scope for which duration will be traced.</param>
+            <param name="startTicks">The number of ticks that represent the date and time when the code entered the scope.</param>
+            <param name="callToken">An unique value which is used as a correlation token to correlate TraceStartScope and TraceEndScope calls.</param>
+            <returns>The calculated duration.</returns>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyCollection">
+            <summary>
+            Implements a collection of the <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyInfo"/> configuration elements holding retry policy parameters.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyCollection.Add(Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyInfo)">
+            <summary>
+            Adds a <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyInfo"/> element to the collection.
+            </summary>
+            <param name="element">A <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyInfo"/> element to add.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyCollection.Get(System.String)">
+            <summary>
+             Returns a <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyInfo"/> element with the specified name.
+            </summary>
+            <param name="name">The name of the element to return.</param>
+            <returns>The <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyInfo"/> element with the specified name; otherwise null.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyCollection.Contains(System.String)">
+            <summary>
+            Determines whether or not a <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyInfo"/> element with the specified name exists in the collection.
+            </summary>
+            <param name="name">The name of the element to find.</param>
+            <returns>True if the element was found, otherwise false.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyCollection.CreateNewElement">
+            <summary>
+            Creates a new instance of a configuration element which this section contains.
+            </summary>
+            <returns>An instance of the <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyInfo"/> object.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyCollection.GetElementKey(System.Configuration.ConfigurationElement)">
+            <summary>
+            Gets the element key for a specified configuration element.
+            </summary>
+            <param name="element">The configuration element to return the key for.</param>
+            <returns>An object that acts as the key for the specified configuration element.</returns>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyCollection.Item(System.Int32)">
+            <summary>
+            Returns a <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyInfo"/> element from the collection by the specified index.
+            </summary>
+            <param name="idx">The item index.</param>
+            <returns>The <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyInfo"/> element at the specified index.</returns>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Properties.SqlCommandResources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Properties.SqlCommandResources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Properties.SqlCommandResources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Properties.SqlCommandResources.QueryGetContextInfo">
+            <summary>
+              Looks up a localized string similar to SELECT CONVERT(UNIQUEIDENTIFIER, CONVERT(NVARCHAR(36), CONTEXT_INFO())).
+            </summary>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.WellKnownTraceCategory">
+            <summary>
+            Provides the standard names of well-known trace message categories for reusability purposes.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.WellKnownTraceCategory.TraceInfo">
+            <summary>
+            Returns the standard name of the TraceInfo trace event category.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.WellKnownTraceCategory.TraceDetails">
+            <summary>
+            Returns the standard name of the TraceDetails trace event category.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.WellKnownTraceCategory.TraceWarning">
+            <summary>
+            Returns the standard name of the TraceWarning trace event category.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.WellKnownTraceCategory.TraceError">
+            <summary>
+            Returns the standard name of the TraceError trace event category.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.WellKnownTraceCategory.TraceIn">
+            <summary>
+            Returns the standard name of the TraceIn trace event category.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.WellKnownTraceCategory.TraceOut">
+            <summary>
+            Returns the standard name of the TraceOut trace event category.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.WellKnownTraceCategory.TraceStartScope">
+            <summary>
+            Returns the standard name of the TraceStartScope trace event category.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.WellKnownTraceCategory.TraceEndScope">
+            <summary>
+            Returns the standard name of the TraceEndScope trace event category.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyConfigurationSettings">
+            <summary>
+            Implements a configuration section containing retry policy settings.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyConfigurationSettings.SectionName">
+            <summary>
+            The name of the configuration section represented by this type.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyConfigurationSettings.#ctor">
+            <summary>
+            Initializes a new instance of a <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyConfigurationSettings"/> object using default settings.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyConfigurationSettings.GetRetryPolicy``1(System.String)">
+            <summary>
+            Returns an instance of the <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy"/> object initialized for a given policy name.
+            </summary>
+            <typeparam name="T">The type implementing the <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.ITransientErrorDetectionStrategy"/> interface which is responsible for detecting transient conditions.</typeparam>
+            <param name="policyName">The name under which a retry policy definition is registered in the application configuration.</param>
+            <returns>The retry policy initialized from the specified policy definition, or a null reference if no such policy definition was found.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyConfigurationSettings.AddFixedIntervalPolicy(System.String,System.Int32,System.Int32)">
+            <summary>
+            Adds a new definition describing a retry policy based on fixed interval retry mode.
+            </summary>
+            <param name="policyName">The name under which a retry policy definition will be registered in the application configuration.</param>
+            <param name="maxRetryCount">The maximum number of retry attempts.</param>
+            <param name="retryInterval">The interval in milliseconds between retry attempts.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyConfigurationSettings.AddIncrementalIntervalPolicy(System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Adds a new definition describing a retry policy based on incremental interval retry mode.
+            </summary>
+            <param name="policyName">The name under which a retry policy definition will be registered in the application configuration.</param>
+            <param name="maxRetryCount">The maximum number of retry attempts.</param>
+            <param name="retryInterval">The initial interval in milliseconds which will apply for the first retry.</param>
+            <param name="retryIncrement">The incremental time value in milliseconds for calculating progressive delay between retry attempts.</param>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyConfigurationSettings.AddExponentialIntervalPolicy(System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Adds a new definition describing a retry policy based on random exponential back-off retry mode.
+            </summary>
+            <param name="policyName">The name under which a retry policy definition will be registered in the application configuration.</param>
+            <param name="maxRetryCount">The maximum number of retry attempts.</param>
+            <param name="minBackoff">The minimum back-off time in milliseconds.</param>
+            <param name="maxBackoff">The maximum back-off time in milliseconds.</param>
+            <param name="deltaBackof">The delta value in milliseconds to calculate random exponential delay between retry attempts.</param>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyConfigurationSettings.DefaultPolicy">
+            <summary>
+            Gets or sets the name of the default general-purpose retry policy.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyConfigurationSettings.DefaultSqlConnectionPolicy">
+            <summary>
+            Gets or sets the name of a retry policy dedicated to handling transient conditions with SQL connections.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyConfigurationSettings.DefaultSqlCommandPolicy">
+            <summary>
+            Gets or sets the name of a retry policy dedicated to handling transient conditions with SQL commands.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyConfigurationSettings.DefaultStoragePolicy">
+            <summary>
+            Gets or sets the name of a retry policy dedicated to handling transient conditions in Windows Azure storage services.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyConfigurationSettings.DefaultCommunicationPolicy">
+            <summary>
+            Gets or sets the name of a retry policy dedicated to handling transient conditions in the WCF communication infrastructure.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyConfigurationSettings.Policies">
+            <summary>
+            Returns a collection of retry policy definitions represented by the <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Configuration.RetryPolicyInfo"/> object instances.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlCommandExtensions">
+            <summary>
+            Provides a set of extension methods adding retry capabilities into the standard System.Data.SqlClient.SqlCommand implementation.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlCommandExtensions.ExecuteNonQueryWithRetry(System.Data.SqlClient.SqlCommand)">
+            <summary>
+            Executes a Transact-SQL statement against the connection and returns the number of rows affected. Uses the default retry policy when executing the command.
+            </summary>
+            <param name="command">The command object which is required as per extension method declaration.</param>
+            <returns>The number of rows affected.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlCommandExtensions.ExecuteNonQueryWithRetry(System.Data.SqlClient.SqlCommand,Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy)">
+            <summary>
+            Executes a Transact-SQL statement against the connection and returns the number of rows affected. Uses the specified retry policy when executing the command.
+            </summary>
+            <param name="command">The command object which is required as per extension method declaration.</param>
+            <param name="retryPolicy">The retry policy defining whether to retry a command if a connection fails while executing the command.</param>
+            <returns>The number of rows affected.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlCommandExtensions.ExecuteNonQueryWithRetry(System.Data.SqlClient.SqlCommand,Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy,Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy)">
+            <summary>
+            Executes a Transact-SQL statement against the connection and returns the number of rows affected. Uses the specified retry policy when executing the command.
+            Uses a separate specified retry policy when establishing a connection.
+            </summary>
+            <param name="command">The command object which is required as per extension method declaration.</param>
+            <param name="cmdRetryPolicy">The command retry policy defining whether to retry a command if it fails while executing.</param>
+            <param name="conRetryPolicy">The connection retry policy defining whether to re-establish a connection if it drops while executing the command.</param>
+            <returns>The number of rows affected.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlCommandExtensions.ExecuteReaderWithRetry(System.Data.SqlClient.SqlCommand)">
+            <summary>
+            Sends the specified command to the connection and builds a SqlDataReader object containing the results.
+            Uses the default retry policy when executing the command.
+            </summary>
+            <param name="command">The command object which is required as per extension method declaration.</param>
+            <returns>A System.Data.SqlClient.SqlDataReader object.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlCommandExtensions.ExecuteReaderWithRetry(System.Data.SqlClient.SqlCommand,Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy)">
+            <summary>
+            Sends the specified command to the connection and builds a SqlDataReader object containing the results.
+            Uses the specified retry policy when executing the command.
+            </summary>
+            <param name="command">The command object which is required as per extension method declaration.</param>
+            <param name="retryPolicy">The retry policy defining whether to retry a command if a connection fails while executing the command.</param>
+            <returns>A System.Data.SqlClient.SqlDataReader object.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlCommandExtensions.ExecuteReaderWithRetry(System.Data.SqlClient.SqlCommand,Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy,Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy)">
+            <summary>
+            Sends the specified command to the connection and builds a SqlDataReader object containing the results.
+            Uses the specified retry policy when executing the command. Uses a separate specified retry policy when
+            establishing a connection.
+            </summary>
+            <param name="command">The command object which is required as per extension method declaration.</param>
+            <param name="cmdRetryPolicy">The command retry policy defining whether to retry a command if it fails while executing.</param>
+            <param name="conRetryPolicy">The connection retry policy defining whether to re-establish a connection if it drops while executing the command.</param>
+            <returns>A System.Data.SqlClient.SqlDataReader object.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlCommandExtensions.ExecuteReaderWithRetry(System.Data.SqlClient.SqlCommand,System.Data.CommandBehavior)">
+            <summary>
+            Sends the specified command to the connection and builds a SqlDataReader object using one of the 
+            CommandBehavior values. Uses the default retry policy when executing the command.
+            </summary>
+            <param name="command">The command object which is required as per extension method declaration.</param>
+            <param name="behavior">One of the System.Data.CommandBehavior values.</param>
+            <returns>A System.Data.SqlClient.SqlDataReader object.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlCommandExtensions.ExecuteReaderWithRetry(System.Data.SqlClient.SqlCommand,System.Data.CommandBehavior,Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy)">
+            <summary>
+            Sends the specified command to the connection and builds a SqlDataReader object using one of the
+            CommandBehavior values. Uses the specified retry policy when executing the command.
+            </summary>
+            <param name="command">The command object which is required as per extension method declaration.</param>
+            <param name="behavior">One of the System.Data.CommandBehavior values.</param>
+            <param name="retryPolicy">The retry policy defining whether to retry a command if a connection fails while executing the command.</param>
+            <returns>A System.Data.SqlClient.SqlDataReader object.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlCommandExtensions.ExecuteReaderWithRetry(System.Data.SqlClient.SqlCommand,System.Data.CommandBehavior,Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy,Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy)">
+            <summary>
+            Sends the specified command to the connection and builds a SqlDataReader object using one of the
+            CommandBehavior values. Uses the specified retry policy when executing the command.
+            Uses a separate specified retry policy when establishing a connection.
+            </summary>
+            <param name="command">The command object which is required as per extension method declaration.</param>
+            <param name="behavior">One of the System.Data.CommandBehavior values.</param>
+            <param name="cmdRetryPolicy">The command retry policy defining whether to retry a command if it fails while executing.</param>
+            <param name="conRetryPolicy">The connection retry policy defining whether to re-establish a connection if it drops while executing the command.</param>
+            <returns>A System.Data.SqlClient.SqlDataReader object.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlCommandExtensions.ExecuteScalarWithRetry(System.Data.SqlClient.SqlCommand)">
+            <summary>
+            Executes the query, and returns the first column of the first row in the result set returned by the query. Additional columns or rows are ignored.
+            Uses the default retry policy when executing the command.
+            </summary>
+            <param name="command">The command object which is required as per extension method declaration.</param>
+            <returns> The first column of the first row in the result set, or a null reference if the result set is empty. Returns a maximum of 2033 characters.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlCommandExtensions.ExecuteScalarWithRetry(System.Data.SqlClient.SqlCommand,Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy)">
+            <summary>
+            Executes the query, and returns the first column of the first row in the result set returned by the query. Additional columns or rows are ignored.
+            Uses the specified retry policy when executing the command.
+            </summary>
+            <param name="command">The command object which is required as per extension method declaration.</param>
+            <param name="retryPolicy">The retry policy defining whether to retry a command if a connection fails while executing the command.</param>
+            <returns> The first column of the first row in the result set, or a null reference if the result set is empty. Returns a maximum of 2033 characters.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlCommandExtensions.ExecuteScalarWithRetry(System.Data.SqlClient.SqlCommand,Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy,Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy)">
+            <summary>
+            Executes the query, and returns the first column of the first row in the result set returned by the query. Additional columns or rows are ignored.
+            Uses the specified retry policy when executing the command. Uses a separate specified retry policy when establishing a connection.
+            </summary>
+            <param name="command">The command object which is required as per extension method declaration.</param>
+            <param name="cmdRetryPolicy">The command retry policy defining whether to retry a command if it fails while executing.</param>
+            <param name="conRetryPolicy">The connection retry policy defining whether to re-establish a connection if it drops while executing the command.</param>
+            <returns> The first column of the first row in the result set, or a null reference if the result set is empty. Returns a maximum of 2033 characters.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlCommandExtensions.ExecuteXmlReaderWithRetry(System.Data.SqlClient.SqlCommand)">
+            <summary>
+            Sends the specified command to the connection and builds an XmlReader object containing the results.
+            Uses the default retry policy when executing the command.
+            </summary>
+            <param name="command">The command object which is required as per extension method declaration.</param>
+            <returns>An System.Xml.XmlReader object.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlCommandExtensions.ExecuteXmlReaderWithRetry(System.Data.SqlClient.SqlCommand,Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy)">
+            <summary>
+            Sends the specified command to the connection and builds an XmlReader object containing the results.
+            Uses the specified retry policy when executing the command.
+            </summary>
+            <param name="command">The command object which is required as per extension method declaration.</param>
+            <param name="retryPolicy">The retry policy defining whether to retry a command if a connection fails while executing the command.</param>
+            <returns>An System.Xml.XmlReader object.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlCommandExtensions.ExecuteXmlReaderWithRetry(System.Data.SqlClient.SqlCommand,Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy,Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy)">
+            <summary>
+            Sends the specified command to the connection and builds an XmlReader object containing the results.
+            Uses the specified retry policy when executing the command. Uses a separate specified retry policy when establishing a connection.
+            </summary>
+            <param name="command">The command object which is required as per extension method declaration.</param>
+            <param name="cmdRetryPolicy">The command retry policy defining whether to retry a command if it fails while executing.</param>
+            <param name="conRetryPolicy">The connection retry policy defining whether to re-establish a connection if it drops while executing the command.</param>
+            <returns>An System.Xml.XmlReader object.</returns>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.ServiceBus.MessageBufferTransientErrorDetectionStrategy">
+            <summary>
+            Provides the transient error detection logic that is specific to Windows Azure AppFabric Message Buffers.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.ServiceBus.MessageBufferTransientErrorDetectionStrategy.IsTransient(System.Exception)">
+            <summary>
+            Determines whether the specified exception represents a transient failure that can be compensated by a retry.
+            </summary>
+            <param name="ex">The exception object to be verified.</param>
+            <returns>True if the specified exception is considered as transient, otherwise false.</returns>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Properties.ExceptionMessages">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Properties.ExceptionMessages.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Properties.ExceptionMessages.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Properties.ExceptionMessages.ArgumentCannotBeDefault">
+            <summary>
+              Looks up a localized string similar to The specified argument {0} cannot be initialized with its default value..
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Properties.ExceptionMessages.ArgumentCannotBeGreaterThanBaseline">
+            <summary>
+              Looks up a localized string similar to The specified argument {0} cannot be greater than its ceiling value of {1}..
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Properties.ExceptionMessages.ArgumentCannotBeNegative">
+            <summary>
+              Looks up a localized string similar to The specified argument {0} cannot be initialized with a negative value..
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Properties.ExceptionMessages.ArgumentCannotBeZeroOrNegative">
+            <summary>
+              Looks up a localized string similar to The specified argument {0} cannot be initialized with a zero or negative value..
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Properties.ExceptionMessages.InvalidEnumValue">
+            <summary>
+              Looks up a localized string similar to The value of the argument {0} provided for the enumeration {1} is invalid..
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Properties.ExceptionMessages.RetryLimitExceeded">
+            <summary>
+              Looks up a localized string similar to The action has exceeded its defined retry limit..
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Properties.ExceptionMessages.StringCannotBeEmpty">
+            <summary>
+              Looks up a localized string similar to The specified string argument {0} must not be empty..
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Properties.ExceptionMessages.TypeNotCompatible">
+            <summary>
+              Looks up a localized string similar to The specified type {0} is not compatible with {1}..
+            </summary>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.AzureStorage.StorageTransientErrorDetectionStrategy">
+            <summary>
+            Provides the transient error detection logic that can recognize transient faults when dealing with Windows Azure storage services.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.AzureStorage.StorageTransientErrorDetectionStrategy.IsTransient(System.Exception)">
+            <summary>
+            Determines whether the specified exception represents a transient failure that can be compensated by a retry.
+            </summary>
+            <param name="ex">The exception object to be verified.</param>
+            <returns>True if the specified exception is considered as transient, otherwise false.</returns>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicyFactory">
+            <summary>
+            Provides a factory class for instantiating application-specific retry policies described in the application configuration.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicyFactory.GetDefaultSqlConnectionRetryPolicy">
+            <summary>
+            Returns the default retry policy dedicated to handling transient conditions with SQL connections.
+            </summary>
+            <returns>The retry policy for SQL connections, or the default <see cref="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy.NoRetry"/> policy if no retry policy definition assigned to SQL connections was found.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicyFactory.GetDefaultSqlCommandRetryPolicy">
+            <summary>
+            Returns the default retry policy dedicated to handling transient conditions with SQL commands.
+            </summary>
+            <returns>The retry policy for SQL commands, or the default <see cref="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy.NoRetry"/> policy if no retry policy definition assigned to SQL commands was found.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicyFactory.GetRetryPolicy``1(System.String)">
+            <summary>
+            Returns an instance of the <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy"/> object initialized for a given policy name.
+            </summary>
+            <typeparam name="T">The type implementing the <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.ITransientErrorDetectionStrategy"/> interface which is responsible for detecting transient conditions.</typeparam>
+            <param name="policyName">The name under which a retry policy definition is registered in the application configuration.</param>
+            <returns>The retry policy initialized from the specified policy definition, or the default <see cref="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.RetryPolicy.NoRetry"/> policy if the specified policy definition was found.</returns>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility">
+            <summary>
+            Providers helper methods for other classes that implement instrumentation logic.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.IsTracingMethod(System.Reflection.MethodBase)">
+            <summary>
+            Determines if the specified method is part of the tracing library.
+            </summary>
+            <param name="methodToCheck">MethodBase describing the method to check.</param>
+            <returns>True if the method is a member of the tracing library, false if not.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.GetCallingMethod">
+            <summary>
+            Walks the call stack to find the name of the method which invoked this class.
+            </summary>
+            <returns>MethodBase representing the most recent method in the stack which is not a member of this class.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.GetFullMethodName(System.Reflection.MethodBase)">
+            <summary>
+            Returns a fully qualified method name including the containing type name.
+            </summary>
+            <param name="callingMethod">The instance of <see cref="T:System.Reflection.MethodBase"/> reflection object containing method metadada.</param>
+            <returns>A string containing the full method name.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.GetParameterList(System.Object[])">
+            <summary>
+            Returns a string representing a list of parameters to be written into trace log.
+            </summary>
+            <param name="parameters">Parameters to be included in the trace log entry.</param>
+            <returns>A comma-separated list of formatted parameters.</returns>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.Resources">
+            <summary>
+            Provides the standard format strings and resources utilized by tracing components.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.Resources.NoReturnValue">
+            <summary>
+            Returns the standard text that appear in the trace log when a method doesn't have a return value.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.Resources.FormatStringTraceIn">
+            <summary>
+            Returns the standard text that appear in the trace log when writing a method entry event.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.Resources.FormatStringTraceOut">
+            <summary>
+            Returns the standard text that appear in the trace log when writing a method exit event.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.Resources.FormatStringTraceOutNoToken">
+            <summary>
+            Returns the standard text that appear in the trace log when writing a method exit event that doesn't contain a call token.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.Resources.FormatStringTraceOutNoTokenAndParams">
+            <summary>
+            Returns the standard text that appear in the trace log when writing a method exit event that doesn't contain a call token or output parameters.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.Resources.FormatStringTraceInfo">
+            <summary>
+            Returns the standard text that appear in the trace log when writing an informational event.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.Resources.FormatStringTraceDetails">
+            <summary>
+            Returns the standard text that appear in the trace log when writing a detailed informational event.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.Resources.FormatStringTraceError">
+            <summary>
+            Returns the standard text that appear in the trace log when writing an error event.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.Resources.FormatStringTraceErrorNoToken">
+            <summary>
+            Returns the standard text that appear in the trace log when writing an error event that doesn't contain a call token.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.Resources.FormatStringTraceWarning">
+            <summary>
+            Returns the standard text that appear in the trace log when writing a warning event.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.Resources.FormatStringTraceScopeStart">
+            <summary>
+            Returns the standard text that appear in the trace log when writing a scope entry event.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.Resources.FormatStringTraceScopeStartNoParams">
+            <summary>
+            Returns the standard text that appear in the trace log when writing a scope entry event that doesn't contain any context parameters. 
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.Resources.FormatStringTraceScopeEnd">
+            <summary>
+            Returns the standard text that appear in the trace log when writing a scope exit event.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.Resources.FormatStringTraceScopeEndNoParams">
+            <summary>
+            Returns the standard text that appear in the trace log when writing a scope exit event that doesn't contain any context parameters. 
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.Resources.TracingProviderGuidPropertyName">
+            <summary>
+            Returns the standard property name that is used for keeping a GUID value that corresponds to the tracing provider ID.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.TracingProviderGuid">
+            <summary>
+            Contains the default GUID values for standard trace providers.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.TracingProviderGuid.Default">
+            <summary>
+            Returns the provider GUID value for default tracing provider.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.TracingProviderGuid.PipelineComponent">
+            <summary>
+            Returns the provider GUID value for a tracing provider dedicated to supporting pipeline components.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.TracingProviderGuid.WorkflowComponent">
+            <summary>
+            Returns the provider GUID value for a tracing provider dedicated to supporting worflow components.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.TracingProviderGuid.DataAccessComponent">
+            <summary>
+            Returns the provider GUID value for a tracing provider dedicated to supporting data access components.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.TracingProviderGuid.TransformComponent">
+            <summary>
+            Returns the provider GUID value for a tracing provider dedicated to supporting transformation components.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.TracingProviderGuid.ServiceComponent">
+            <summary>
+            Returns the provider GUID value for a tracing provider dedicated to supporting service components.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.TracingProviderGuid.RulesComponent">
+            <summary>
+            Returns the provider GUID value for a tracing provider dedicated to supporting Rules Engine components.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.TracingProviderGuid.TrackingComponent">
+            <summary>
+            Returns the provider GUID value for a tracing provider dedicated to supporting BAM tracking components.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.TracingProviderGuid.WorkerRoleComponent">
+            <summary>
+            Returns the provider GUID value for a tracing provider dedicated to supporting Windows Azure web and worker roles.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.TracingProviderGuid.CloudStorageComponent">
+            <summary>
+            Returns the provider GUID value for a tracing provider dedicated to supporting cloud storage components.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.SystemEventId">
+            <summary>
+            Provides the standard event ID values.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.SystemEventId.Info">
+            <summary>
+            Returns the information event ID.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.SystemEventId.DetailedInfo">
+            <summary>
+            Returns the detailed information event ID.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.SystemEventId.Warning">
+            <summary>
+            Returns the warning event ID.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.SystemEventId.Error">
+            <summary>
+            Returns the error event ID.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.SystemEventId.MethodEntry">
+            <summary>
+            Returns the method entry event ID.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.SystemEventId.MethodExit">
+            <summary>
+            Returns the method exit event ID.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.SystemEventId.StartScope">
+            <summary>
+            Returns the start scope event ID.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.SystemEventId.EndScope">
+            <summary>
+            Returns the end scope event ID.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.InstrumentationUtility.SystemEventId.Heartbeat">
+            <summary>
+            Returns the heartbeat event ID.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.HighResolutionTimer">
+            <summary>
+            Provides the implementation of a high-resolution timer.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.HighResolutionTimer.GetElapsedMilliseconds(System.Int64)">
+            <summary>
+            Gets the total elapsed time (in milliseconds) measured by taking into account the specified start timer value. 
+            </summary>
+            <param name="startTicks">The start timer value.</param>
+            <returns>The total elapsed time in milliseconds.</returns>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.HighResolutionTimer.GetElapsedDateTimeTicks(System.Int64)">
+            <summary>
+            Gets the number of ticks that represent the date and time measured by taking into account the specified start timer value.
+            </summary>
+            <param name="startTicks">The start timer value.</param>
+            <returns>The calculated the number of ticks.</returns>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.HighResolutionTimer.Frequency">
+            <summary>
+            Returns the frequency of the high-resolution timer, if one exists.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.HighResolutionTimer.TickCount">
+            <summary>
+            Returns the current value of the high-resolution timer. 
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.HighResolutionTimer.Current">
+            <summary>
+            Returns a singleton instance of the <see cref="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.HighResolutionTimer"/> object.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.Instrumentation.HighResolutionTimer.CurrentTickCount">
+            <summary>
+            Returns the current value of the high-resolution timer. 
+            </summary>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlAzureTransientErrorDetectionStrategy">
+            <summary>
+            Provides the transient error detection logic for transient faults that are specific to SQL Azure.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlAzureTransientErrorDetectionStrategy.IsTransient(System.Exception)">
+            <summary>
+            Determines whether the specified exception represents a transient failure that can be compensated by a retry.
+            </summary>
+            <param name="ex">The exception object to be verified.</param>
+            <returns>True if the specified exception is considered as transient, otherwise false.</returns>
+        </member>
+        <member name="T:Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.SqlAzure.SqlAzureTransientErrorDetectionStrategy.ProcessNetLibErrorCode">
+            <summary>
+            Error codes reported by the DBNETLIB module.
+            </summary>
+        </member>
+    </members>
+</doc>

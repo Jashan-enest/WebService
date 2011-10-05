@@ -1,0 +1,110 @@
+D:\Official\Projects\Kani\Code\WindowsAzureProject2\WebRole1\bin\WebRole1.dll
+D:\Official\Projects\Kani\Code\WindowsAzureProject2\WebRole1\bin\WebRole1.pdb
+D:\Official\Projects\Kani\Code\WindowsAzureProject2\WebRole1\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Official\Projects\Kani\Code\WindowsAzureProject2\WebRole1\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Official\Projects\Kani\Code\WindowsAzureProject2\WebRole1\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Official\Projects\Kani\Code\WindowsAzureProject2\WebRole1\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Official\Projects\Kani\Code\WindowsAzureProject2\WebRole1\obj\Debug\ResolveAssemblyReference.cache
+D:\Official\Projects\Kani\Code\WindowsAzureProject2\WebRole1\obj\Debug\WebRole1.dll
+D:\Official\Projects\Kani\Code\WindowsAzureProject2\WebRole1\obj\Debug\WebRole1.pdb
+D:\Official\Projects\Kani\Coding\Web Service v2.0\WindowsAzureProject2\WebRole1\bin\WebRole1.dll
+D:\Official\Projects\Kani\Coding\Web Service v2.0\WindowsAzureProject2\WebRole1\bin\WebRole1.pdb
+D:\Official\Projects\Kani\Coding\Web Service v2.0\WindowsAzureProject2\WebRole1\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Official\Projects\Kani\Coding\Web Service v2.0\WindowsAzureProject2\WebRole1\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Official\Projects\Kani\Coding\Web Service v2.0\WindowsAzureProject2\WebRole1\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Official\Projects\Kani\Coding\Web Service v2.0\WindowsAzureProject2\WebRole1\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Official\Projects\Kani\Coding\Web Service v2.0\WindowsAzureProject2\WebRole1\obj\Debug\ResolveAssemblyReference.cache
+D:\Official\Projects\Kani\Coding\Web Service v2.0\WindowsAzureProject2\WebRole1\obj\Debug\WebRole1.dll
+D:\Official\Projects\Kani\Coding\Web Service v2.0\WindowsAzureProject2\WebRole1\obj\Debug\WebRole1.pdb
+D:\Official\Projects\Kani\Coding\Web Service v2.0\WindowsAzureProject2\WebRole1\bin\Microsoft.Http.dll
+D:\Official\Projects\Kani\Coding\Web Service v2.0\WindowsAzureProject2\WebRole1\bin\Microsoft.Http.Extensions.dll
+D:\Official\Projects\Kani\Coding\Web Service v2.0\WindowsAzureProject2\WebRole1\bin\Microsoft.ServiceModel.Web.dll
+D:\Official\Projects\Kani\Coding\Web Service v2.0\WindowsAzureProject2\WebRole1\bin\Microsoft.Http.pdb
+D:\Official\Projects\Kani\Coding\Web Service v2.0\WindowsAzureProject2\WebRole1\bin\Microsoft.Http.Extensions.pdb
+D:\Official\Projects\Kani\Coding\Web Service v2.0\WindowsAzureProject2\WebRole1\bin\Microsoft.ServiceModel.Web.pdb
+D:\Official\Projects\Kani\Code\Web Service v2.0\WindowsAzureProject2\WebRole1\bin\WebRole1.dll
+D:\Official\Projects\Kani\Code\Web Service v2.0\WindowsAzureProject2\WebRole1\bin\WebRole1.pdb
+D:\Official\Projects\Kani\Code\Web Service v2.0\WindowsAzureProject2\WebRole1\bin\Microsoft.Http.dll
+D:\Official\Projects\Kani\Code\Web Service v2.0\WindowsAzureProject2\WebRole1\bin\Microsoft.Http.Extensions.dll
+D:\Official\Projects\Kani\Code\Web Service v2.0\WindowsAzureProject2\WebRole1\bin\Microsoft.ServiceModel.Web.dll
+D:\Official\Projects\Kani\Code\Web Service v2.0\WindowsAzureProject2\WebRole1\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Official\Projects\Kani\Code\Web Service v2.0\WindowsAzureProject2\WebRole1\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Official\Projects\Kani\Code\Web Service v2.0\WindowsAzureProject2\WebRole1\bin\Microsoft.Http.pdb
+D:\Official\Projects\Kani\Code\Web Service v2.0\WindowsAzureProject2\WebRole1\bin\Microsoft.Http.Extensions.pdb
+D:\Official\Projects\Kani\Code\Web Service v2.0\WindowsAzureProject2\WebRole1\bin\Microsoft.ServiceModel.Web.pdb
+D:\Official\Projects\Kani\Code\Web Service v2.0\WindowsAzureProject2\WebRole1\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Official\Projects\Kani\Code\Web Service v2.0\WindowsAzureProject2\WebRole1\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Official\Projects\Kani\Code\Web Service v2.0\WindowsAzureProject2\WebRole1\obj\Debug\ResolveAssemblyReference.cache
+D:\Official\Projects\Kani\Code\Web Service v2.0\WindowsAzureProject2\WebRole1\obj\Debug\WebRole1.dll
+D:\Official\Projects\Kani\Code\Web Service v2.0\WindowsAzureProject2\WebRole1\obj\Debug\WebRole1.pdb
+D:\Official\Projects\Kani\Code\Web Service v2.0\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\WebRole1.dll
+D:\Official\Projects\Kani\Code\Web Service v2.0\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\WebRole1.pdb
+D:\Official\Projects\Kani\Code\Web Service v2.0\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\Microsoft.Http.dll
+D:\Official\Projects\Kani\Code\Web Service v2.0\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\Microsoft.Http.Extensions.dll
+D:\Official\Projects\Kani\Code\Web Service v2.0\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\Microsoft.ServiceModel.Web.dll
+D:\Official\Projects\Kani\Code\Web Service v2.0\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Official\Projects\Kani\Code\Web Service v2.0\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Official\Projects\Kani\Code\Web Service v2.0\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\Microsoft.Http.pdb
+D:\Official\Projects\Kani\Code\Web Service v2.0\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\Microsoft.Http.Extensions.pdb
+D:\Official\Projects\Kani\Code\Web Service v2.0\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\Microsoft.ServiceModel.Web.pdb
+D:\Official\Projects\Kani\Code\Web Service v2.0\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Official\Projects\Kani\Code\Web Service v2.0\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Official\Projects\Kani\Code\Web Service v2.0\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\obj\Debug\ResolveAssemblyReference.cache
+D:\Official\Projects\Kani\Code\Web Service v2.0\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\obj\Debug\WebRole1.dll
+D:\Official\Projects\Kani\Code\Web Service v2.0\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\obj\Debug\WebRole1.pdb
+D:\Official\Projects\Kani\Code\WebServicev2.0\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\WebRole1.dll
+D:\Official\Projects\Kani\Code\WebServicev2.0\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\WebRole1.pdb
+D:\Official\Projects\Kani\Code\WebServicev2.0\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\Microsoft.Http.dll
+D:\Official\Projects\Kani\Code\WebServicev2.0\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\Microsoft.Http.Extensions.dll
+D:\Official\Projects\Kani\Code\WebServicev2.0\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\Microsoft.ServiceModel.Web.dll
+D:\Official\Projects\Kani\Code\WebServicev2.0\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Official\Projects\Kani\Code\WebServicev2.0\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Official\Projects\Kani\Code\WebServicev2.0\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\Microsoft.Http.pdb
+D:\Official\Projects\Kani\Code\WebServicev2.0\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\Microsoft.Http.Extensions.pdb
+D:\Official\Projects\Kani\Code\WebServicev2.0\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\Microsoft.ServiceModel.Web.pdb
+D:\Official\Projects\Kani\Code\WebServicev2.0\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Official\Projects\Kani\Code\WebServicev2.0\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Official\Projects\Kani\Code\WebServicev2.0\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\obj\Debug\ResolveAssemblyReference.cache
+D:\Official\Projects\Kani\Code\WebServicev2.0\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\obj\Debug\WebRole1.dll
+D:\Official\Projects\Kani\Code\WebServicev2.0\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\obj\Debug\WebRole1.pdb
+D:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\WebRole1.dll
+D:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\WebRole1.pdb
+D:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\Microsoft.Http.dll
+D:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\Microsoft.Http.Extensions.dll
+D:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\Microsoft.ServiceModel.Web.dll
+D:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\Microsoft.Http.pdb
+D:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\Microsoft.Http.Extensions.pdb
+D:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\Microsoft.ServiceModel.Web.pdb
+D:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\obj\Debug\ResolveAssemblyReference.cache
+D:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\obj\Debug\WebRole1.dll
+D:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\obj\Debug\WebRole1.pdb
+E:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\WebRole1.dll
+E:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\WebRole1.pdb
+E:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\Microsoft.WindowsAzure.Diagnostics.dll
+E:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\Microsoft.WindowsAzure.StorageClient.dll
+E:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\Microsoft.WindowsAzure.Diagnostics.xml
+E:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\bin\Microsoft.WindowsAzure.StorageClient.xml
+E:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\obj\Debug\ResolveAssemblyReference.cache
+E:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\obj\Debug\WebRole1.dll
+E:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\WithOut SSL REST Service\WindowsAzureProject2\WebRole1\obj\Debug\WebRole1.pdb
+D:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\Without_SSL\WindowsAzureProject2\WebRole1\bin\WebRole1.dll
+D:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\Without_SSL\WindowsAzureProject2\WebRole1\bin\WebRole1.pdb
+D:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\Without_SSL\WindowsAzureProject2\WebRole1\bin\Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.dll
+D:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\Without_SSL\WindowsAzureProject2\WebRole1\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\Without_SSL\WindowsAzureProject2\WebRole1\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\Without_SSL\WindowsAzureProject2\WebRole1\bin\Newtonsoft.Json.dll
+D:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\Without_SSL\WindowsAzureProject2\WebRole1\bin\Microsoft.ApplicationServer.Caching.Core.dll
+D:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\Without_SSL\WindowsAzureProject2\WebRole1\bin\Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.pdb
+D:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\Without_SSL\WindowsAzureProject2\WebRole1\bin\Microsoft.AppFabricCAT.Samples.Azure.TransientFaultHandling.xml
+D:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\Without_SSL\WindowsAzureProject2\WebRole1\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\Without_SSL\WindowsAzureProject2\WebRole1\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\Without_SSL\WindowsAzureProject2\WebRole1\bin\Newtonsoft.Json.pdb
+D:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\Without_SSL\WindowsAzureProject2\WebRole1\bin\Newtonsoft.Json.xml
+D:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\Without_SSL\WindowsAzureProject2\WebRole1\obj\Debug\ResolveAssemblyReference.cache
+D:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\Without_SSL\WindowsAzureProject2\WebRole1\obj\Debug\WebRole1.dll
+D:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\Without_SSL\WindowsAzureProject2\WebRole1\obj\Debug\WebRole1.pdb
+D:\Official\Projects\Kani\Code\WebServicev2.0_LatestRavi\Without_SSL\WindowsAzureProject2\WebRole1\bin\Microsoft.ServiceBus.dll
